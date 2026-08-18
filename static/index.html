@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>AutoAudit Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: [
+                            "Inter",
+                            "ui-sans-serif",
+                            "system-ui",
+                            "sans-serif"
+                        ]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <div class="min-h-screen">
+        <header class="border-b border-slate-800 bg-slate-950/95">
+            <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                    <p class="text-sm font-medium text-cyan-300">
+                        ERP Risk & Compliance
+                    </p>
+
+                    <h1 class="mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
+                        AutoAudit Fraud Review
+                    </h1>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3">
+                    <div
+                        id="backendStatus"
+                        class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-medium text-slate-300"
+                    >
+                        <span
+                            id="statusDot"
+                            class="h-2.5 w-2.5 rounded-full bg-slate-500"
+                        ></span>
+
+                        <span id="statusText">
+                            Checking backend
+                        </span>
+                    </div>
+
+                    <button
+                        id="refreshButton"
+                        type="button"
+                        class="rounded-lg border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-cyan-500 hover:text-cyan-200 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                        Refresh
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="mx-auto max-w-7xl px-6 py-8">
+            <section
+                id="errorPanel"
+                class="mb-6 hidden rounded-lg border border-red-500/30 bg-red-500/10 p-4 text-sm text-red-100"
+                role="alert"
+            >
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <p id="errorText"></p>
+
+                    <button
+                        id="retryButton"
+                        type="button"
+                        class="w-fit rounded-md bg-red-500 px-3 py-2 text-sm font-semibold text-white transition hover:bg-red-400"
+                    >
+                        Try again
+                    </button>
+                </div>
+            </section>
+
+            <section
+                id="toastPanel"
+                class="mb-6 hidden rounded-lg border border-emerald-500/30 bg-emerald-500/10 p-4 text-sm font-medium text-emerald-100"
+                aria-live="polite"
+            ></section>
+
+            <section class="mb-8 grid grid-cols-1 gap-5 md:grid-cols-3">
+                <article class="rounded-lg border border-slate-800 bg-slate-900 p-6">
+                    <p class="text-sm font-medium text-slate-400">
+                        Total Flagged
+                    </p>
+
+                    <p
+                        id="totalFlagged"
+                        class="mt-3 text-3xl font-semibold tracking-tight"
+                    >
+                        0
+                    </p>
+                </article>
+
+                <article class="rounded-lg border border-slate-800 bg-slate-900 p-6">
+                    <p class="text-sm font-medium text-slate-400">
+                        Highest Risk Amount
+                    </p>
+
+                    <p
+                        id="highestRisk"
+                        class="mt-3 text-3xl font-semibold tracking-tight text-red-300"
+                    >
+                        GHS 0.00
+                    </p>
+                </article>
+
+                <article class="rounded-lg border border-slate-800 bg-slate-900 p-6">
+                    <p class="text-sm font-medium text-slate-400">
+                        Pending Audits
+                    </p>
+
+                    <p
+                        id="pendingAudits"
+                        class="mt-3 text-3xl font-semibold tracking-tight text-amber-300"
+                    >
+                        0
+                    </p>
+                </article>
+            </section>
+
+            <section class="mb-5 rounded-lg border border-slate-800 bg-slate-900 p-4">
+                <div class="grid gap-4 lg:grid-cols-[1fr_auto] lg:items-center">
+                    <label class="block">
+                        <span class="sr-only">
+                            Search vendors
+                        </span>
+
+                        <input
+                            id="searchInput"
+                            type="search"
+                            placeholder="Search vendor names..."
+                            class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
+                        >
+                    </label>
+
+                    <div
+                        id="filterButtons"
+                        class="flex flex-wrap gap-2"
+                        aria-label="Transaction status filters"
+                    >
+                        <button
+                            type="button"
+                            data-filter="all"
+                            class="filter-button rounded-lg px-4 py-2 text-sm font-semibold transition"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            type="button"
+                            data-filter="pending"
+                            class="filter-button rounded-lg px-4 py-2 text-sm font-semibold transition"
+                        >
+                            Pending
+                        </button>
+
+                        <button
+                            type="button"
+                            data-filter="escalated"
+                            class="filter-button rounded-lg px-4 py-2 text-sm font-semibold transition"
+                        >
+                            Escalated
+                        </button>
+
+                        <button
+                            type="button"
+                            data-filter="approved"
+                            class="filter-button rounded-lg px-4 py-2 text-sm font-semibold transition"
+                        >
+                            Approved
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="overflow-hidden rounded-lg border border-slate-800 bg-slate-900">
+                <div class="flex flex-col gap-3 border-b border-slate-800 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <h2 class="text-base font-semibold">
+                            Flagged Transactions
+                        </h2>
+
+                        <p
+                            id="tableSubtext"
+                            class="mt-1 text-sm text-slate-400"
+                        >
+                            Loading transactions...
+                        </p>
+                    </div>
+
+                    <span
+                        id="transactionCount"
+                        class="w-fit rounded-full border border-slate-700 bg-slate-950 px-3 py-1 text-xs font-medium text-slate-300"
+                    >
+                        0 shown
+                    </span>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[1120px] text-left">
+                        <thead class="bg-slate-950/70 text-xs uppercase text-slate-400">
+                            <tr>
+                                <th class="px-5 py-4">
+                                    Transaction
+                                </th>
+
+                                <th class="px-5 py-4">
+                                    Vendor
+                                </th>
+
+                                <th class="px-5 py-4">
+                                    Amount
+                                </th>
+
+                                <th class="px-5 py-4">
+                                    Category
+                                </th>
+
+                                <th class="px-5 py-4">
+                                    Timestamp
+                                </th>
+
+                                <th class="px-5 py-4">
+                                    Status
+                                </th>
+
+                                <th class="px-5 py-4">
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody
+                            id="transactionsTable"
+                            class="divide-y divide-slate-800"
+                        ></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div
+        id="escalationModal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 px-4 py-6"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+    >
+        <div class="w-full max-w-2xl rounded-lg border border-slate-700 bg-slate-900 shadow-2xl">
+            <div class="flex items-start justify-between gap-4 border-b border-slate-800 px-6 py-5">
+                <div>
+                    <p class="text-sm font-medium text-red-300">
+                        Escalate for fraud review
+                    </p>
+
+                    <h2
+                        id="modalTitle"
+                        class="mt-1 text-xl font-semibold"
+                    >
+                        Confirm escalation
+                    </h2>
+                </div>
+
+                <button
+                    id="closeModalButton"
+                    type="button"
+                    class="rounded-md border border-slate-700 px-3 py-2 text-sm font-semibold text-slate-200 transition hover:border-slate-500"
+                    aria-label="Close modal"
+                >
+                    Close
+                </button>
+            </div>
+
+            <div class="px-6 py-5">
+                <p class="mb-4 text-sm text-slate-300">
+                    Review the transaction details before sending this item to escalation.
+                </p>
+
+                <dl
+                    id="modalDetails"
+                    class="grid gap-3 sm:grid-cols-2"
+                ></dl>
+            </div>
+
+            <div class="flex flex-col-reverse gap-3 border-t border-slate-800 px-6 py-5 sm:flex-row sm:justify-end">
+                <button
+                    id="cancelEscalationButton"
+                    type="button"
+                    class="rounded-lg border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-slate-500 disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    id="confirmEscalationButton"
+                    type="button"
+                    class="rounded-lg bg-red-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-400 disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                    Confirm Escalation
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE =
+            window.location.protocol === "file:"
+                ? "http://127.0.0.1:8000"
+                : "";
+
+        const API = {
+            anomalies: `${API_BASE}/api/anomalies`,
+            action: `${API_BASE}/api/action`
+        };
+
+        const state = {
+            transactions: [],
+            activeFilter: "all",
+            searchTerm: "",
+            loading: false,
+            actionLoadingIds: new Set(),
+            selectedTransaction: null,
+            toastTimer: null
+        };
+
+        const statusStyles = {
+            pending: {
+                label: "Pending",
+                badge:
+                    "border-amber-400/30 bg-amber-400/10 text-amber-200"
+            },
+            approved: {
+                label: "Approved",
+                badge:
+                    "border-emerald-400/30 bg-emerald-400/10 text-emerald-200"
+            },
+            escalated: {
+                label: "Escalated",
+                badge:
+                    "border-red-400/30 bg-red-400/10 text-red-200"
+            }
+        };
+
+        const elements = {
+            backendStatus: document.getElementById("backendStatus"),
+            statusDot: document.getElementById("statusDot"),
+            statusText: document.getElementById("statusText"),
+            refreshButton: document.getElementById("refreshButton"),
+            retryButton: document.getElementById("retryButton"),
+            errorPanel: document.getElementById("errorPanel"),
+            errorText: document.getElementById("errorText"),
+            toastPanel: document.getElementById("toastPanel"),
+            totalFlagged: document.getElementById("totalFlagged"),
+            highestRisk: document.getElementById("highestRisk"),
+            pendingAudits: document.getElementById("pendingAudits"),
+            searchInput: document.getElementById("searchInput"),
+            filterButtons: document.querySelectorAll(".filter-button"),
+            transactionsTable: document.getElementById("transactionsTable"),
+            transactionCount: document.getElementById("transactionCount"),
+            tableSubtext: document.getElementById("tableSubtext"),
+            escalationModal: document.getElementById("escalationModal"),
+            closeModalButton: document.getElementById("closeModalButton"),
+            cancelEscalationButton:
+                document.getElementById("cancelEscalationButton"),
+            confirmEscalationButton:
+                document.getElementById("confirmEscalationButton"),
+            modalDetails: document.getElementById("modalDetails")
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            bindEvents();
+            loadTransactions();
+        });
+
+        function bindEvents() {
+            elements.refreshButton.addEventListener(
+                "click",
+                loadTransactions
+            );
+
+            elements.retryButton.addEventListener(
+                "click",
+                loadTransactions
+            );
+
+            elements.searchInput.addEventListener("input", (event) => {
+                state.searchTerm = event.target.value.trim().toLowerCase();
+                renderDashboard();
+            });
+
+            elements.filterButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    state.activeFilter = button.dataset.filter;
+                    renderDashboard();
+                });
+            });
+
+            elements.transactionsTable.addEventListener(
+                "click",
+                handleTableClick
+            );
+
+            elements.closeModalButton.addEventListener(
+                "click",
+                closeEscalationModal
+            );
+
+            elements.cancelEscalationButton.addEventListener(
+                "click",
+                closeEscalationModal
+            );
+
+            elements.confirmEscalationButton.addEventListener(
+                "click",
+                confirmEscalation
+            );
+
+            elements.escalationModal.addEventListener("click", (event) => {
+                if (event.target === elements.escalationModal) {
+                    closeEscalationModal();
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (
+                    event.key === "Escape" &&
+                    !elements.escalationModal.classList.contains("hidden")
+                ) {
+                    closeEscalationModal();
+                }
+            });
+        }
+
+        async function loadTransactions() {
+            state.loading = true;
+            clearError();
+            renderDashboard();
+            setBackendStatus("checking");
+
+            try {
+                const response = await fetch(API.anomalies);
+                const data = await parseResponse(response);
+
+                if (!response.ok) {
+                    throw new Error(
+                        getErrorMessage(
+                            data,
+                            `Backend returned HTTP ${response.status}`
+                        )
+                    );
+                }
+
+                state.transactions = Array.isArray(data)
+                    ? data.map(normalizeTransaction)
+                    : [];
+
+                setBackendStatus("connected");
+            } catch (error) {
+                state.transactions = [];
+                setBackendStatus("disconnected");
+                showError(
+                    `${error.message}. Make sure the FastAPI backend is running.`
+                );
+            } finally {
+                state.loading = false;
+                renderDashboard();
+            }
+        }
+
+        async function handleTableClick(event) {
+            const button = event.target.closest("button[data-action]");
+
+            if (!button) {
+                return;
+            }
+
+            const transaction = findTransaction(button.dataset.id);
+
+            if (!transaction || transaction.status !== "pending") {
+                return;
+            }
+
+            if (button.dataset.action === "approved") {
+                await submitAction(transaction.transaction_id, "approved");
+                return;
+            }
+
+            if (button.dataset.action === "open-escalation") {
+                openEscalationModal(transaction);
+            }
+        }
+
+        async function confirmEscalation() {
+            if (!state.selectedTransaction) {
+                return;
+            }
+
+            setModalBusy(true);
+
+            const succeeded = await submitAction(
+                state.selectedTransaction.transaction_id,
+                "escalated"
+            );
+
+            setModalBusy(false);
+
+            if (succeeded) {
+                closeEscalationModal();
+            }
+        }
+
+        async function submitAction(transactionId, action) {
+            clearError();
+            state.actionLoadingIds.add(transactionId);
+            renderDashboard();
+
+            try {
+                const response = await fetch(API.action, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        transaction_id: transactionId,
+                        action
+                    })
+                });
+
+                const data = await parseResponse(response);
+
+                if (!response.ok) {
+                    throw new Error(
+                        getErrorMessage(
+                            data,
+                            `Action failed with HTTP ${response.status}`
+                        )
+                    );
+                }
+
+                const updated = normalizeTransaction(
+                    data.transaction || {
+                        ...findTransaction(transactionId),
+                        status: action
+                    }
+                );
+
+                state.transactions = state.transactions.map((transaction) =>
+                    transaction.transaction_id === transactionId
+                        ? {
+                            ...transaction,
+                            ...updated,
+                            status: action
+                        }
+                        : transaction
+                );
+
+                showToast(
+                    `Transaction marked as ${statusStyles[action].label}.`
+                );
+
+                return true;
+            } catch (error) {
+                showError(error.message);
+                return false;
+            } finally {
+                state.actionLoadingIds.delete(transactionId);
+                renderDashboard();
+            }
+        }
+
+        async function parseResponse(response) {
+            const text = await response.text();
+
+            if (!text) {
+                return null;
+            }
+
+            try {
+                return JSON.parse(text);
+            } catch (error) {
+                return text;
+            }
+        }
+
+        function renderDashboard() {
+            const visibleTransactions = getVisibleTransactions();
+
+            elements.refreshButton.disabled = state.loading;
+            updateFilterButtons();
+            updateSummaryCards(visibleTransactions);
+            updateTableHeader(visibleTransactions.length);
+            renderRows(visibleTransactions);
+        }
+
+        function getVisibleTransactions() {
+            return state.transactions.filter((transaction) => {
+                const matchesStatus =
+                    state.activeFilter === "all" ||
+                    transaction.status === state.activeFilter;
+
+                const vendorName =
+                    transaction.vendor_name || "";
+
+                const matchesSearch = vendorName
+                    .toLowerCase()
+                    .includes(state.searchTerm);
+
+                return matchesStatus && matchesSearch;
+            });
+        }
+
+        function updateSummaryCards(visibleTransactions) {
+            const pendingCount = visibleTransactions.filter(
+                (transaction) => transaction.status === "pending"
+            ).length;
+
+            const highestAmount = visibleTransactions.length
+                ? Math.max(
+                    ...visibleTransactions.map(
+                        (transaction) =>
+                            Number(transaction.amount_ghs) || 0
+                    )
+                )
+                : 0;
+
+            elements.totalFlagged.textContent =
+                visibleTransactions.length.toLocaleString();
+
+            elements.highestRisk.textContent =
+                formatGHS(highestAmount);
+
+            elements.pendingAudits.textContent =
+                pendingCount.toLocaleString();
+        }
+
+        function updateTableHeader(visibleCount) {
+            const total = state.transactions.length;
+
+            elements.transactionCount.textContent =
+                `${visibleCount.toLocaleString()} shown`;
+
+            if (state.loading) {
+                elements.tableSubtext.textContent =
+                    "Loading transactions from the audit API...";
+                return;
+            }
+
+            elements.tableSubtext.textContent =
+                `${total.toLocaleString()} total transactions loaded`;
+        }
+
+        function renderRows(visibleTransactions) {
+            if (state.loading) {
+                elements.transactionsTable.innerHTML = `
+                    <tr>
+                        <td
+                            colspan="7"
+                            class="px-5 py-12 text-center text-sm text-slate-400"
+                        >
+                            Loading flagged transactions...
+                        </td>
+                    </tr>
+                `;
+
+                return;
+            }
+
+            if (!visibleTransactions.length) {
+                elements.transactionsTable.innerHTML = `
+                    <tr>
+                        <td
+                            colspan="7"
+                            class="px-5 py-12 text-center text-sm text-slate-400"
+                        >
+                            No transactions match the current search or filter.
+                        </td>
+                    </tr>
+                `;
+
+                return;
+            }
+
+            elements.transactionsTable.innerHTML = visibleTransactions
+                .map(renderTransactionRow)
+                .join("");
+        }
+
+       function renderTransactionRow(transaction) {
+            const status = statusStyles[transaction.status];
+            const isPending = transaction.status === "pending";
+            const isBusy =
+                state.actionLoadingIds.has(transaction.transaction_id);
+            const buttonsDisabled = !isPending || isBusy;
+            const disabledClasses = buttonsDisabled
+                ? "cursor-not-allowed opacity-45"
+                : "";
+
+            return `
+                <tr class="transition hover:bg-slate-800/50">
+                    <td class="px-5 py-4 align-top">
+                        <span
+                            class="block max-w-[170px] truncate font-mono text-xs text-slate-400"
+                            title="${escapeHTML(transaction.transaction_id)}"
+                        >
+                            ${escapeHTML(transaction.transaction_id)}
+                        </span>
+                    </td>
+
+                    <td class="px-5 py-4 align-top">
+                        <p class="font-medium text-slate-100">
+                            ${escapeHTML(transaction.vendor_name)}
+                        </p>
+                    </td>
+
+                    <td class="px-5 py-4 align-top">
+                        <span class="font-semibold text-red-200">
+                            ${formatGHS(transaction.amount_ghs)}
+                        </span>
+                    </td>
+
+                    <td class="px-5 py-4 align-top">
+                        <span class="rounded-full border border-slate-700 bg-slate-950 px-3 py-1 text-xs font-medium text-slate-300">
+                            ${escapeHTML(transaction.category)}
+                        </span>
+                    </td>
+
+                    <td class="px-5 py-4 align-top text-sm text-slate-400">
+                        ${formatTimestamp(transaction.timestamp)}
+                    </td>
+
+                    <td class="px-5 py-4 align-top">
+                        <span class="inline-flex rounded-full border px-3 py-1 text-xs font-semibold ${status.badge}">
+                            ${status.label}
+                        </span>
+                    </td>
+
+                    <td class="px-5 py-4 align-top">
+        ${!isPending ? `
+          <span class="text-xs text-slate-400 font-medium italic">Action Completed</span>
+        ` : `
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              data-action="approve"
+              data-id="${escapeHTML(transaction.transaction_id)}"
+              ${buttonsDisabled ? "disabled" : ""}
+              class="rounded-lg bg-emerald-500/10 px-3 py-1.5 text-xs text-emerald-400 hover:bg-emerald-500/20"
+            >
+              ${isBusy ? "Saving..." : "Approve"}
+            </button>
+            <button
+              type="button"
+              data-action="open-escalation"
+              data-id="${escapeHTML(transaction.transaction_id)}"
+              ${buttonsDisabled ? "disabled" : ""}
+              class="rounded-lg bg-red-500/10 px-3 py-1.5 text-xs text-red-400 hover:bg-red-500/20"
+            >
+              Escalate Fraud
+            </button>
+          </div>
+        `}
+      </td>
+    </tr>
+  `;
+}
+        function updateFilterButtons() {
+            elements.filterButtons.forEach((button) => {
+                const isActive = button.dataset.filter === state.activeFilter;
+
+                button.className = isActive
+                    ? "filter-button rounded-lg bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition"
+                    : "filter-button rounded-lg border border-slate-700 bg-slate-950 px-4 py-2 text-sm font-semibold text-slate-300 transition hover:border-cyan-400 hover:text-cyan-200";
+            });
+        }
+
+        function openEscalationModal(transaction) {
+            state.selectedTransaction = transaction;
+            elements.modalDetails.innerHTML = renderModalDetails(transaction);
+            setModalBusy(false);
+            elements.escalationModal.classList.remove("hidden");
+            elements.escalationModal.classList.add("flex");
+            document.body.classList.add("overflow-hidden");
+            elements.confirmEscalationButton.focus();
+        }
+
+        function closeEscalationModal() {
+            state.selectedTransaction = null;
+            elements.escalationModal.classList.add("hidden");
+            elements.escalationModal.classList.remove("flex");
+            document.body.classList.remove("overflow-hidden");
+            setModalBusy(false);
+        }
+
+        function renderModalDetails(transaction) {
+            const details = [
+                ["Transaction ID", transaction.transaction_id],
+                ["Vendor", transaction.vendor_name],
+                ["Amount", formatGHS(transaction.amount_ghs)],
+                ["Category", transaction.category],
+                ["Timestamp", formatTimestamp(transaction.timestamp)],
+                ["Current status", statusStyles[transaction.status].label]
+            ];
+
+            return details
+                .map(([label, value]) => `
+                    <div class="rounded-lg border border-slate-800 bg-slate-950 p-4">
+                        <dt class="text-xs font-semibold uppercase text-slate-500">
+                            ${escapeHTML(label)}
+                        </dt>
+
+                        <dd class="mt-2 break-words text-sm text-slate-100">
+                            ${escapeHTML(value)}
+                        </dd>
+                    </div>
+                `)
+                .join("");
+        }
+
+        function setModalBusy(isBusy) {
+            elements.confirmEscalationButton.disabled = isBusy;
+            elements.closeModalButton.disabled = isBusy;
+            elements.cancelEscalationButton.disabled = isBusy;
+            elements.confirmEscalationButton.textContent = isBusy
+                ? "Escalating..."
+                : "Confirm Escalation";
+        }
+
+        function normalizeTransaction(transaction) {
+            const normalizedStatus = normalizeStatus(
+                transaction.status || transaction.audit_status
+            );
+
+            return {
+                ...transaction,
+                transaction_id: String(transaction.transaction_id || ""),
+                vendor_name: transaction.vendor_name || "Unknown vendor",
+                category: transaction.category || "Uncategorized",
+                status: normalizedStatus
+            };
+        }
+
+        function normalizeStatus(value) {
+            const status = String(value || "pending").toLowerCase();
+
+            if (status === "approved" || status === "approve") {
+                return "approved";
+            }
+
+            if (
+                status === "escalated" ||
+                status === "flagged" ||
+                status === "flag"
+            ) {
+                return "escalated";
+            }
+
+            return "pending";
+        }
+
+        function findTransaction(transactionId) {
+            return state.transactions.find(
+                (transaction) =>
+                    transaction.transaction_id === transactionId
+            );
+        }
+
+        function setBackendStatus(status) {
+            const settings = {
+                checking: {
+                    text: "Checking backend",
+                    wrapper:
+                        "inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-medium text-slate-300",
+                    dot: "h-2.5 w-2.5 rounded-full bg-slate-500"
+                },
+                connected: {
+                    text: "Backend connected",
+                    wrapper:
+                        "inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-200",
+                    dot: "h-2.5 w-2.5 rounded-full bg-emerald-300"
+                },
+                disconnected: {
+                    text: "Backend disconnected",
+                    wrapper:
+                        "inline-flex items-center gap-2 rounded-full border border-red-400/30 bg-red-400/10 px-4 py-2 text-sm font-medium text-red-200",
+                    dot: "h-2.5 w-2.5 rounded-full bg-red-300"
+                }
+            };
+
+            elements.backendStatus.className = settings[status].wrapper;
+            elements.statusDot.className = settings[status].dot;
+            elements.statusText.textContent = settings[status].text;
+            elements.refreshButton.disabled = state.loading;
+        }
+
+        function showError(message) {
+            elements.errorText.textContent = message;
+            elements.errorPanel.classList.remove("hidden");
+        }
+
+        function clearError() {
+            elements.errorPanel.classList.add("hidden");
+            elements.errorText.textContent = "";
+        }
+
+        function showToast(message) {
+            window.clearTimeout(state.toastTimer);
+            elements.toastPanel.textContent = message;
+            elements.toastPanel.classList.remove("hidden");
+
+            state.toastTimer = window.setTimeout(() => {
+                elements.toastPanel.classList.add("hidden");
+                elements.toastPanel.textContent = "";
+            }, 2800);
+        }
+
+        function getErrorMessage(data, fallback) {
+            if (data && typeof data === "object" && data.detail) {
+                return Array.isArray(data.detail)
+                    ? data.detail
+                        .map((item) => item.msg || JSON.stringify(item))
+                        .join(", ")
+                    : data.detail;
+            }
+
+            if (typeof data === "string" && data.trim()) {
+                return data;
+            }
+
+            return fallback;
+        }
+
+        function formatGHS(amount) {
+            return new Intl.NumberFormat("en-GH", {
+                style: "currency",
+                currency: "GHS",
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }).format(Number(amount) || 0);
+        }
+
+        function formatTimestamp(timestamp) {
+            if (!timestamp) {
+                return "Not recorded";
+            }
+
+            const date = new Date(timestamp);
+
+            if (Number.isNaN(date.getTime())) {
+                return timestamp;
+            }
+
+            return date.toLocaleString("en-GH", {
+                dateStyle: "medium",
+                timeStyle: "short"
+            });
+        }
+
+        function escapeHTML(value) {
+            return String(value ?? "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>

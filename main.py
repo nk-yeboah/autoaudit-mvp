@@ -16,6 +16,7 @@ from typing import Literal, Optional
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 
@@ -25,6 +26,7 @@ from pydantic import BaseModel
 
 BASE_DIR = Path(__file__).resolve().parent
 CSV_FILE = BASE_DIR / "flagged_audit_report.csv"
+STATIC_DIR = BASE_DIR / "static"
 
 
 # ---------------------------------------------------------------------------
@@ -52,6 +54,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+if STATIC_DIR.exists():
+    app.mount(
+        "/static",
+        StaticFiles(directory=STATIC_DIR),
+        name="static",
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -83,10 +92,84 @@ def load_transactions() -> None:
             errors="coerce",
         )
 
+    transactions_df["status"] = "pending"
+
     print(
         f"Loaded {len(transactions_df):,} flagged transactions "
         f"from {CSV_FILE.name}"
     )
+
+
+def clean_json_value(value):
+    """
+    Convert pandas/numpy scalar values into JSON-friendly Python values.
+    """
+
+    if pd.isna(value):
+        return None
+
+    if hasattr(value, "item"):
+        return value.item()
+
+    return value
+
+
+def serialize_transaction(transaction: pd.Series) -> dict:
+    """
+    Convert one transaction row into a JSON-friendly dictionary.
+    """
+
+    return {
+        key: clean_json_value(value)
+        for key, value in transaction.to_dict().items()
+    }
+
+
+def get_summary_metrics() -> dict:
+    """
+    Recalculate summary metrics from the current in-memory transaction state.
+    """
+
+    pending_df = transactions_df[
+        transactions_df["status"] == "pending"
+    ]
+
+    highest_risk_remaining = 0.0
+
+    if not pending_df.empty and "amount_ghs" in pending_df.columns:
+        highest_amount = pending_df["amount_ghs"].max()
+
+        if pd.notna(highest_amount):
+            highest_risk_remaining = float(highest_amount)
+
+    return {
+        "total_pending": int(
+            (transactions_df["status"] == "pending").sum()
+        ),
+        "total_escalated": int(
+            (transactions_df["status"] == "escalated").sum()
+        ),
+        "highest_risk_remaining": highest_risk_remaining,
+    }
+
+
+def get_transaction_index(transaction_id: str):
+    """
+    Return the DataFrame index for a transaction id or raise 404.
+    """
+
+    matches = transactions_df.index[
+        transactions_df["transaction_id"].astype(str)
+        == transaction_id
+    ]
+
+    if len(matches) == 0:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Transaction '{transaction_id}' not found.",
+        )
+
+    return matches[0]
 
 
 # ---------------------------------------------------------------------------
@@ -96,6 +179,11 @@ def load_transactions() -> None:
 class AuditAction(BaseModel):
     transaction_id: str
     action: Literal["approve", "flag"]
+
+
+class TransactionAction(BaseModel):
+    transaction_id: str
+    action: Literal["approved", "escalated"]
 
 
 # ---------------------------------------------------------------------------
@@ -178,18 +266,7 @@ def audit_transaction(payload: AuditAction):
 
     global transactions_df
 
-    matches = transactions_df.index[
-        transactions_df["transaction_id"].astype(str)
-        == payload.transaction_id
-    ]
-
-    if len(matches) == 0:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Transaction '{payload.transaction_id}' not found.",
-        )
-
-    index = matches[0]
+    index = get_transaction_index(payload.transaction_id)
 
     new_status = (
         "Approved"
@@ -199,6 +276,11 @@ def audit_transaction(payload: AuditAction):
 
     # Add/update an audit status column.
     transactions_df.loc[index, "audit_status"] = new_status
+    transactions_df.loc[index, "status"] = (
+        "approved"
+        if payload.action == "approve"
+        else "escalated"
+    )
 
     return {
         "success": True,
@@ -209,4 +291,34 @@ def audit_transaction(payload: AuditAction):
             f"Transaction {payload.transaction_id} "
             f"has been marked as {new_status}."
         ),
+    }
+
+
+# ---------------------------------------------------------------------------
+# Endpoint 4: Update transaction review state
+# ---------------------------------------------------------------------------
+
+@app.post("/api/action")
+def update_transaction_action(payload: TransactionAction):
+    """
+    Update the dynamic review status of a flagged transaction.
+
+    Supported actions:
+        approved  -> transaction marked as approved
+        escalated -> transaction marked as escalated
+    """
+
+    global transactions_df
+
+    index = get_transaction_index(payload.transaction_id)
+    transactions_df.loc[index, "status"] = payload.action
+
+    updated_transaction = serialize_transaction(
+        transactions_df.loc[index]
+    )
+
+    return {
+        "success": True,
+        "transaction": updated_transaction,
+        "summary": get_summary_metrics(),
     }
