@@ -1,0 +1,1001 @@
+transaction_id,vendor_name,amount_ghs,timestamp,approval_status,category,is_fraud_label
+65ea9b6c-1178-41a0-955d-15f249b7cade,Smith Group,15345.77,2026-05-20T05:41:28,Pending,Office Supplies,False
+b5090d76-10a7-425f-b2a4-2e0c192be624,Santana-Faulkner,19379.7,2026-05-20T06:03:49,Flagged,IT Equipment,False
+b9596a2e-5f66-4a5d-8766-998e4034e3e3,Kramer PLC,15369.42,2026-05-20T10:42:21,Pending,Office Supplies,False
+535d68b7-67c1-4216-b0ea-aaf9df81e72c,"Norman, Floyd and Fernandez",28677.51,2026-05-20T11:48:19,Pending,Marketing,False
+e9ccd5eb-5aa3-450f-b08d-91ac16948514,Jackson-Webster,47011.24,2026-05-20T14:11:08,Flagged,Logistics,False
+218a7595-28a6-4f78-a96b-977c27ea0eac,"Jordan, Patterson and Woods",40370.55,2026-05-20T14:58:42,Approved,Office Supplies,False
+eff3589f-3129-4e6b-b7cf-b0fa7c560bd1,Edwards Inc,21899.8,2026-05-20T15:04:54,Pending,IT Equipment,False
+aa5d862c-136f-4cb3-a24d-166622b9872f,Hernandez Ltd,32499.51,2026-05-20T17:01:08,Approved,Marketing,False
+11f552a1-7cb3-4140-8478-bdfe5602b6a0,Jones and Sons,9110.8,2026-05-21T01:23:59,Approved,Marketing,False
+6c36f018-7580-4406-9160-6345cc34a75b,Arnold-Patterson,10689.94,2026-05-21T02:37:50,Approved,Logistics,False
+74b298b3-d770-45e3-b5e8-f17aa01e41d5,Williams-Turner,30841.15,2026-05-21T04:02:06,Approved,Logistics,False
+5606ec81-dddc-4472-b6c9-b9a34216f1bb,Adkins PLC,7999.98,2026-05-21T06:44:33,Flagged,Marketing,False
+570d5e64-dc41-4170-ad4c-fbfe4762b33f,Smith Inc,30968.98,2026-05-21T12:14:22,Pending,Office Supplies,False
+f0b89413-3dc0-45eb-a16d-aff1ce211c34,Perez-White,6688.24,2026-05-21T13:04:00,Flagged,Office Supplies,False
+2abb4106-2c2b-40ae-a654-1bb12b5ff370,"Gonzales, Smith and Davis",17741.16,2026-05-21T14:24:35,Pending,Office Supplies,False
+939165cc-1343-4d50-85d8-36970c40d479,"Burns, Hart and Wells",33347.65,2026-05-21T18:51:55,Pending,IT Equipment,False
+25589a5f-38f2-4f4c-a4ff-c52d744fad32,"Torres, Burns and Garner",2705.31,2026-05-21T22:54:32,Pending,IT Equipment,False
+c11567c2-d2be-409f-bf8c-b7a158791e8c,Mccall-Prince,3330.95,2026-05-22T03:14:40,Pending,IT Equipment,False
+a15bc888-e372-4c6c-8ae8-5c768d2cdbb7,"Sheppard, Gutierrez and White",49114.75,2026-05-22T09:55:41,Approved,Office Supplies,False
+c1c52f56-5e2c-442a-a8ad-683121f77cf7,Drake and Sons,44192.39,2026-05-22T13:00:50,Approved,Office Supplies,False
+f4d69ecf-6f6b-4e8b-81ef-40f6e0655260,Rodriguez and Sons,10058.99,2026-05-22T17:08:41,Flagged,IT Equipment,False
+dae4377b-1268-475f-8694-eb959bc8537e,Young Group,8053.25,2026-05-22T17:20:41,Pending,IT Equipment,False
+a88e6155-e0f6-4a81-b0af-d45da00ecac8,Velasquez LLC,28770.11,2026-05-22T18:14:40,Pending,Logistics,False
+0a5195aa-d5ff-4591-acd1-8d3122d79bbc,"Griffith, Mitchell and Pugh",36367.76,2026-05-22T18:36:14,Flagged,IT Equipment,False
+1ba61af1-1b41-4574-b644-d89955e1f089,Zamora-Briggs,41111.32,2026-05-23T00:45:32,Flagged,IT Equipment,False
+909fe3a3-a5fe-4751-b718-cee4df10ed17,"Friedman, Sanders and Ayala",39760.98,2026-05-23T01:07:53,Flagged,IT Equipment,False
+a2a204c4-fd35-4e8d-b8e0-97f1662435a9,Reid-Martinez,30523.64,2026-05-23T03:18:57,Approved,IT Equipment,False
+a619e572-3f5d-412b-9efb-d13afe8b05bb,"Sandoval, Jones and Figueroa",11988.18,2026-05-23T03:32:05,Approved,Office Supplies,False
+609601db-15bf-49e6-bb38-88538dbe0731,"Jones, Bernard and Williams",23035.28,2026-05-23T04:24:13,Approved,Office Supplies,False
+7d8efb9f-4b49-4a3c-b1a2-02b581b31af9,Norris-Harrison,275.52,2026-05-23T08:09:17,Approved,IT Equipment,False
+929ae3df-a031-4868-82dd-d1872be7c814,White-Rose,46025.3,2026-05-23T09:12:18,Pending,Logistics,False
+9b4a1f79-233b-4125-8c0e-db6992e89be6,Harris Ltd,17166.47,2026-05-23T12:55:48,Flagged,IT Equipment,False
+a66d9bd6-0690-4cb9-be8f-17fceb25df01,Hammond-Lewis,38234.74,2026-05-23T17:30:50,Flagged,IT Equipment,False
+4f0e6b0e-1179-4659-979a-e78aefdc5234,Brown LLC,3305.23,2026-05-23T17:39:53,Approved,Logistics,False
+2fdee7e7-c785-4a20-9855-c3b366cb2526,"Hall, Rodgers and Jefferson",5962.83,2026-05-23T19:00:35,Approved,Marketing,False
+ba4cabed-1cde-489d-963a-ea4da36303c3,Thompson-Brooks,14264.67,2026-05-23T19:14:07,Approved,Logistics,False
+78f93544-0831-41de-919d-d0b82601037d,Walker-Miller,5876.8,2026-05-23T20:04:29,Flagged,Marketing,False
+1563cd77-f3c7-463a-80bc-2a48b301fb40,Hernandez-Bowman,29321.2,2026-05-23T20:15:43,Flagged,Marketing,False
+42d4e731-e134-455a-a6f3-bb3b0138da31,Weaver-Thompson,37003.24,2026-05-23T20:33:37,Approved,Logistics,False
+e0559c43-0dca-4a74-bbcf-51e3a19fa02d,"Vasquez, Smith and Vincent",5243.86,2026-05-24T06:34:43,Pending,IT Equipment,False
+3e699415-9a12-462a-a820-9d99c9efb8a3,Flores-Johnson,4916.0,2026-05-24T09:00:00,Pending,IT Equipment,True
+95ac9029-30da-41af-ba08-612716401062,Flores-Johnson,4994.0,2026-05-24T09:15:00,Flagged,Logistics,True
+99f36e09-5c45-4537-a1bc-228d06d2689b,Flores-Johnson,4997.0,2026-05-24T09:30:00,Flagged,IT Equipment,True
+d9e4d771-991e-4654-8e86-aa4d3ccb244f,Flores-Johnson,4948.0,2026-05-24T09:45:00,Approved,Marketing,True
+9f9257e9-113b-4b80-98de-b978196cc893,Chase Group,37573.49,2026-05-24T09:48:15,Pending,Marketing,False
+617bd990-a972-4f9e-8415-a7a073d14c33,Flores-Johnson,4944.0,2026-05-24T10:00:00,Pending,Marketing,True
+cd50ca77-4f5f-46b0-9191-6b794d90ef8a,Flores-Johnson,4944.0,2026-05-24T10:15:00,Approved,Office Supplies,True
+dab0b5f8-cb70-4bac-bf7f-c303bc994df6,Flores-Johnson,4931.0,2026-05-24T10:30:00,Approved,IT Equipment,True
+54efc586-e75d-4dc0-b2e6-b4eaf73a6d7b,Flores-Johnson,4975.0,2026-05-24T10:45:00,Approved,Logistics,True
+d1a190c8-8ee0-46eb-851c-3dffdcc5feb2,Flores-Johnson,4939.0,2026-05-24T11:00:00,Approved,IT Equipment,True
+54182901-9e41-4772-bbfb-cc5ac2d92d61,Flores-Johnson,4921.0,2026-05-24T11:15:00,Approved,IT Equipment,True
+b70a6e15-b59c-4937-86a2-8363241a0ad3,Clay Group,31759.62,2026-05-24T15:13:18,Approved,IT Equipment,False
+f9277f01-ab6d-4710-9bdb-ef2b38b23b0a,Landry Ltd,34437.4,2026-05-24T21:08:43,Approved,Marketing,False
+e6770c36-0d77-4df9-9480-a765f63ca5c1,"Fitzgerald, Brown and Edwards",14367.7,2026-05-25T00:56:19,Flagged,Marketing,False
+7340f9f1-e982-45de-b941-02a628aaba8b,"Lewis, Fowler and Maddox",29900.11,2026-05-25T01:57:18,Pending,Office Supplies,False
+d08413f9-12e5-44b2-b799-cfd8d74de665,Martinez-Dunlap,8540.11,2026-05-25T02:05:34,Approved,Marketing,False
+f5d2fc81-9c7d-464d-8320-cd7c81e8f632,"Mitchell, Mendoza and Peterson",6823.1,2026-05-25T03:48:54,Pending,Marketing,False
+63d4ec68-06ca-4c33-9d24-ba7acb338703,Santiago Inc,32705.22,2026-05-25T09:59:31,Flagged,IT Equipment,False
+97150e70-4e72-4b74-997a-fa42b7e39fde,"Ramirez, Walker and Ray",12084.97,2026-05-25T10:16:22,Flagged,Marketing,False
+fed86a15-bada-4443-b5a4-490dddd7b75a,Gordon-Henderson,21101.45,2026-05-25T10:59:58,Approved,IT Equipment,False
+e8086894-73f7-446a-9c51-a4cea1fbcb78,"Hicks, Adkins and Phillips",13564.66,2026-05-25T11:15:14,Approved,Marketing,False
+13284640-6bca-4846-87f8-5acb4d55488d,Jones Ltd,38664.28,2026-05-25T21:17:03,Approved,Logistics,False
+0346110f-33f0-4338-ae50-3848413c53bf,"Thompson, Lang and Oneill",8651.43,2026-05-25T22:52:26,Approved,Office Supplies,False
+e39aba40-c198-4541-9dce-cf256bd47346,Johnson PLC,13352.42,2026-05-25T23:05:49,Pending,Office Supplies,False
+858e2ad7-4d15-430c-9f01-19a148175398,Graves-Weaver,3068.54,2026-05-26T00:30:15,Approved,Marketing,False
+466e98a7-2de8-4419-a32b-d288e75f9a13,Jenkins-Pierce,42520.37,2026-05-26T02:11:24,Approved,IT Equipment,False
+e761dff8-bcbe-4c8c-ad59-f1151166860c,Lowery-Jones,38263.75,2026-05-26T10:19:45,Approved,Marketing,False
+7bf9a211-dff2-42bc-ad4e-8b15bfa5968a,Salazar Inc,30731.7,2026-05-26T13:18:10,Pending,Marketing,False
+f81a4563-4fbe-47c8-9249-6cceb22752af,"Rivera, Hendricks and Flynn",13748.73,2026-05-26T14:23:10,Approved,IT Equipment,False
+a94929e5-1898-4010-a368-a11b40b0da8d,Vargas LLC,438143.74,2026-05-26T16:50:54,Flagged,Marketing,True
+ecf95632-b1e5-4f97-b389-8d2c15078a80,"Patel, Adams and Lopez",18756.83,2026-05-26T19:37:52,Approved,Office Supplies,False
+413c99bc-f043-4baf-9b97-8ab6eca44f9d,"Clark, Salinas and Guerra",47758.59,2026-05-26T21:14:59,Pending,Marketing,False
+5641c0bc-1941-4cac-aba4-e5a2f4909194,"Arroyo, Miller and Tucker",3896.3,2026-05-26T21:22:31,Flagged,Office Supplies,False
+b02090ec-246d-4d3e-8ef0-1e28da8978b3,Bauer PLC,4900.6,2026-05-27T00:14:26,Flagged,Office Supplies,False
+780c0dda-1908-4b9a-849a-1473156a2f3b,Porter PLC,25389.14,2026-05-27T01:34:06,Flagged,Logistics,False
+4e9f530d-ce9c-4c8c-8046-f0f152385128,Brown Group,21743.1,2026-05-27T02:26:13,Flagged,Marketing,False
+a2961a1e-0b5e-4162-8d4b-e499065b1ddf,"Turner, Tyler and Pierce",41084.78,2026-05-27T05:55:23,Flagged,IT Equipment,False
+e9f7806d-a3d6-478f-bedf-fd31e23dd1ad,"Clay, Alvarez and Williams",15157.27,2026-05-27T09:20:31,Flagged,IT Equipment,False
+d3d7b4f9-2d36-4023-9827-d54f63f40d92,"Chen, Burton and Brooks",32177.18,2026-05-27T12:03:51,Flagged,Logistics,False
+19729a86-0619-4aa7-8a57-f5e23aeaef6f,Nunez-Nicholson,18927.11,2026-05-27T13:15:30,Flagged,Office Supplies,False
+2a634a61-8eda-42ac-acbb-f0e3d659ed21,Turner PLC,6413.97,2026-05-27T14:23:48,Flagged,Marketing,False
+d30bd4da-8621-4f02-abb9-b348731e3ab5,"Brown, Joseph and Ray",28236.34,2026-05-27T15:41:05,Pending,Marketing,False
+71289223-2469-48e0-ba2b-84e8097fcd70,Martinez Group,11055.27,2026-05-27T18:42:37,Flagged,Marketing,False
+10f1c442-c7b1-40e1-8b85-fb92cd8f7cad,Martinez-Anderson,45191.29,2026-05-27T19:15:41,Pending,Logistics,False
+9d0f2ff3-8e42-4a71-82a4-5fef2ed3a3cd,West-Smith,49831.9,2026-05-27T20:42:28,Approved,IT Equipment,False
+173d3696-9809-49fb-954c-d158826f48a4,"Jones, Stanley and Mejia",37937.24,2026-05-27T22:01:38,Approved,Logistics,False
+e8638720-df5f-4e0f-a2b1-b3a944c6cbaf,"Richardson, Carpenter and Nixon",37334.61,2026-05-27T22:39:33,Approved,IT Equipment,False
+ae541fdb-8240-431d-9d2c-b10f3422e956,Brown PLC,33054.67,2026-05-27T22:46:18,Approved,Logistics,False
+4dfe1a90-3276-4d70-bb11-6bed1560ee19,Mason-Snyder,45957.51,2026-05-27T23:32:30,Flagged,Logistics,False
+14cc1b7a-5c11-472f-980d-403384c84e9f,Turner PLC,6413.97,2026-05-28T01:23:48,Pending,Office Supplies,True
+6f38988e-5f6f-44a7-aeb3-b802d9174360,"Brandt, Morrison and Hernandez",16614.92,2026-05-28T02:00:43,Flagged,Office Supplies,False
+892d55bc-89fb-41bd-9347-60d181a7777b,Pena LLC,10518.35,2026-05-28T04:09:08,Pending,Office Supplies,False
+45b16680-cf1f-4284-ad6e-3aad2f24eab5,Cannon-Kent,8874.32,2026-05-28T07:24:27,Pending,Marketing,False
+d890b711-56ea-4b18-874f-43f67286932d,"Hale, Myers and Larson",23025.39,2026-05-28T09:30:29,Pending,Marketing,False
+9b488822-82fd-485e-bf8b-bacf83900f44,Kelley LLC,37549.95,2026-05-28T10:20:49,Pending,Marketing,False
+a00b1d32-ebe3-4d89-a26b-325709931d87,Garcia-Perry,22707.3,2026-05-28T12:09:17,Approved,Office Supplies,False
+a0f392e2-59a3-41e4-bcb0-3f61cf2264f3,"Mosley, Taylor and Matthews",47810.54,2026-05-28T12:40:29,Approved,Office Supplies,False
+bef87234-67f7-4fa3-bbe6-3a18c4ac5eb7,Erickson Inc,39381.81,2026-05-28T13:23:36,Flagged,Office Supplies,False
+8ae16b05-9d65-4290-abe9-a9fe5ac2d769,"Vargas, Morris and Sanchez",30565.55,2026-05-28T14:02:16,Pending,Marketing,False
+4f9fb634-9047-41fb-85ff-ace623d488e5,"Prince, Wilcox and Robertson",11601.78,2026-05-28T14:12:44,Pending,Logistics,False
+97a024af-a4f6-4972-9da7-e017df3810f3,Baker-Atkins,19610.4,2026-05-28T14:47:01,Pending,Logistics,False
+eb1c037e-3ea0-4f94-af5d-b91a3b37e52a,Prince-Sandoval,14883.19,2026-05-28T16:40:32,Flagged,Marketing,False
+a6b83c0c-f8f6-479d-a670-ccb2e61e751c,Mills PLC,30570.66,2026-05-28T18:11:36,Approved,Marketing,False
+bdcc3f97-4c52-4cbc-9ea9-96fa4ffa7fc2,Jackson-Mcclure,15697.44,2026-05-28T18:50:42,Flagged,IT Equipment,False
+99d8a300-e96e-499d-9b83-de02b637af5d,Koch-Jimenez,33833.59,2026-05-28T21:55:41,Pending,Marketing,False
+d655687f-7a10-4246-8d9c-5f1011a3785b,Ford-Phelps,13707.57,2026-05-28T22:47:40,Approved,IT Equipment,False
+f855357a-fa36-435f-9ef4-f8b065d3891c,Phillips-Holland,14387.16,2026-05-28T23:30:49,Approved,Marketing,False
+53db773a-6347-4dcd-8666-fee93ccbc0e5,"Santana, Lopez and Bell",39539.26,2026-05-28T23:37:47,Approved,IT Equipment,False
+29404125-7cf4-4a7a-b3c9-6f10c428a4e7,"Williams, Huff and Murphy",46283.89,2026-05-29T00:38:24,Flagged,Office Supplies,False
+31c27a3b-fd07-4117-a99c-09a7d27184b7,Walters-Vasquez,11994.74,2026-05-29T00:42:31,Pending,IT Equipment,False
+c31a6d02-bb4d-4435-abc6-65ded7cdc20b,Wright Group,24439.98,2026-05-29T01:04:46,Flagged,IT Equipment,False
+fb4495c3-2fe8-4faf-a23f-43b019386a49,"Campbell, Lee and Johnson",23136.28,2026-05-29T02:20:14,Approved,Office Supplies,False
+a573a281-4667-471c-8377-5ef92a098b62,"Leblanc, Jones and Decker",24630.19,2026-05-29T05:20:25,Pending,Logistics,False
+f7ac7fdc-d250-4168-b04b-f3e424a94584,"Hill, Weber and Mendez",12964.81,2026-05-29T05:48:09,Flagged,Office Supplies,False
+f91eb357-ded9-4042-8368-77a267247b85,Ramos PLC,30418.31,2026-05-29T16:14:32,Approved,Logistics,False
+e19c5471-8caf-4560-abcb-ee6b1bec398f,"Collins, Murphy and Hammond",31784.93,2026-05-29T17:02:28,Flagged,Office Supplies,False
+23eac32b-ed23-4acc-a51c-78e398746c1d,Lynch Ltd,37365.79,2026-05-29T19:19:46,Approved,Office Supplies,False
+cc5c499b-8196-46bb-9375-6e071915462c,Lambert and Sons,21782.45,2026-05-29T21:13:13,Pending,Logistics,False
+b6b14f18-646c-42c8-a070-f8a2b6922172,Payne-Fritz,49907.92,2026-05-30T02:44:46,Flagged,Office Supplies,False
+4640b000-f085-47c7-95a4-2374afd28dd2,Howard Group,49487.69,2026-05-30T02:53:39,Flagged,Office Supplies,False
+87cbf6c4-095d-4df4-a8fc-a55f737e2ef3,Munoz-Anderson,11293.36,2026-05-30T03:56:52,Pending,Logistics,False
+53a6f343-bc8a-4e35-ad77-2463273ee9d7,"Haynes, Miller and Jackson",43486.32,2026-05-30T04:07:39,Approved,Logistics,False
+34ba2600-799a-4a2a-ae80-6f1fbec95c49,Davis-Shaffer,4741.29,2026-05-30T04:34:32,Pending,IT Equipment,False
+b9d6b26f-7729-45dd-9e8d-c31a9ba5d35e,Cross and Sons,45438.74,2026-05-30T05:23:48,Pending,IT Equipment,False
+dc6dc7dc-ef44-48c5-abbe-32a1f1989e2d,Allen-Sandoval,23502.8,2026-05-30T05:39:10,Flagged,IT Equipment,False
+f716ffe0-cade-4cb9-bd0a-1352a2f50b52,"Higgins, Wilson and Wilson",27548.13,2026-05-30T11:42:39,Pending,Office Supplies,False
+275472ac-d889-40f9-98e5-3f4fd92c696c,Kelley-Brooks,23374.81,2026-05-30T11:50:50,Approved,Office Supplies,False
+146d5515-6f75-4d6e-a836-06c2e73c9e93,Todd-Williams,5194.2,2026-05-30T15:19:52,Approved,Logistics,False
+9390f266-163c-4f1a-a3fb-d0949dc3cf22,"Dean, Wheeler and Williams",42064.32,2026-05-30T16:01:16,Flagged,Logistics,False
+5d41ffee-ba05-40f9-9977-83376fd765be,Blanchard-Jones,29277.22,2026-05-30T17:29:31,Flagged,Marketing,False
+59d57dc1-99fe-4972-9330-bb7eb2d49917,Armstrong Ltd,44712.31,2026-05-30T20:10:25,Approved,Logistics,False
+ff2a6be3-a254-4d1c-b4d0-498abddd5ba2,Hill and Sons,41155.84,2026-05-31T02:39:35,Approved,Marketing,False
+f965e7a2-11d7-4949-9e58-f91f237fc60b,Lewis-Perez,23353.48,2026-05-31T03:02:51,Pending,Logistics,False
+02bd8831-1aae-4e17-94b0-04914752aee9,Banks-Robles,45313.61,2026-05-31T03:32:22,Approved,Logistics,False
+532f1b14-09af-48a5-95a7-adf446575338,James-Hogan,2713.87,2026-05-31T04:16:45,Pending,IT Equipment,False
+2930f673-f2bc-484a-8403-674aee17da49,Sanchez Group,47938.3,2026-05-31T10:22:00,Pending,Logistics,False
+0afeb1e6-62a8-4339-8c55-3188d7050708,Richards-Ford,21813.47,2026-05-31T14:32:57,Pending,Logistics,False
+dbf9dbd0-1494-4eb3-b806-bd27afb60c7d,French-Williams,22335.7,2026-05-31T15:29:40,Approved,Marketing,False
+8277510d-520b-48d6-8283-1db9bb14d1d2,Schwartz-Brown,17241.83,2026-05-31T15:34:56,Pending,IT Equipment,False
+f71ba384-a4ca-4c75-9f5c-79245c21f354,"Mcbride, Byrd and Oliver",33005.73,2026-05-31T20:22:32,Pending,Office Supplies,False
+9ab6044f-b06d-417f-9b8c-2568c50b8ce8,Jefferson-Burke,6778.89,2026-05-31T22:10:38,Flagged,Logistics,False
+5bf8c7bb-f9d1-448a-9e07-da80f5b2566c,Roth-Clayton,12001.24,2026-06-01T00:17:22,Flagged,Office Supplies,False
+6b973701-783b-479a-8f16-073a597243ee,Dixon-Hernandez,29894.13,2026-06-01T00:49:19,Pending,Marketing,False
+a58d2320-e90c-48f1-844a-dec7a70e8358,Butler Group,3261.88,2026-06-01T04:05:45,Flagged,IT Equipment,False
+7a008150-c5fa-418a-bda4-40cab12f9b66,Dixon-Hernandez,29894.13,2026-06-01T05:49:19,Approved,Office Supplies,True
+876d4d1b-f4cd-4c5e-8376-68e945ab871f,"Curry, Carroll and Roberts",10973.39,2026-06-01T05:51:49,Pending,IT Equipment,False
+11f81af4-e8d6-49e9-9d28-46ab3ef88629,Tran Ltd,18077.5,2026-06-01T10:21:04,Flagged,Marketing,False
+ff0e2851-d25c-46f2-a0ab-9b7ea159795a,"Jones, Owens and Holmes",8313.4,2026-06-01T15:08:23,Flagged,Office Supplies,False
+dfd6dd80-5ce2-44dd-a944-c73e1f81bc12,Williams-Cook,41668.54,2026-06-01T20:55:49,Flagged,IT Equipment,False
+cd5e48a5-f910-4512-a260-3f566e366325,Harris PLC,41086.56,2026-06-01T21:22:53,Pending,Marketing,False
+c6b3d321-0f0f-4cff-94cc-4bb4907b5e6e,Harris-Barker,30018.0,2026-06-01T23:28:42,Flagged,IT Equipment,False
+e447416f-4011-4fd7-8b27-938140721ad4,Burgess-Thompson,6006.37,2026-06-02T00:03:11,Flagged,IT Equipment,False
+f7f0e600-6d0f-429e-8efa-fae7a359ab79,Ward-Nelson,440.39,2026-06-02T00:51:44,Approved,Office Supplies,False
+b5810396-9008-4dc7-adff-3971e381bd2e,Ayala-Mullins,19711.17,2026-06-02T02:21:06,Flagged,Office Supplies,False
+bfb2585b-a96e-435a-978b-885580010732,"Martin, Sanchez and Perkins",45732.47,2026-06-02T02:52:31,Approved,Marketing,False
+1b1131e6-be22-4030-822f-c8d94dd43fa8,Mendez-Robinson,41958.37,2026-06-02T03:20:11,Pending,Office Supplies,False
+010589f6-7804-4817-a739-b866dd06c567,Boone Group,18826.68,2026-06-02T04:11:22,Pending,IT Equipment,False
+74be95aa-71e7-4ce8-8939-126e9d319fc5,"Singh, Graham and Larsen",16233.28,2026-06-02T05:03:13,Flagged,IT Equipment,False
+df32f126-13ba-42f4-9dd9-cbbf03a298f9,Hall-Harding,20944.57,2026-06-02T09:15:43,Flagged,Logistics,False
+c4813561-a498-4449-b5c3-3cf0adc61866,"Foster, Garcia and Turner",24583.9,2026-06-02T10:03:14,Approved,Marketing,False
+b4d879f7-3d4e-42f3-938f-e26b744f9524,"Barrett, Thompson and Smith",20369.85,2026-06-02T11:49:30,Flagged,Logistics,False
+e06a1950-d145-491d-945f-b90b641e681b,Brown-Dickerson,34823.38,2026-06-02T12:10:58,Approved,IT Equipment,False
+b1ef745a-7639-4ebc-bdf8-f316dd02d5ea,"Ramos, Robinson and Mosley",27081.78,2026-06-02T18:21:10,Approved,Marketing,False
+63943984-a90d-4af8-ae1b-a3f89ee06e7d,"Walker, Cunningham and Zuniga",39578.4,2026-06-02T19:49:17,Pending,Logistics,False
+2d218dc3-82aa-4ae1-9c65-59c9aab3f86f,Mcdonald Inc,49026.43,2026-06-02T20:05:10,Approved,Marketing,False
+86c8def6-3387-4c3b-876e-4a0ff1c6ad33,"Christensen, Dunn and Dean",13456.69,2026-06-02T21:27:43,Flagged,Logistics,False
+c2b9d4bb-7349-4d89-a2c2-05e5fd11e6f5,"Walker, Hernandez and Baker",27961.14,2026-06-02T23:31:59,Approved,Logistics,False
+147c624b-a3d8-4f0f-ad44-6cf4a62dd430,"Smith, Green and Perkins",33688.93,2026-06-03T08:37:22,Pending,Marketing,False
+8c602e8c-766b-4d76-8235-ba107337bfba,Marsh Ltd,25061.25,2026-06-03T16:34:15,Pending,Logistics,False
+f1dd3573-e1a2-4ec9-b618-5009f823e5d1,"Dawson, Stafford and Evans",18245.33,2026-06-03T17:27:33,Flagged,Office Supplies,False
+1728b151-9952-4198-b2b2-924feb06c921,Terry Group,10898.35,2026-06-03T18:47:04,Approved,Logistics,False
+fb7dedef-f52b-4fbd-ab34-2ca77db03058,Orozco-Miller,17907.42,2026-06-03T19:33:34,Approved,Marketing,False
+67c90e4a-833a-4ec2-afed-890ebe3cd93b,"Bartlett, Brown and Martinez",8556.55,2026-06-04T00:39:01,Pending,Office Supplies,False
+2cd31e07-3ecc-4404-a319-a103a55697c3,Mckinney-Moore,469.42,2026-06-04T02:15:12,Pending,Logistics,False
+f3c890a5-4c63-4bc5-b068-db06aa338fe3,Brown Ltd,49878.8,2026-06-04T02:45:16,Flagged,Logistics,False
+41bc8051-11a6-4c13-af53-9baa66f64ec1,Lloyd PLC,29183.64,2026-06-04T03:07:33,Approved,IT Equipment,False
+a0cd2573-7e20-4cb3-b688-54befd6ed1b4,"Cruz, Middleton and Larsen",9214.24,2026-06-04T03:34:02,Pending,Office Supplies,False
+a2fce4e6-2763-440d-9954-8685b6362b0e,"Henson, Russell and Oliver",23278.99,2026-06-04T04:14:02,Approved,Office Supplies,False
+9e71e80e-7ad5-4605-ab07-532302edebaa,"Cowan, Peters and Higgins",27822.89,2026-06-04T04:48:04,Approved,IT Equipment,False
+460e743a-5fae-4c2e-94f6-80dae86cfaf7,Lee-Cooke,22495.98,2026-06-04T05:08:49,Approved,IT Equipment,False
+edb041ca-0fdc-4201-944a-dd81211243dc,Wright LLC,34960.48,2026-06-04T05:33:27,Pending,Office Supplies,False
+1b2684cc-34c5-4280-a476-a83b13dee266,Gonzalez LLC,28966.5,2026-06-04T07:35:04,Flagged,Logistics,False
+3448bef2-f5bd-435a-8fee-7008b01b7f50,Huff LLC,15121.25,2026-06-04T07:35:40,Approved,Logistics,False
+ee37c637-6b14-4074-aa32-6b25d61637e9,Lawson Group,28367.83,2026-06-04T10:10:37,Approved,Logistics,False
+534acace-b346-4d15-a9de-6796163b9ca3,Smith PLC,44742.98,2026-06-04T12:07:40,Pending,Marketing,False
+2f93c48c-833c-4d43-b2d1-9abf58167eb7,Santana-Byrd,43802.1,2026-06-04T12:12:30,Approved,Marketing,False
+fba88073-1313-48d1-942b-b154b4c5048b,Buckley and Sons,6943.94,2026-06-04T12:22:17,Approved,Marketing,False
+a9cc7fd0-940c-4168-8626-d0b88c87c6e2,Meyer PLC,34532.28,2026-06-04T15:27:31,Pending,Marketing,False
+b686c15b-9b2b-44bc-b1e2-62c2287c544f,"Howard, Silva and Hall",3939.6,2026-06-04T16:03:04,Approved,Office Supplies,False
+f745b43d-ef82-4716-b690-a90f913a233e,Peterson Group,17213.13,2026-06-04T19:01:59,Flagged,Logistics,False
+83e14343-fdda-40ee-92bb-5d7cf0b71406,Ramirez-Baker,24820.5,2026-06-04T19:05:24,Flagged,IT Equipment,False
+485f36e1-a126-430b-94ab-eefda9903b6c,Anderson PLC,1571.31,2026-06-04T19:33:24,Approved,Logistics,False
+4c61e741-918a-4b6a-8525-aa118342cf9b,"Romero, Gonzalez and Brooks",41079.38,2026-06-04T20:32:06,Flagged,Logistics,False
+50679517-323e-4fd2-8291-25d5086139e7,"Wilson, Hall and Logan",48320.17,2026-06-04T21:06:30,Approved,Office Supplies,False
+856ab4bb-2df8-40c4-b111-500d75d85465,"Duncan, Sweeney and Jones",27744.8,2026-06-04T21:35:05,Pending,Office Supplies,False
+f2dd82c3-7da6-4c1a-808c-6998be8c1403,Sandoval LLC,7267.98,2026-06-05T07:41:43,Flagged,Logistics,False
+2260c6da-1bb4-49bc-86c9-c094fa884a11,"Ellison, Arias and Thompson",41748.68,2026-06-05T08:55:24,Pending,IT Equipment,False
+682b6cf2-1575-4f8b-a0b2-e927a803ae01,Porter PLC,33574.46,2026-06-05T08:57:37,Pending,Office Supplies,False
+0c2adedd-bb63-45ce-8455-74f5252b1433,Adams-Thomas,9199.34,2026-06-05T09:43:12,Pending,IT Equipment,False
+4488e667-ecc9-4ad9-ad7e-385e73dd33ad,Aguirre-Benjamin,37164.72,2026-06-05T13:03:25,Approved,IT Equipment,False
+1d6d58fe-033d-41cf-8c60-89460e388952,"Zuniga, Wong and Lynch",44020.34,2026-06-05T18:52:50,Flagged,Office Supplies,False
+3c51ae91-f0c8-4620-a8b4-61ba7e4582b7,Farrell Group,13218.15,2026-06-05T22:25:01,Flagged,Marketing,False
+da84edfd-4f4f-4b2a-a3f7-fd62b0f80a66,Johnson-Vega,47576.5,2026-06-05T22:46:06,Pending,Office Supplies,False
+af9d110d-28f4-4ba5-bc23-7ee9ef1b3a18,Mcconnell-Frey,37828.49,2026-06-06T00:52:37,Approved,Office Supplies,False
+89010af5-a995-416f-904d-aa97476b0ab2,"Williams, Evans and Wilkins",23413.5,2026-06-06T01:14:23,Approved,Marketing,False
+dd1f7df2-e406-4af9-b326-2435b29fbbab,Chapman Inc,1073.45,2026-06-06T02:07:18,Pending,Logistics,False
+700576cd-3010-4e38-81a3-fffb6bb28c5c,Payne-Li,8843.5,2026-06-06T04:05:09,Flagged,Marketing,False
+dd1c00c1-8aef-468e-9686-021593c219f6,"Powers, Harris and Harris",27169.28,2026-06-06T08:43:14,Pending,Marketing,False
+d79a05d1-a4a7-42ef-a2d7-e73f8922eb2b,"Hopkins, Williams and Pace",7339.12,2026-06-06T12:21:25,Approved,Office Supplies,False
+d8112584-f90e-4261-8893-7bcd2f6c78c8,"Liu, Baker and Mason",29835.0,2026-06-06T12:23:15,Flagged,Logistics,False
+f7ba0d7e-10df-47e1-bef6-b442ed5a274b,Shaw Inc,37556.47,2026-06-06T14:00:04,Approved,Logistics,False
+f0d885e0-8e85-4f68-9098-817c39a0e5da,Davis-Mason,30481.82,2026-06-06T14:59:46,Flagged,Office Supplies,False
+16133897-7783-457d-867e-ffd8ce620520,"Townsend, Meyer and Byrd",48223.86,2026-06-06T15:20:05,Pending,Logistics,False
+bd14b002-c855-44d3-915c-8bb53efc07fb,Thomas-Huffman,26916.72,2026-06-06T16:21:37,Approved,Marketing,False
+785c75d2-b79f-452e-bce9-097e192f8ebb,Andrade-Jackson,46142.85,2026-06-06T16:27:10,Flagged,Marketing,False
+c2bc93bb-00ae-4cac-b85c-7ca5f2e38840,Pittman PLC,33347.38,2026-06-06T18:10:32,Pending,Logistics,False
+1f40ca80-eda8-4ba1-976d-8357366eff28,Robinson-Berry,31331.4,2026-06-06T22:01:02,Flagged,Office Supplies,False
+13087018-0ff5-4aa1-8c6b-06afd8eab948,Wilson-Torres,44147.17,2026-06-06T22:37:23,Pending,Office Supplies,False
+5ee6b1fd-a6b9-4386-947b-ab3714fde469,"Green, Stokes and Hines",30953.16,2026-06-06T22:40:43,Flagged,IT Equipment,False
+c3bcbfe3-25ba-48e8-bece-76fae8ee46e0,Mullen-Cooper,15641.34,2026-06-07T00:38:54,Pending,Marketing,False
+74509f8e-88f1-49ce-9c6c-ba5a5a3fbd2b,Sawyer Group,29908.59,2026-06-07T03:03:12,Pending,Marketing,False
+f0237651-807f-4684-85c2-c0e0a011ba50,Booker Inc,1371.19,2026-06-07T05:21:52,Approved,IT Equipment,False
+7dbb971e-2b4b-4bef-9198-229a2f4c53c2,Lucero Inc,19379.57,2026-06-07T07:47:08,Approved,Logistics,False
+ed171d30-22f5-42c9-9b1e-aa76d1daa3e3,Ward-Hensley,38176.12,2026-06-07T08:11:43,Flagged,IT Equipment,False
+06732c22-306a-4c15-b5a1-2b708103a258,Peck-Griffith,16370.2,2026-06-07T14:26:38,Approved,Marketing,False
+a2f9a5f4-b6c7-45ac-8588-a02da55b15db,"Hughes, Hubbard and Estes",48280.5,2026-06-07T14:28:55,Pending,Marketing,False
+f0fd7457-baf2-4119-9ecc-54f817ae1cd6,Mcclain PLC,47984.47,2026-06-07T16:10:28,Approved,Logistics,False
+4684754f-3b74-461e-bf61-92ebf50475ad,Ponce Ltd,11674.7,2026-06-07T17:10:05,Pending,Marketing,False
+ca378aca-2ad7-43c0-bdcf-2ef112a99546,Walker Ltd,23015.39,2026-06-07T22:07:25,Pending,IT Equipment,False
+deb2f04b-5a83-494e-949c-d6dabbfb9efa,Jensen LLC,10648.23,2026-06-08T00:54:41,Approved,Office Supplies,False
+cbd3a91f-1901-463b-8a32-3f1b64890d35,"Newton, Ortiz and King",32371.17,2026-06-08T04:37:43,Approved,Logistics,False
+0e038b42-0f67-4ef6-b9d6-401553651293,"Reynolds, Johnson and Mendez",12315.81,2026-06-08T07:53:52,Pending,Marketing,False
+6d26221a-8bf2-4f29-9435-626187197098,Dillon-Mccarty,27085.15,2026-06-08T11:42:16,Flagged,Office Supplies,False
+a684afd5-a6c4-4db5-9b39-c1ae55a68982,Hull Ltd,2267.58,2026-06-08T12:03:28,Pending,IT Equipment,False
+781e175f-190a-442d-950b-f395e6fa23ff,Wright-Vang,25318.98,2026-06-08T12:13:16,Pending,Logistics,False
+c1d83ea0-c186-4095-ad6e-fdfd5f2f8d23,Fowler-Clark,37950.97,2026-06-08T15:25:36,Approved,IT Equipment,False
+3161bc48-ca6d-47ad-8f74-bbaeb5cca6b3,Thompson-Jones,4036.33,2026-06-08T15:41:29,Flagged,Marketing,False
+37d6a371-a896-46c5-90d8-afb91d053efe,"Rose, Scott and Brown",24781.74,2026-06-08T15:45:15,Flagged,IT Equipment,False
+da880ae3-c8c2-4275-9348-4827e07286b6,Poole PLC,37073.14,2026-06-08T19:09:28,Flagged,Office Supplies,False
+a2e86790-6825-4993-942a-b6021a1fd54a,Joyce-Brown,3076.28,2026-06-09T00:26:20,Pending,Office Supplies,False
+7d94942a-c618-46f5-a246-ada776923a8f,"Bennett, Rojas and Parker",22055.0,2026-06-09T02:14:10,Flagged,Office Supplies,False
+cb8a7998-a8ad-43f1-a5a1-0aad60aab571,Jones PLC,8352.72,2026-06-09T06:48:36,Flagged,Office Supplies,False
+0f4dd4d2-e317-40a6-83fd-e6fc38fe40da,"Johnson, Mcfarland and Edwards",35688.72,2026-06-09T06:48:43,Flagged,Office Supplies,False
+91d29c2b-3b8f-42db-9fa8-39a96c382967,Thornton PLC,48323.93,2026-06-09T07:14:23,Flagged,IT Equipment,False
+2b7a43a2-4b67-4943-8b74-d4e301313159,"Moore, Olson and Jones",40789.31,2026-06-09T09:19:43,Flagged,Marketing,False
+5bec68ee-c107-45df-9d94-18e190bb0fff,"Crosby, Carpenter and Haley",42635.61,2026-06-09T12:57:14,Flagged,Office Supplies,False
+eb2a5934-dc16-47dc-bc06-5a6afb2fbcab,Walker and Sons,26536.2,2026-06-09T16:12:27,Flagged,Logistics,False
+3efb20ff-ed50-40bc-8b0d-3385e925b712,Bell-Lane,18950.76,2026-06-09T19:48:57,Approved,Marketing,False
+66cfc5e2-e487-43cb-b91a-1d0881ab0461,"Warner, Huffman and Ray",480922.2,2026-06-09T20:18:52,Flagged,Marketing,True
+8355d8a9-a22a-4aa8-96dc-daa3fcca711b,Zamora and Sons,38444.62,2026-06-10T03:47:59,Flagged,Marketing,False
+ba8a9aaf-1b8d-4b6e-ae63-b210955494c4,"Johnson, Scott and Smith",44190.39,2026-06-10T07:50:43,Flagged,Logistics,False
+6c8ca42c-f411-43ad-babb-1eee6d555cd1,"Miller, Henderson and Johnson",44448.94,2026-06-10T09:33:43,Approved,Logistics,False
+7086d927-745a-4431-b933-54a5d979b65a,Johnson PLC,25552.34,2026-06-10T10:27:09,Approved,IT Equipment,False
+d9abefb1-1096-401a-8155-5563b393f6d9,Barnes-Wolf,7381.59,2026-06-10T12:23:40,Pending,Office Supplies,False
+b790a9cf-451f-457c-b122-ded40ab135bd,Kane-Bennett,15639.94,2026-06-10T14:16:48,Approved,Marketing,False
+55282a72-6adf-4f20-9937-5b2bacaa4878,Odom PLC,15625.38,2026-06-10T15:09:55,Pending,IT Equipment,False
+5f32c72e-0197-4607-b196-11400c0c59ba,Harrell-Reese,34438.1,2026-06-10T16:23:56,Pending,Office Supplies,False
+a50004cb-38d7-409b-8945-74b478ab08fb,Davis Ltd,47018.57,2026-06-10T16:48:24,Approved,IT Equipment,False
+e35f5d9d-8e4b-4c3b-9129-8268204442b6,Johnson-Olsen,11385.9,2026-06-10T18:13:47,Approved,Office Supplies,False
+7e152b4a-badc-4cd9-8dcf-0fa03ec0bd9e,"Rodriguez, Brennan and Garrison",17585.2,2026-06-10T18:24:24,Approved,Marketing,False
+1b4d8d47-efd5-460f-b8ad-527030795589,Figueroa and Sons,42005.14,2026-06-10T20:13:01,Approved,Logistics,False
+2d25d497-8767-466a-b41c-737bd8fd6491,Tran Inc,20465.7,2026-06-10T23:41:20,Approved,Marketing,False
+73c3aa55-2351-4577-9e7d-57e8c7f84da8,Carter LLC,37153.3,2026-06-11T00:01:18,Flagged,IT Equipment,False
+6ea907d0-ba50-4108-98a2-14ddb4b64611,"Chan, Lewis and Walker",3353.2,2026-06-11T00:38:51,Flagged,Office Supplies,False
+e76d2755-ec13-47a7-9ad2-0c81acb6ba47,Welch LLC,40565.8,2026-06-11T06:10:48,Flagged,Logistics,False
+5fd9034d-88bb-4cf5-aa57-cf0b41214b8f,"Le, Lewis and Hayes",43007.83,2026-06-11T08:31:38,Pending,IT Equipment,False
+d415af34-084a-4ff4-848a-759c5fb05d4e,Munoz-Johnson,28413.94,2026-06-11T09:31:52,Flagged,Logistics,False
+06387f0d-d89a-4b55-8bfa-9cf72a8e42bf,"Cooper, Chavez and Garza",11091.92,2026-06-11T11:36:12,Pending,Marketing,False
+5ee7f135-abb0-4591-a297-131f0d39ae2d,"Smith, Macias and Gonzales",32006.61,2026-06-11T12:00:57,Approved,IT Equipment,False
+e6878b5e-4fd3-48c8-913f-399ff73e7aea,Dillon-Banks,7170.2,2026-06-11T14:45:37,Pending,Logistics,False
+461fc78d-ceae-4473-8e44-5ba53f48d20d,Castro-Mullen,36269.2,2026-06-11T16:21:40,Pending,Office Supplies,False
+56add578-962e-4bc1-af3f-39899caeeba1,Ferrell-Wilson,3071.4,2026-06-11T23:13:20,Flagged,Office Supplies,False
+65014b9c-762e-4bad-aa1d-95820e41b8d2,"Gregory, Kim and Martinez",2140.18,2026-06-12T02:00:27,Flagged,IT Equipment,False
+37a5f687-f1f5-4f81-83a7-254f6629c033,Cortez PLC,2439.24,2026-06-12T07:48:33,Pending,Marketing,False
+8345504d-7e00-413e-97f1-5e7537a5ad1a,Patterson-Mendez,47190.18,2026-06-12T12:39:14,Flagged,Marketing,False
+362cc701-7007-48d9-a15c-8f3c1ae6b4e7,Robertson-Rodriguez,26230.16,2026-06-12T15:23:19,Pending,Logistics,False
+cf454a3c-a941-455c-bb9b-6803aa7b5a26,Kim Inc,45294.46,2026-06-12T19:04:01,Pending,Marketing,False
+e24e944e-8ded-4c7f-b2da-2843410b99cd,Howard-Jordan,21358.7,2026-06-12T21:07:11,Flagged,Marketing,False
+e506ed3d-2d87-4cf8-ad72-65e6356fdc8b,Williams Inc,48647.65,2026-06-12T21:56:41,Approved,Marketing,False
+ede7b2b2-19dc-4617-9edd-eb788353966a,Patton-Ward,27697.38,2026-06-13T02:41:42,Flagged,Marketing,False
+7af5aa90-cb0e-405d-ac65-7e9febafa99a,Fowler-Coleman,22746.75,2026-06-13T10:52:10,Pending,IT Equipment,False
+e3a2a3e7-ad09-402e-9bde-1fc12c0e976b,Fields PLC,39884.45,2026-06-13T12:06:04,Flagged,Office Supplies,False
+9f98e60e-6409-4fc7-a320-88f9e53eb624,"Rivera, Warner and Nelson",27985.95,2026-06-13T13:54:41,Approved,Logistics,False
+39a5e4b0-375b-46de-80b8-130c74895b27,Reid LLC,25688.6,2026-06-13T19:08:47,Flagged,Logistics,False
+28315b5b-4a83-4307-8c9f-484e75d49c2a,Hall Ltd,32715.74,2026-06-13T19:54:31,Pending,IT Equipment,False
+e3717a70-a6ba-4e2d-94c8-b4128eaed177,Preston-Wright,9170.33,2026-06-14T01:11:24,Pending,Logistics,False
+eb3cd639-bba1-46e0-acba-bf09d53de00b,Castro-Frederick,17124.46,2026-06-14T04:37:03,Pending,Logistics,False
+7c0874ff-2602-4fba-a2c4-f31a1c628cae,"Anderson, Clarke and Jackson",30115.38,2026-06-14T09:57:35,Approved,Marketing,False
+e4586cb6-bfdc-4039-9f74-12e94fa41b34,Morris-Wright,12209.17,2026-06-14T11:46:20,Pending,Office Supplies,False
+1d5283e1-f131-4a94-9650-3f98c97661f9,Nguyen-Ellis,35285.23,2026-06-14T15:25:34,Flagged,Marketing,False
+245bcf3d-a17c-4bc3-8225-89a012bb6b4f,"Hall, Vega and Price",48999.96,2026-06-14T16:03:34,Approved,Marketing,False
+a9e38e7b-a18a-4b74-ab3d-47226a69e34a,"Ford, Johnson and Smith",32481.71,2026-06-14T16:10:49,Pending,Marketing,False
+46fcd363-6cf7-44e5-9572-7d84884ce035,Wood-Griffin,12216.47,2026-06-14T17:37:21,Pending,Marketing,False
+ba3ae2e0-fd32-4548-8f1f-a4857f74c2ef,Hart-Moore,3752.5,2026-06-14T17:50:38,Flagged,Marketing,False
+f8772a59-1863-4d41-ac5a-9c5ad26df87a,Gibbs Inc,36624.46,2026-06-14T20:19:54,Flagged,Logistics,False
+fb655755-8bc6-4f7a-bffd-fb3437e339bf,"Heath, Jones and Hall",46431.36,2026-06-14T20:33:20,Flagged,Office Supplies,False
+91ed646b-7f05-4316-a00e-97fa8a2dcfd9,Ruiz-Jacobson,7669.39,2026-06-14T21:36:13,Approved,Marketing,False
+15ef5d8d-5818-40db-b341-f0fe110fc91d,White-Estes,1908.14,2026-06-14T22:40:48,Approved,Logistics,False
+eb0f747f-639f-4439-beb2-42abb8757212,"Boyer, Bradley and Valenzuela",259799.58,2026-06-15T01:21:56,Approved,Marketing,True
+3b16b7ea-6782-4390-bafa-1b71590d909b,Hart-Moore,3752.5,2026-06-15T01:50:38,Flagged,IT Equipment,True
+752eaac9-4436-4ec4-a0fb-7bfc688b6966,Santiago and Sons,25060.18,2026-06-15T02:12:11,Approved,IT Equipment,False
+29ae0679-c9d3-418a-9d92-584439064690,Morgan-French,4675.35,2026-06-15T02:39:21,Approved,IT Equipment,False
+6c0ee7ab-b2a6-45f2-9f55-59ae0ff5fc19,"Phillips, Wright and Jones",5716.98,2026-06-15T04:31:07,Approved,Marketing,False
+6913825c-a650-4659-aeb7-0fe29b551842,Olsen Ltd,37841.87,2026-06-15T09:07:32,Approved,Marketing,False
+f961b9f8-c909-48a0-ad10-bc8a1cdffb86,Harris PLC,49077.61,2026-06-15T11:53:01,Flagged,IT Equipment,False
+6a0e8883-616e-4ed0-a952-5f8a75d68c3c,"Carter, Adams and Newman",20644.4,2026-06-15T12:09:08,Pending,IT Equipment,False
+036f4f3d-e68f-43a7-8bd9-c671e24e9f01,Mejia-Lambert,18230.68,2026-06-15T15:25:44,Approved,Office Supplies,False
+967c5497-4b15-490a-bb2f-f88e04eb68b1,Mitchell and Sons,46722.66,2026-06-15T15:44:54,Pending,Office Supplies,False
+35fd6fb5-c782-4926-af7a-41259ee4d807,Tucker-Ramos,29139.84,2026-06-15T16:37:24,Approved,Logistics,False
+f635573e-2946-4ded-b8d6-6bc75efec8b7,"Washington, Lynch and Johnson",17410.49,2026-06-15T21:51:36,Pending,Office Supplies,False
+2b54ce43-65c9-42d8-82c4-6c7206502c4f,"Winters, Newman and Brown",45036.47,2026-06-15T22:56:56,Approved,Logistics,False
+0a87f782-d40c-48a3-86a2-39c4c46e73e2,"Mayer, Fowler and Livingston",19404.59,2026-06-16T00:07:08,Pending,IT Equipment,False
+1410b2a3-52e0-4f83-a58a-d36f23facab5,Olson LLC,19660.87,2026-06-16T00:21:04,Flagged,IT Equipment,False
+18094bd1-b627-420e-a9cf-1bab87247fb5,Flores-Rivera,5006.96,2026-06-16T04:15:06,Approved,Office Supplies,False
+2a4f9058-9d99-4b89-8d56-745f8c1b3b11,"Flores, Thomas and Bush",35655.44,2026-06-16T16:09:36,Flagged,Office Supplies,False
+5d07d953-0833-483d-a104-2a4a29f2894e,"Perez, Meza and Stone",10714.41,2026-06-16T17:58:44,Approved,IT Equipment,False
+ab5f0903-d4cf-49e8-b73b-e4d3fc58e42c,Curry-Barker,22660.2,2026-06-16T20:21:30,Approved,Marketing,False
+e7331df8-e1ea-43d1-8de4-ef89e38ec581,Jefferson PLC,28868.1,2026-06-16T22:32:31,Approved,Logistics,False
+7350a2ba-471b-43b3-9f9c-3207d9878a77,Johnson-Lucas,35688.6,2026-06-16T22:47:07,Pending,Logistics,False
+f0f45200-61f2-4dd6-a82d-adf10c655f0d,"Santos, Moody and Taylor",20985.12,2026-06-17T00:34:33,Pending,Office Supplies,False
+4f86e3ca-708e-490f-a7b6-ad0cbb93aa7a,Myers and Sons,30107.11,2026-06-17T04:03:20,Approved,Logistics,False
+1d7b2534-16f2-425b-ab8b-1ef15e428681,"Rivera, Thornton and Wells",48498.69,2026-06-17T07:26:41,Flagged,Office Supplies,False
+2b824f0e-3da2-4d5f-a504-30aa1d413be7,Thomas Inc,17629.57,2026-06-17T08:20:29,Pending,Marketing,False
+1ea4275c-20ee-4eff-99d7-b7b928a86864,"Torres, Brown and Williams",25236.64,2026-06-17T09:46:35,Pending,IT Equipment,False
+8f47241c-cde6-40e3-9553-aa030a8e1330,Clark Ltd,13185.12,2026-06-17T12:04:06,Approved,Marketing,False
+ba5668f1-b15c-43db-95cd-b0ab2cb6be2c,Jimenez Ltd,7798.82,2026-06-17T12:11:07,Flagged,IT Equipment,False
+3a919824-a436-4a40-b978-47fddc24040d,Morris Ltd,39215.68,2026-06-17T13:59:12,Pending,IT Equipment,False
+b0226cad-fe11-4d3d-843e-67d3dde7f0e4,"Martinez, Nielsen and Miller",47923.58,2026-06-17T15:15:12,Flagged,IT Equipment,False
+60b166e7-ae4c-4e23-939a-1d6ca06059a6,Mack-Peterson,44776.68,2026-06-17T16:00:12,Pending,Office Supplies,False
+3089205d-c621-4b55-ae17-b5ab27a56c52,"Joseph, West and Smith",45359.6,2026-06-17T17:43:01,Approved,Marketing,False
+8de48564-a1b3-4775-b54c-f347f36c6638,"Olsen, Gray and Gross",14730.85,2026-06-17T18:22:24,Approved,Office Supplies,False
+dd64133c-7f1d-4f72-b4a9-134dd56ac4d5,Lloyd Inc,10759.57,2026-06-17T19:17:07,Approved,IT Equipment,False
+5b0ea4b1-9fcf-41af-9bc4-cb077af8fbe4,"Parker, Ortiz and Powell",47269.38,2026-06-17T21:01:30,Flagged,Office Supplies,False
+08955dfe-57d2-4325-8bf5-c8e6c24e992d,Walker-Dudley,18384.71,2026-06-18T01:35:26,Pending,Office Supplies,False
+4c42be1d-1bf1-4823-91c5-a52a9f4366fe,Huynh-Davis,49208.74,2026-06-18T05:30:19,Pending,IT Equipment,False
+6a33e4dd-2cd6-4be0-8267-88ba8308f6fb,"Padilla, Garcia and Jackson",28540.12,2026-06-18T05:54:18,Approved,Logistics,False
+104628ab-24cd-4209-918d-fff875480db7,"Johnston, Velez and Larson",32099.88,2026-06-18T08:03:56,Approved,Marketing,False
+0ed56c3a-5965-408d-965c-157cd9dfc69c,Flynn-Pearson,361964.26,2026-06-18T11:27:11,Flagged,IT Equipment,True
+a94b884e-3709-4c63-bda4-e307f7233d71,Stevens-Robinson,27874.48,2026-06-18T12:08:51,Flagged,Marketing,False
+fac3a170-687b-427f-883c-3e53b9290bb1,Ellis and Sons,39015.78,2026-06-18T18:00:11,Approved,Marketing,False
+32de91c2-aef1-4376-8662-0341f4391616,Hayes-Jensen,12781.4,2026-06-18T20:22:26,Flagged,Office Supplies,False
+cd36ba78-38b1-451d-9439-e7099fb916ff,Murphy LLC,21150.13,2026-06-18T22:17:08,Pending,Marketing,False
+7b9e51dc-52cd-411e-a11a-aea2b50ac115,"Anderson, Jackson and Williams",16004.89,2026-06-19T00:14:47,Approved,Marketing,False
+05dcaa4e-d082-4d3a-bb98-a4e35375679d,Ballard Group,31665.69,2026-06-19T01:29:00,Pending,Marketing,False
+efb6a4cd-60c8-4799-a0ee-79ad1e9e73ed,Romero-Smith,42437.85,2026-06-19T03:48:31,Approved,Office Supplies,False
+7e974ab2-2776-48e6-bbcb-0a2d950bb1ff,Miller Group,17300.79,2026-06-19T04:59:04,Approved,Office Supplies,False
+39192422-bfb9-4606-88f7-fff191a8f3b8,Blackwell LLC,13311.5,2026-06-19T06:37:40,Flagged,Marketing,False
+8e6f145b-996c-4b9a-9cf6-ea7937be9235,"Hines, Santos and Day",25706.75,2026-06-19T06:50:45,Flagged,Marketing,False
+bd9704ca-7bdc-464c-9aaa-0a17c4d655f7,Bell Inc,18101.75,2026-06-19T07:24:04,Pending,Marketing,False
+244ffa9d-4170-4daa-bca4-5b419c3cbc1a,Cline-Ayala,26375.8,2026-06-19T08:04:36,Pending,Logistics,False
+20ffdb9c-6c3d-49c0-96af-0416f0f73b84,"Shaw, Jacobson and Padilla",10567.51,2026-06-19T08:43:47,Flagged,Logistics,False
+932dac75-13d1-4f71-b926-16f5c5548904,Perez LLC,41170.93,2026-06-19T11:19:34,Approved,Logistics,False
+af8bfe2c-cdb8-464c-ae67-59fcfb80c315,Kennedy Ltd,34253.85,2026-06-19T11:21:58,Pending,Office Supplies,False
+d1d7bc6a-2b99-4c0e-87f4-67869eb7ba99,Blair-Edwards,29820.51,2026-06-19T12:19:52,Flagged,IT Equipment,False
+f819159f-70cc-4355-856c-08adb517b04b,Frye-Daugherty,25107.49,2026-06-19T12:38:06,Flagged,Logistics,False
+8a125061-29b0-4729-986b-e8aaddf5aec8,Moreno Group,5138.73,2026-06-19T16:40:11,Flagged,IT Equipment,False
+8b101f2e-ba45-4427-b2a3-1d4184889d74,Pena-Watts,34163.0,2026-06-19T20:12:10,Pending,IT Equipment,False
+1d96fe66-ba15-4696-a5d6-42e36e434d6c,Sandoval-Cunningham,40691.1,2026-06-19T21:17:37,Pending,Office Supplies,False
+f9e455ce-3248-4486-8392-f209c3b15b0e,Hayes-Sullivan,17050.52,2026-06-19T21:22:26,Approved,Marketing,False
+3b986c00-274c-44db-8c51-b8afe56aa294,Edwards Ltd,22394.77,2026-06-20T04:09:35,Flagged,IT Equipment,False
+17972817-35a0-4710-b3f3-3a2120704ec9,Flowers LLC,13332.8,2026-06-20T05:10:08,Flagged,Logistics,False
+8b297c8c-97c9-4d7b-a22f-4769c2a8ef5d,Butler Ltd,14813.41,2026-06-20T05:36:05,Pending,Logistics,False
+00eefb1b-8014-4f91-bd50-6bb487d68928,Mack-Gould,1733.51,2026-06-20T06:15:37,Approved,Logistics,False
+0e3c95ac-a801-4b9e-9c62-14662f73e7a3,Henderson-Bailey,7474.85,2026-06-20T07:28:23,Pending,Logistics,False
+adf1312b-22d3-457a-bb0f-c2dda482a6b5,Avila LLC,31390.83,2026-06-20T08:28:24,Pending,Logistics,False
+327e08d0-5862-4a48-985c-a5862afe59a9,"Jimenez, Arnold and Austin",12543.67,2026-06-20T11:48:40,Pending,IT Equipment,False
+958d9b85-7357-4999-9a28-6f413be78744,Williams Ltd,30880.58,2026-06-20T15:14:20,Approved,IT Equipment,False
+a26e1caa-cb32-447a-a326-3eee541e6410,"Bowman, Roberts and Sullivan",37678.51,2026-06-20T16:51:47,Approved,Marketing,False
+b129f569-a0a2-4587-94cb-953f8b8c93b9,"Copeland, Wilson and Carlson",48555.91,2026-06-20T18:17:04,Flagged,Logistics,False
+9fabcfdd-6c4d-4f90-96df-43ef5abf93ab,"Rhodes, Nguyen and Maxwell",27563.25,2026-06-20T20:02:30,Approved,Logistics,False
+61534b4a-2ebb-4603-b275-0b677d453a02,Fitzgerald-Wright,1050.93,2026-06-20T22:45:12,Pending,Office Supplies,False
+0fb4f835-779b-4fe5-8d55-adf2e569fa01,Santiago-Hodge,26861.42,2026-06-21T04:35:48,Pending,Marketing,False
+ac32e2b6-ae28-4b4f-9c39-49a004fafedf,Nelson-Lamb,8894.64,2026-06-21T06:38:54,Approved,Marketing,False
+fffb63aa-d4a9-49f2-a224-b42291499242,"Steele, Williams and Preston",40617.77,2026-06-21T08:32:08,Flagged,Office Supplies,False
+e65d357d-77f2-48c8-afd4-6fa6b777dbea,Johnson Ltd,49048.87,2026-06-21T09:03:05,Approved,Logistics,False
+8ba8a4ec-a1d2-4fa1-8a0e-8a8766d7e347,"Brock, Torres and Ruiz",1000.43,2026-06-21T09:25:38,Approved,Office Supplies,False
+c963614f-52ea-4a81-a496-c822ebde922e,Ware Ltd,6125.44,2026-06-21T09:26:35,Pending,IT Equipment,False
+1e77a5aa-fa5e-4ac6-a234-30cf599923f8,Brock-Rivera,21872.79,2026-06-21T16:05:25,Pending,Office Supplies,False
+168e85b5-2336-456b-9dd3-b14e4dbd6ad5,"Jones, Fletcher and Harris",42578.71,2026-06-21T16:32:28,Approved,Logistics,False
+794932f5-9def-4d37-8fae-e03531356c61,Robertson-Schultz,43278.1,2026-06-21T17:08:37,Approved,Office Supplies,False
+387b5463-bc87-47be-b37f-a9b68786f2fb,Williams-Jackson,24917.7,2026-06-21T17:09:18,Flagged,Office Supplies,False
+190e00fa-4b88-4596-99de-645c07491f52,Graham-Johnson,32096.28,2026-06-21T19:20:13,Flagged,Marketing,False
+b262ce29-db51-4989-aa38-40603f497e4e,Hartman-Hernandez,14654.55,2026-06-21T19:25:38,Approved,Marketing,False
+29b2957b-c793-40f6-a586-ed25568248d2,Hudson-Barnett,16081.96,2026-06-21T19:57:34,Approved,Marketing,False
+b0e656ca-1bb3-4fa6-8326-96a84805410f,"Conley, Stephenson and Johnson",6728.64,2026-06-21T20:48:59,Flagged,Office Supplies,False
+d55326b3-a6fc-4b04-a4af-aa4a3ccf51ff,Summers-Lee,25848.27,2026-06-21T23:32:27,Approved,Marketing,False
+83e779f5-71b2-4fb9-86f8-d40d6a43bf6e,Martinez-Walker,28811.66,2026-06-21T23:53:42,Approved,Office Supplies,False
+43ecbeff-6592-4c2e-b0b7-e1719d59183b,Park-Parker,1997.23,2026-06-22T03:56:50,Pending,Logistics,False
+acbce476-9b0e-4e97-9de6-38f49b09016b,Watson-Washington,9075.66,2026-06-22T05:05:08,Approved,Logistics,False
+eee8ebc2-92ce-46a7-bb2b-dac207d70e5d,Lewis-Salinas,21400.23,2026-06-22T05:08:44,Pending,IT Equipment,False
+b9d57095-714e-4f58-8851-45d8edb90040,Pena Group,33414.71,2026-06-22T06:20:47,Pending,Logistics,False
+788d3f78-4f56-4984-a66e-2b95d761c3b9,"Nguyen, Smith and Jennings",19779.64,2026-06-22T07:31:43,Pending,Logistics,False
+94b20e2c-eea1-46cb-b65a-ee6552f803d1,Bates-Henry,17248.69,2026-06-22T12:46:51,Flagged,Logistics,False
+c0b997dd-80d5-46db-8dfe-4b5062306706,Castillo-Harrington,25167.91,2026-06-22T13:45:22,Flagged,IT Equipment,False
+7afe9c57-6dc5-4c0e-a550-7487e96de164,"Peters, King and Parker",11812.47,2026-06-22T14:30:25,Flagged,Marketing,False
+4d5ffd8a-ac07-439e-a3e5-e700a5630b27,"Walsh, Clark and Navarro",43397.56,2026-06-22T16:10:59,Approved,IT Equipment,False
+ff20e800-f4cf-41c9-a9cf-408da46f2204,Bates-Henry,17248.69,2026-06-22T21:46:51,Approved,Marketing,True
+2a7f765e-18ba-4aa7-a444-872f2603f321,Weeks LLC,5243.99,2026-06-22T22:50:05,Pending,Marketing,False
+46fb45f2-e69d-4ba3-bbda-de4dfb6bdbe6,"Wilson, Hicks and Bullock",5105.65,2026-06-23T02:12:07,Pending,Office Supplies,False
+cf6af84d-70e9-42b2-b2df-1c60e84880d8,Clark-Steele,29370.1,2026-06-23T04:46:44,Pending,Logistics,False
+c301b93f-920e-4d61-b94c-f0910a8d01c8,Johnson-Alvarez,21383.58,2026-06-23T07:00:54,Pending,Marketing,False
+40934231-7b2e-42ee-a360-615d6685cdb3,"Moore, Murillo and Ramos",33175.43,2026-06-23T09:04:23,Pending,IT Equipment,False
+8ae0cf5f-12b6-4928-bf2e-75bd6de9dce6,"Peters, Russell and Johnson",28344.57,2026-06-23T12:46:43,Flagged,Logistics,False
+c502d0cd-f19c-48fa-9a51-9c3ec224220d,Decker-Dudley,40011.25,2026-06-23T22:07:00,Flagged,Marketing,False
+f3506ca0-678c-4f58-9a23-81f6f5c5cbb9,"Perry, Garcia and Fowler",36696.95,2026-06-23T22:12:49,Flagged,Marketing,False
+b4940359-8b24-4cec-b410-a2cacbe76614,Smith Group,28851.93,2026-06-23T22:41:21,Flagged,Office Supplies,False
+175b3ad6-429e-4fc8-b7f8-7f600d4d7cf9,Rodriguez-James,13155.49,2026-06-24T00:32:02,Flagged,IT Equipment,False
+d210de67-0dd4-48b1-a6c0-d3c4b04a56ce,Cooper Group,28520.87,2026-06-24T01:12:49,Approved,Office Supplies,False
+c82b4838-f844-48da-8301-39605aad9f50,"Hall, Hall and Mcdaniel",39788.72,2026-06-24T01:14:17,Approved,Marketing,False
+54f73fb8-4a5b-4df6-ba8b-0e9b98a3390e,"Hale, Gilbert and Craig",39389.65,2026-06-24T02:21:12,Approved,Logistics,False
+d7d774a5-1712-456e-a5f8-e9d5f45418ae,Singh LLC,46740.81,2026-06-24T04:35:27,Approved,Logistics,False
+9da3bbd3-eb1b-4337-b934-360ffa825375,"Mckinney, Graves and Thompson",19757.2,2026-06-24T06:26:11,Flagged,Office Supplies,False
+0e057309-0d74-46ea-9bb9-2f226630259b,Gutierrez-Lopez,43200.69,2026-06-24T07:06:20,Flagged,Marketing,False
+fc93594d-4c07-4cae-ac34-5e68acb6c6b2,"Stephens, Thompson and Valdez",48721.33,2026-06-24T15:18:06,Flagged,Logistics,False
+ae61d503-0e13-4003-b6f7-2518599f8ad0,Diaz-Harvey,3479.14,2026-06-24T15:56:28,Pending,Office Supplies,False
+77a47e77-f623-4943-9dd0-36154e4aa059,Hampton-Morrow,37633.14,2026-06-24T18:56:54,Flagged,Logistics,False
+72e65505-ab38-4259-a1c9-1d8ee72b0d3f,Jenkins-Payne,46770.64,2026-06-24T19:12:02,Approved,Logistics,False
+33886925-7346-4242-af86-005a7501cf11,Crawford Group,25439.43,2026-06-24T20:04:44,Flagged,IT Equipment,False
+2110aa62-0b85-4216-a8f6-fd03177a3fe1,Hernandez-Nash,43797.46,2026-06-25T01:23:55,Pending,IT Equipment,False
+51eb5745-2606-431b-a59c-fa127540de5b,Reid-Diaz,25011.35,2026-06-25T02:40:58,Pending,Office Supplies,False
+9a01b012-f6f5-47e1-974f-7f513aa62757,"Johnson, Hernandez and Cole",23833.49,2026-06-25T04:30:30,Pending,Marketing,False
+4392a28f-6427-44a7-82f1-13add5583537,Floyd-Jimenez,22507.53,2026-06-25T05:30:59,Pending,Logistics,False
+c771953d-6a7a-47b4-a402-8c80a94c2461,Crawford and Sons,17892.52,2026-06-25T05:57:03,Pending,IT Equipment,False
+431b6075-509e-405e-b690-b5216508b6bc,Anderson Group,883.7,2026-06-25T07:28:48,Flagged,Logistics,False
+506b41a3-24a5-4f7b-9425-93a49ebae52a,Young-Vang,26082.64,2026-06-25T13:42:30,Approved,Logistics,False
+be7487a8-8ecc-48e2-ab56-ee485dd1b1bf,Kane-Knox,24640.48,2026-06-25T15:24:58,Approved,Office Supplies,False
+fd55b5a9-270f-45ba-8e61-6319e4e885ea,"Henry, Johnston and Sanchez",48260.88,2026-06-25T16:22:15,Pending,Marketing,False
+38312dae-9b2e-4843-b9f5-89f1cc8d0703,Smith-Little,35594.46,2026-06-25T23:20:02,Flagged,Office Supplies,False
+7450eaf7-c673-43ca-a653-d10890028f9b,"Joyce, Murray and Campbell",24206.86,2026-06-26T05:55:33,Flagged,Marketing,False
+5dc9e352-4b70-4d57-9e96-944e056fc3a3,Ramirez Inc,16964.2,2026-06-26T08:05:05,Pending,IT Equipment,False
+3fa9656c-290c-4cb6-a037-b38e43cd077a,Sanchez-Arnold,27329.61,2026-06-26T09:55:07,Approved,Office Supplies,False
+704df2d0-bc1a-4535-8c73-be3bd66e8443,"Cole, Cox and Mills",6076.14,2026-06-26T11:05:13,Flagged,Office Supplies,False
+ceedfda6-e76f-46a4-bde6-cfff41024b58,Dalton Inc,46230.81,2026-06-26T12:55:56,Flagged,IT Equipment,False
+77e3fe26-5c0b-4e2c-a4e0-0e0a6d7f0dca,"Harrison, Banks and White",8887.64,2026-06-26T18:56:47,Pending,Marketing,False
+e2aaf3cb-5ad1-47ff-a31f-92bdddae545b,Espinoza Ltd,25970.31,2026-06-27T00:13:10,Pending,Office Supplies,False
+146e5662-99c1-4d7a-8fb2-535097596918,Scott PLC,17816.34,2026-06-27T03:33:10,Pending,Office Supplies,False
+d136591a-51b8-4c3a-b9a0-ff350b594d43,"Williams, Reyes and Miller",2000.6,2026-06-27T05:19:51,Approved,Marketing,False
+5e703aa1-a036-48f4-99b4-01f1af2c1c65,Valdez-Hernandez,35716.69,2026-06-27T06:41:09,Approved,IT Equipment,False
+2c525424-83c9-41bc-b48b-6a1d07beb7fe,Rosales-Howe,15617.37,2026-06-27T07:44:40,Flagged,IT Equipment,False
+6587691d-8961-43c0-8b69-745c00536dd4,White PLC,42930.44,2026-06-27T07:59:29,Flagged,Office Supplies,False
+60601008-a90a-45a2-832a-eed2b0a76f86,"Thomas, Williams and Armstrong",830.7,2026-06-27T10:22:31,Flagged,Logistics,False
+1ff2bf61-0e1e-4fb6-80bb-6c8a0d3fd26d,Mills-Rhodes,7913.18,2026-06-27T12:04:33,Flagged,Logistics,False
+7f7cb258-7e1a-4a7b-ba6c-b3ab6e1a8776,Hubbard-Kim,39851.11,2026-06-27T12:46:45,Flagged,Logistics,False
+be3acaf8-042e-48d4-8ac7-c98d9a5166c2,Chan-Gomez,10418.11,2026-06-27T12:50:55,Pending,Office Supplies,False
+70e33f0e-f265-43fd-a690-4b73d6a97f2a,Spence Ltd,45927.37,2026-06-27T14:23:34,Pending,Logistics,False
+40e11162-9b09-4453-8e67-d8b0de57a6d0,"Fox, Ochoa and Adams",15892.24,2026-06-27T16:56:03,Approved,IT Equipment,False
+0424c56c-19df-4281-bdcf-4b8b601af91a,Mills-Rhodes,7913.18,2026-06-27T19:04:33,Flagged,Office Supplies,True
+3d3b6fda-5438-412e-8c89-a0e1e521cf40,"Valentine, Harris and Edwards",19789.41,2026-06-27T20:03:50,Pending,IT Equipment,False
+d40c8920-cb18-4c29-832d-647d4bd026b8,Hart-Bradley,31991.38,2026-06-27T20:26:32,Approved,Office Supplies,False
+b60b9299-21a3-4bb6-97db-f6afc3711171,"Donovan, Howard and Maldonado",8043.72,2026-06-28T01:35:55,Approved,Logistics,False
+6918d995-cae9-4fa0-a3fa-23a6cf28e405,Evans PLC,325329.33,2026-06-28T04:53:24,Approved,Logistics,True
+b822d019-1044-4d2e-bdac-ed8f1e912c3f,Kaufman-Walker,33960.32,2026-06-28T13:46:46,Pending,IT Equipment,False
+020dfc64-9680-42a1-817a-0ff6f3b347ec,Sanchez-Aguirre,42168.38,2026-06-28T14:21:46,Pending,Marketing,False
+486269e8-25ad-448f-8f28-da7110469e62,Jones Ltd,18093.81,2026-06-28T14:38:13,Pending,Office Supplies,False
+d89aba6e-26d2-4878-9ac4-8583a38de561,Cole LLC,10284.13,2026-06-28T15:20:29,Approved,IT Equipment,False
+d032b9b7-f3e2-4ffb-9056-8c7ab5fb6f60,Bass PLC,27289.83,2026-06-28T19:04:39,Pending,Logistics,False
+aa8d0c19-8491-44b8-baea-b22ab2cacef7,"Colon, Blankenship and Turner",42544.8,2026-06-28T19:29:48,Approved,Office Supplies,False
+474bae64-616d-4db5-bf27-e8478a0e6524,Hernandez-Vaughn,29003.4,2026-06-29T00:20:50,Flagged,Marketing,False
+1b73dece-55c4-485f-9f64-c838bd852f60,"Hall, Smith and Brooks",28309.37,2026-06-29T03:30:45,Flagged,Marketing,False
+042a70ca-086c-4ebe-b057-b8f86a1d79ad,Chavez-Anderson,26174.43,2026-06-29T05:51:54,Flagged,IT Equipment,False
+657cca19-ed66-450c-b164-a72b75b68192,"Hill, Becker and Fischer",37106.46,2026-06-29T06:59:24,Flagged,Marketing,False
+c590222d-f725-4599-884c-a7d239232e37,Shields-Smith,39220.76,2026-06-29T08:20:45,Pending,Logistics,False
+98f05e0c-6902-440e-a150-570663ce4223,Rocha-Wood,47444.6,2026-06-29T08:37:32,Approved,Office Supplies,False
+868faa2e-c69e-48e1-9250-e97040c0b088,"Evans, Knapp and Williams",43812.73,2026-06-29T15:40:43,Approved,Office Supplies,False
+6d427dce-bea3-48f0-95d6-7973c14aa724,Johnson Ltd,47615.97,2026-06-29T21:00:00,Flagged,Logistics,False
+6ff4ac6a-a193-425d-a01c-2b2211b5bb88,Martin-Nelson,45534.17,2026-06-29T21:38:13,Flagged,IT Equipment,False
+1bacbbd6-da45-4a1b-b19b-6b2993260af6,Hammond Inc,10724.18,2026-06-29T21:47:41,Pending,IT Equipment,False
+9d1dc205-5f76-4ebc-a729-3c6536a0dd18,Cruz Ltd,47313.0,2026-06-29T21:57:41,Approved,Marketing,False
+55fe7b81-12b7-4608-b7fe-31f742ce3b75,Hughes PLC,23764.4,2026-06-30T00:46:54,Pending,Office Supplies,False
+7e0e5134-990e-4929-a744-09108ea09b25,Herrera and Sons,16395.24,2026-06-30T03:09:14,Approved,IT Equipment,False
+0758d5c0-959f-4ef2-89eb-ba07fc75edc5,Carlson-Andrews,33577.49,2026-06-30T05:51:01,Approved,Marketing,False
+550c5b05-6aeb-49b5-ab10-884b2078d40c,Hopkins LLC,12578.12,2026-06-30T07:06:30,Pending,Marketing,False
+179a6046-ee2f-43e9-be34-6a8313a3e31b,Golden-Wolfe,34312.53,2026-06-30T19:38:20,Approved,Marketing,False
+e33d3360-53b2-456b-ad69-93d713511596,"Johnson, Wood and Tran",45386.19,2026-06-30T21:34:27,Approved,Logistics,False
+b066b812-31e1-4ae1-b6a6-5a8f2b79c342,Torres and Sons,26712.7,2026-06-30T21:48:38,Flagged,IT Equipment,False
+045bf405-8be1-4480-9980-29be5879f837,"Warren, Allen and Adams",36876.78,2026-06-30T22:13:27,Pending,Logistics,False
+3e2fb16b-3475-4c54-a507-4a5a20ffa599,Rodriguez-Fernandez,11794.82,2026-07-01T00:59:32,Approved,Logistics,False
+4c895e00-32c9-45bf-8c6b-4262059497b6,Kelly Group,29627.62,2026-07-01T02:22:38,Approved,Marketing,False
+cf491749-6f4c-4f07-9e1d-0e152f1ebace,"Wilkins, Jones and Bradley",33223.17,2026-07-01T09:40:55,Flagged,Office Supplies,False
+24f35790-96f5-4bbd-80fd-299bdd87c8a5,"Poole, Johns and Figueroa",6910.26,2026-07-01T10:16:33,Flagged,Logistics,False
+f5c5b6d0-a6dd-4c5d-87e6-3379957bfa61,Scott Ltd,25344.73,2026-07-01T12:11:10,Approved,Office Supplies,False
+2df48dd1-7754-49d6-91c4-db9ec85c435d,"Lucas, Williams and Zimmerman",46913.1,2026-07-01T20:01:32,Flagged,Office Supplies,False
+800a2f70-08e8-4752-961b-ac811def2bb0,Gonzales Group,41205.4,2026-07-02T02:31:05,Flagged,IT Equipment,False
+6ccca498-7dac-4446-afb8-1590c180b749,Jensen-Branch,20076.21,2026-07-02T02:31:22,Flagged,Office Supplies,False
+2e97cd22-2cdb-4064-8302-0e07c32b1bef,Figueroa-Perry,14235.93,2026-07-02T03:12:30,Pending,Office Supplies,False
+c3385914-15c0-40be-9b85-d4427f5ecac2,Austin-Morgan,11324.9,2026-07-02T05:52:21,Approved,Office Supplies,False
+d53d8287-1fd1-42aa-b6ad-04f02a6d06d5,"Weaver, Anderson and Reed",19313.53,2026-07-02T06:22:02,Flagged,Logistics,False
+c0ac26a2-18eb-4b0b-8cdf-c14ea8e9fa91,Jacobson Ltd,33844.14,2026-07-02T08:36:23,Flagged,IT Equipment,False
+653c3145-0039-4be2-9990-63aea0a97d2f,Garcia Inc,15872.26,2026-07-02T12:22:54,Flagged,Logistics,False
+3b1ea268-8193-4ac0-a9e0-d88b479b52bb,"Carpenter, Keller and Grimes",47682.38,2026-07-02T12:37:46,Flagged,Marketing,False
+fbc79da8-8295-49a1-82c4-c5e1fef1b610,"Howe, King and Nixon",24680.98,2026-07-02T14:50:55,Pending,Logistics,False
+7432af85-54bf-4e2e-96c3-113387b9b85b,"Snyder, Webster and Wolf",11709.98,2026-07-02T18:07:25,Flagged,IT Equipment,False
+f962a29f-e53f-4f35-a686-da9921683191,"Parker, Ferguson and Flowers",4228.69,2026-07-02T19:03:37,Approved,Logistics,False
+a596198f-dcda-425f-a2f1-23d21abd922d,Jones and Sons,39335.7,2026-07-02T19:14:22,Pending,IT Equipment,False
+9b4514a5-ae89-4e01-a7b4-177919351eb4,Woods-Soto,4034.27,2026-07-02T20:20:10,Flagged,IT Equipment,False
+fd193ca4-f02f-414a-8493-c5bc6081dcbe,Hicks-Arnold,40945.23,2026-07-02T20:46:52,Pending,IT Equipment,False
+70d1a314-395e-4787-a29c-0412b59f14f3,Manning Group,36005.57,2026-07-02T20:50:13,Pending,Office Supplies,False
+5d37c6a7-03a5-4a60-b768-6656306fc6d8,Mason-Rosario,21171.77,2026-07-02T21:53:36,Approved,IT Equipment,False
+50ff4a58-bfc1-4aa7-81e0-ce436ef49a21,"Goodwin, Diaz and Morales",13897.53,2026-07-02T22:22:23,Approved,Office Supplies,False
+4c09ff3a-60c4-44ba-9bf3-4a8343c5a86f,Nichols-Smith,40276.6,2026-07-03T06:04:34,Flagged,Marketing,False
+747b173d-8259-492d-abb1-7e0bb4cbb6eb,"Morrison, Hebert and Rogers",707.38,2026-07-03T06:48:31,Flagged,Marketing,False
+f0491f1b-49e2-4fb7-a0e9-9cda07597983,Obrien and Sons,22872.35,2026-07-03T07:45:50,Pending,Logistics,False
+398b0e60-06d3-496f-af6b-c7fcfeb01e35,Cervantes-Pierce,18988.84,2026-07-03T07:55:11,Approved,IT Equipment,False
+3236a55d-8841-43c1-9b80-ac862dadb3e2,Hernandez LLC,24472.36,2026-07-03T10:29:03,Approved,Office Supplies,False
+cfb0f01a-52d2-4855-b2f8-b7d20878295b,Wilson Group,24520.43,2026-07-03T11:54:39,Pending,Marketing,False
+ebfa8593-11a6-412f-9aac-49ac4c11b6fc,"White, Taylor and Baldwin",45673.61,2026-07-03T14:34:09,Approved,IT Equipment,False
+3e00d779-d0f8-408d-88c8-93806fbfa7e2,"Schmidt, Lopez and Mason",20773.62,2026-07-03T15:17:02,Flagged,Logistics,False
+c2d58ec4-c95b-4b7e-954d-4f6589f90c6e,"Sanders, Nguyen and Hill",5803.49,2026-07-03T15:40:55,Approved,Marketing,False
+7cc9caf4-dae4-4c52-af5c-f75f6944ad84,Foster-Rocha,14034.83,2026-07-03T17:18:03,Approved,IT Equipment,False
+8da4945f-1c8f-4074-8868-66edfe2eea83,Powell-Young,36177.82,2026-07-03T17:51:59,Pending,Marketing,False
+5100726d-8872-49d1-b7c2-6a37d36ba284,Reyes LLC,24763.56,2026-07-03T19:10:31,Approved,Office Supplies,False
+710a7294-0bf3-4bbd-9014-5c84b35c74db,Reyes LLC,24763.56,2026-07-03T20:10:31,Flagged,IT Equipment,True
+795f35b1-2bbf-41ee-b96d-ddd55ca2909b,"Duncan, Duncan and Davis",36384.65,2026-07-03T20:50:16,Pending,Office Supplies,False
+898912db-f0f3-4a96-952b-966aa75ddef4,York PLC,44073.72,2026-07-03T22:55:27,Flagged,Logistics,False
+4a60a9da-61dd-4c09-af94-4c7b5a17067b,"Johnson, Day and Taylor",38890.72,2026-07-03T23:56:02,Approved,Logistics,False
+ff26ab27-7922-4178-8ff5-f66f14660983,Avila LLC,47800.28,2026-07-04T02:58:33,Flagged,Marketing,False
+da4d15e7-06bf-43ea-8980-93b3a71af2cd,Mathews-Thomas,15892.28,2026-07-04T03:01:31,Approved,Marketing,False
+4c1ab7c2-68ee-4ace-8e9f-1b6e53b10a59,Smith Inc,46537.37,2026-07-04T07:21:38,Flagged,Logistics,False
+e4fce770-af24-4d49-85ca-f5b517ec0048,Cohen-Mckinney,6474.58,2026-07-04T08:33:04,Pending,Office Supplies,False
+86554f70-78c3-483b-ae97-12297adad066,"Lewis, Perry and Rivera",45578.19,2026-07-04T09:46:51,Pending,Logistics,False
+43fa39a7-33e2-4383-bdbe-8d24d96f1441,Hebert-Collier,13779.83,2026-07-04T14:45:19,Flagged,Logistics,False
+a04f67cd-b0f8-4421-9b0a-53ff9b606d18,Mason-Gallegos,22724.57,2026-07-04T19:39:35,Flagged,IT Equipment,False
+e7222e73-3580-45e9-9c6a-374bd1f9f653,"Villanueva, Butler and Williams",38882.19,2026-07-04T20:47:55,Flagged,Logistics,False
+ee124b9b-e7a3-4460-9e4b-45065e8ef823,Bridges-Brown,24934.8,2026-07-04T21:10:52,Approved,Logistics,False
+bea5e2e5-9397-452f-a9da-8e5a0c904d42,Castro-Harvey,14709.58,2026-07-05T02:34:47,Flagged,IT Equipment,False
+3ab35d3e-2177-4c7d-82c7-824867d6743f,Atkins-Robinson,27080.66,2026-07-05T03:24:28,Pending,IT Equipment,False
+45d63619-71c2-4bd5-9b9e-2cd3144e4831,Perkins Ltd,16031.1,2026-07-05T07:33:34,Flagged,Office Supplies,False
+91c233a3-d3b2-497f-8d20-e899d2a399ac,Robinson Ltd,39944.63,2026-07-05T08:35:16,Pending,Marketing,False
+ddad34ae-3a56-49d9-89be-bae4eafa0f81,Dalton-Nguyen,2403.84,2026-07-05T09:37:10,Pending,IT Equipment,False
+4cf5a0af-f7a9-4309-ad20-a594da39b107,Jackson Group,49611.14,2026-07-05T09:47:58,Pending,Marketing,False
+82e6e72b-aac9-4cab-a681-589db0ec1812,Fox-Reese,8407.94,2026-07-05T09:49:55,Pending,IT Equipment,False
+01770633-33e2-4357-9ff1-9c3c3d62dbf9,"Smith, Weeks and Arroyo",18893.6,2026-07-05T11:44:43,Pending,Logistics,False
+51ecd0fc-c941-4617-aaba-f0737960dc62,Morgan-Rodriguez,37143.93,2026-07-05T16:12:20,Approved,Office Supplies,False
+fc7f3947-1fb5-4fd3-9563-838d58ff5402,Bass-Nielsen,11610.24,2026-07-05T16:30:06,Pending,Logistics,False
+0658d4e1-3351-4f2b-9c7c-4289ae334a62,Payne-Garcia,32414.48,2026-07-05T17:23:22,Flagged,Office Supplies,False
+cb78d79e-ef24-44c3-9294-324fc0ecae51,Martin Group,6212.96,2026-07-05T21:44:42,Approved,Marketing,False
+5935b30f-e7b7-4700-b232-a46fdae1fda6,Wheeler-Austin,35951.11,2026-07-06T00:57:24,Flagged,Logistics,False
+c91f521e-c807-4762-8556-43ff1c42bfa8,Gibson-Clark,22928.39,2026-07-06T01:23:51,Pending,Marketing,False
+c51a620e-2bfa-46cf-8aa5-194776d79372,"Becker, Lara and Baker",44393.98,2026-07-06T04:19:12,Approved,Office Supplies,False
+1207ebf7-5b79-4c06-8cba-d542475b6394,Moore Group,4882.88,2026-07-06T04:29:07,Pending,Office Supplies,False
+1b5d02ad-70b5-4cd9-aab4-e313e63bbc75,Rios-Buchanan,27080.74,2026-07-06T08:54:23,Flagged,Marketing,False
+9ed3aad2-2ac8-4aa7-8d7c-0d393769c8ef,Castillo and Sons,45835.16,2026-07-06T12:53:50,Pending,Office Supplies,False
+ba096f11-8d48-4d16-a3b8-d4bf2cd0a312,"Ramirez, Mayer and Wood",26501.65,2026-07-06T13:19:28,Pending,Logistics,False
+5fe6a06a-5875-4ce9-8be2-f26d2d036567,"Norton, Jackson and Cortez",30300.21,2026-07-06T13:57:29,Approved,Logistics,False
+13ce11b9-443b-4361-802e-f95a1ed4faf9,"Vaughan, Miller and Cortez",36524.1,2026-07-06T14:34:03,Flagged,Office Supplies,False
+2033548f-a653-4a2a-886c-f08e40bbcce9,Perry-Larsen,26913.87,2026-07-06T14:51:03,Approved,Logistics,False
+0d957b22-9bfb-4b20-9639-08d7b5f295db,"Ramos, Frazier and Love",10883.41,2026-07-06T15:09:01,Approved,Marketing,False
+89a34cd3-e82a-4a6c-9466-58b511d5974e,Johnston and Sons,13822.97,2026-07-06T16:53:45,Approved,Office Supplies,False
+525453f0-c113-40fe-906b-d490eed6f842,"Gibson, Chavez and Graves",19078.14,2026-07-06T22:31:56,Approved,IT Equipment,False
+da471b21-5e78-40b1-8131-ad4d1438b998,Stone-Welch,40358.72,2026-07-06T23:43:01,Approved,Office Supplies,False
+fd14d7e3-c821-457c-b981-8dce3c90a824,Cunningham-Barton,11123.99,2026-07-07T06:15:44,Flagged,Logistics,False
+82d7ad25-134e-468e-b4b2-bd36d46b3953,"Howard, Green and Hunt",30656.68,2026-07-07T10:50:19,Pending,Logistics,False
+3a43df6b-a0c9-4312-aac8-d7e769601640,Roberts-Wilson,9093.97,2026-07-07T11:05:25,Flagged,Marketing,False
+638122a8-ca3a-47e5-a232-8ab387d708e2,Smith-Jimenez,331.79,2026-07-07T14:01:09,Flagged,Logistics,False
+ec93a093-e31f-4adb-a3aa-1120685c3b7a,Morrison Group,49577.18,2026-07-07T17:21:52,Approved,Logistics,False
+7739ad2a-f63c-430a-9f08-8dff28be3e68,"Blackburn, Jones and Preston",41675.74,2026-07-07T18:17:43,Approved,Marketing,False
+34c040d6-e190-4bad-a9dd-698f00e5d557,Hunter-Fuller,2710.7,2026-07-07T19:37:38,Pending,Marketing,False
+43b7addb-6a24-46c8-9646-b36061773917,Young-Good,23390.8,2026-07-07T20:05:57,Pending,Logistics,False
+b81cdae9-70f9-49a7-8ec8-51b75471634a,"Williams, Fernandez and Hernandez",3647.39,2026-07-07T22:46:45,Flagged,Office Supplies,False
+0ed47c3f-62b3-4763-8901-b23b2651bb28,Hunter-Hansen,17211.22,2026-07-08T00:34:03,Pending,IT Equipment,False
+58c4406e-29ee-4bcd-b35d-696b5b925c9a,Ochoa PLC,31859.17,2026-07-08T05:51:16,Flagged,Marketing,False
+7305fb0c-2233-4ad5-aad5-e6586fdce9d0,Jones Ltd,3783.65,2026-07-08T09:01:01,Pending,Office Supplies,False
+1c54ca79-5395-4baa-afc2-7641448efcc8,"Jones, Jones and Smith",17351.93,2026-07-08T09:54:35,Flagged,Logistics,False
+ef9355a1-5901-464d-9ad1-042840c4f58e,Montgomery PLC,7800.67,2026-07-08T10:45:15,Approved,Marketing,False
+919d2f88-6bcf-4a2a-9bb0-d5e6a80efa8a,Aguilar PLC,47141.44,2026-07-08T17:28:20,Pending,Office Supplies,False
+88432948-53d8-4d7c-a0a2-9aea38180516,Moreno-Mayer,3292.37,2026-07-09T01:29:39,Approved,Office Supplies,False
+5702a4ef-1d1a-483c-8680-083182d4f0c8,Villanueva-Lee,32003.5,2026-07-09T01:33:36,Approved,Logistics,False
+b9058c11-7e70-4406-a133-79d70975c5c5,Mullen PLC,18033.14,2026-07-09T01:56:48,Approved,Office Supplies,False
+ab403f70-8482-431d-9032-4b900991d3bc,"Edwards, Perry and King",363485.84,2026-07-09T04:59:45,Pending,Office Supplies,True
+7eac9cae-1f1f-40b6-a685-ff7ea331f65b,Carlson-Smith,4216.14,2026-07-09T05:00:39,Flagged,Office Supplies,False
+acaf3914-7be7-49f8-8a56-218bd00edc50,Jackson and Sons,37604.18,2026-07-09T07:57:31,Pending,Logistics,False
+a96cdd23-14b1-4ec5-99db-5e17bed05a78,Fitzgerald Group,16458.14,2026-07-09T10:31:57,Pending,Logistics,False
+c3d411a9-48fb-44e2-ade2-211e52f4cfe7,Young-Barnett,4219.33,2026-07-09T10:51:31,Pending,Marketing,False
+05af8edb-c14b-4f20-b861-a5569fac57e1,Miller-Wheeler,171.27,2026-07-09T14:29:29,Flagged,Marketing,False
+268ab8b1-7f13-41ce-8322-99bc1e8964f6,"Jones, Torres and Blackburn",34769.5,2026-07-09T14:35:13,Approved,Logistics,False
+92ee0e3a-b16e-4c8b-ade1-ddc277f7ff90,Garner PLC,41332.93,2026-07-09T17:56:41,Approved,IT Equipment,False
+654c748a-559a-4c40-aba6-cbe4727aa4d9,"Mitchell, Boone and Stokes",44287.95,2026-07-09T22:08:51,Approved,Logistics,False
+a7f0c0cd-7ff5-4fb7-b5a6-e08a0d1dfbce,Johnson Group,31110.7,2026-07-10T01:04:01,Approved,Logistics,False
+c4be2416-ed12-49ed-95fc-7320408b2e29,"Washington, Hardy and Bray",12652.27,2026-07-10T02:35:28,Flagged,IT Equipment,False
+fa0a22ae-a927-4de8-a2b2-8b98ee3322ea,Bush Ltd,43024.4,2026-07-10T03:00:46,Flagged,Office Supplies,False
+58816673-17f6-4c49-b52e-b256d3f34c30,Smith Inc,44192.1,2026-07-10T04:03:11,Approved,Marketing,False
+1e78d44f-1a16-4c68-83a9-9951b124eaae,Gonzalez-Wilkerson,25201.17,2026-07-10T05:20:03,Approved,Logistics,False
+e886caf5-4f17-4230-9620-b36a48a8d0c2,"Miller, Villegas and Jones",12375.85,2026-07-10T05:54:21,Flagged,Logistics,False
+7aad485a-4810-401d-bf3b-2b32ef2f07ab,Arroyo-Martin,8514.84,2026-07-10T09:40:03,Flagged,Marketing,False
+1d36747a-ce34-4698-a8d7-41a7cead02d5,Reyes-Stewart,877.36,2026-07-10T15:40:43,Flagged,Logistics,False
+cd829ca7-bd33-4971-b908-5dd65c08f0f4,"Bennett, Frye and Stevens",43499.61,2026-07-10T22:22:28,Pending,IT Equipment,False
+427c635e-2b50-4bcc-8965-9167da80f17a,West-Cantrell,22634.18,2026-07-10T23:34:36,Pending,Logistics,False
+c0564a4a-882f-48c4-b6fb-840abf0ef521,"Wiley, Graham and Bowman",41456.95,2026-07-10T23:54:20,Pending,IT Equipment,False
+b1b2eb06-8cfc-4ef9-803e-ceafd8ab3fe8,Calhoun-Hooper,47559.21,2026-07-11T00:41:48,Approved,Marketing,False
+e9ffa35f-acf9-4063-b18a-43d19655981b,Cardenas-Barnes,36380.7,2026-07-11T03:56:15,Flagged,Marketing,False
+9dc2f1f6-7715-44df-8f1b-cbb33558653c,"Jenkins, Smith and Bowen",533.68,2026-07-11T04:27:31,Pending,Logistics,False
+769bcc3f-0712-46a0-8723-710c05d4cab2,Montes Ltd,36049.56,2026-07-11T12:43:47,Approved,Marketing,False
+4ec76ec0-3151-47e1-95c4-dc6b6f1d88b8,Morales and Sons,16138.94,2026-07-11T13:49:48,Approved,Logistics,False
+313d2642-3181-434e-8d9c-ebd6985412a1,Santiago-Paul,25570.58,2026-07-11T14:50:18,Pending,Office Supplies,False
+73a7d87b-3855-4a77-bb33-33ed3e75ca8a,Mann-Hansen,16529.5,2026-07-11T20:45:38,Flagged,Marketing,False
+9efc3956-f093-4bcf-acac-9dbdf2be98f6,Contreras-Mckinney,5853.87,2026-07-12T13:41:05,Flagged,IT Equipment,False
+80f8f360-ce1d-45f0-b3f3-cdfe15bea1e8,Howard-Torres,31554.59,2026-07-12T17:35:13,Approved,Office Supplies,False
+9dacacd0-5a2c-4371-bfc9-91c69395d54e,Moore and Sons,17443.84,2026-07-12T18:20:01,Approved,Office Supplies,False
+c81c41da-2351-4f38-8582-438f9a237861,White Inc,23953.49,2026-07-12T20:22:00,Flagged,Marketing,False
+84b75500-15f4-4f75-a6f2-56e24d2a1d4a,Beck-Wood,45436.31,2026-07-12T21:47:02,Flagged,IT Equipment,False
+74915518-a894-4e56-98ca-fe89272108e2,"Taylor, Farmer and Bush",30633.14,2026-07-13T06:18:37,Flagged,Logistics,False
+668a0e86-82d6-4c39-9bb2-1b77d0fa0d44,"Serrano, Turner and Barnes",40211.11,2026-07-13T07:39:28,Approved,Office Supplies,False
+bf39e07c-604d-40c6-b1e8-ca674b153be6,Walker-Burgess,791.12,2026-07-13T08:19:03,Flagged,Office Supplies,False
+8355ea26-a15f-4765-81d5-b978571eeb6a,Miller-Wright,9877.72,2026-07-13T08:30:10,Pending,Office Supplies,False
+ff68b1a1-c798-4261-931a-f9a3439c6b3b,"Rhodes, Cruz and Combs",31683.44,2026-07-13T09:08:05,Flagged,Logistics,False
+9442314c-c02c-4290-9b6f-4eac05fb937b,Patel-Hall,11614.16,2026-07-13T10:01:07,Flagged,IT Equipment,False
+635e5734-3900-4bf1-9f2b-660720477067,"Duarte, Gutierrez and Cook",48430.26,2026-07-13T13:57:40,Flagged,Office Supplies,False
+4c05e9d2-193a-432a-835b-199ca38bb193,Johnson-Henson,44326.29,2026-07-13T16:16:21,Pending,Office Supplies,False
+597c69a6-5830-4c9b-ad39-3b6de48a3253,Morales PLC,26527.46,2026-07-13T17:13:36,Approved,IT Equipment,False
+dc3603ad-1f8a-46e1-9384-ecda94ccc126,"Guerrero, Graves and Armstrong",44146.36,2026-07-13T18:03:59,Approved,Marketing,False
+fdb9678c-8e17-453b-9615-d6c568f32ba8,"Walsh, Page and Hodges",33123.69,2026-07-13T18:18:23,Pending,Marketing,False
+412259b8-e690-46bb-b2a7-b1bdcdf7f7b4,Smith PLC,30064.4,2026-07-13T19:58:07,Approved,Logistics,False
+41e8bafe-1149-41b4-9e33-e99f31a65b8d,"Jordan, Swanson and Franklin",24461.52,2026-07-13T20:19:15,Flagged,Office Supplies,False
+9a0ceda6-acff-43dd-ac8f-50bae81e19f1,"Livingston, Curry and Acosta",11077.4,2026-07-13T21:37:45,Pending,Logistics,False
+6fb7eadf-33c8-4af2-ac47-29305ed3c9db,Wood LLC,36347.58,2026-07-13T21:51:48,Pending,Office Supplies,False
+b90eba51-d04f-4eb5-9091-771db6d51d81,Palmer Group,3746.58,2026-07-13T22:06:24,Approved,Marketing,False
+0663949a-664f-4cbd-a741-f5b2091c1780,Hickman-Evans,49399.91,2026-07-13T22:12:59,Approved,Marketing,False
+9b8b92eb-b135-4a04-814e-46b4dd6ac711,"Lamb, Farrell and Meadows",320238.81,2026-07-14T03:14:43,Flagged,Logistics,True
+91604f6a-1f72-42d0-be50-d3af069413d0,Griffin and Sons,49724.65,2026-07-14T03:48:23,Flagged,Office Supplies,False
+64dab777-8c59-487b-aa6f-deb218a62aee,"Fry, Myers and Gamble",47864.0,2026-07-14T06:25:45,Approved,Office Supplies,False
+3d732388-4313-4176-bfdc-28bab76a5424,"Lopez, Doyle and Gibbs",42586.32,2026-07-14T07:07:29,Flagged,Office Supplies,False
+3af482e0-8696-4ad1-a26d-9298924ece65,Pruitt-Webb,10546.13,2026-07-14T09:49:58,Flagged,Marketing,False
+2a2ec351-62b9-4e88-93a3-fcc79fd8ac47,"Hensley, Powell and David",39096.8,2026-07-14T11:32:18,Approved,Logistics,False
+88b84e9b-f01d-455a-9b42-3dfd39a51eb5,Rivera Group,19445.19,2026-07-14T11:48:15,Approved,Marketing,False
+19a9f7f7-033c-4193-b7e4-2585c283f9bf,"Cruz, Lee and Sandoval",47624.29,2026-07-14T12:21:33,Flagged,Office Supplies,False
+4d6701c1-0be4-4c40-9f55-9c5b57acff34,Li Inc,40480.17,2026-07-14T12:28:05,Pending,IT Equipment,False
+b59e8c96-aa95-46f5-8710-3cdc5c26eaf3,Sims-Kirby,2142.43,2026-07-14T14:34:56,Flagged,Marketing,False
+a7d8bac8-7d3b-4bac-9f69-cdde6492c4d0,Garcia-Jones,29039.91,2026-07-14T15:25:40,Flagged,IT Equipment,False
+c27f47d4-f107-483b-b9f2-75dcbf4d7aab,Young-Williams,43392.36,2026-07-14T16:25:07,Flagged,Marketing,False
+b36805cf-2bc6-4711-b0e2-53631d80c501,Gray-Myers,404138.2,2026-07-14T18:12:37,Approved,Marketing,True
+f3de8fb9-dadc-4234-9038-496500ee9315,"Salas, Parks and Butler",34225.86,2026-07-14T19:02:56,Approved,Marketing,False
+7e4fc9e1-cc5e-448d-8473-d9f2003cd271,Villanueva-Ibarra,40776.4,2026-07-14T22:49:32,Pending,Marketing,False
+084e6fb8-6cb4-4bc0-b471-c9f2b5776c6b,Williams LLC,10667.3,2026-07-14T22:50:21,Approved,Marketing,False
+aafea94a-b881-4f81-9ea7-dae2011fe053,Walter-Li,7768.65,2026-07-14T23:41:54,Pending,Marketing,False
+0a066399-3851-4ba1-8f83-0dca880492d7,Gibson Ltd,31238.78,2026-07-15T01:30:32,Approved,Marketing,False
+f80a7a9e-148f-4f16-8d4d-e2c66b9553e2,Lane LLC,10832.39,2026-07-15T01:48:08,Flagged,Marketing,False
+b608bd88-1326-4d55-9737-83aa60525c24,Young-Hendricks,9283.64,2026-07-15T02:31:58,Pending,IT Equipment,False
+d0da493d-f25b-4990-bd9d-d214fa17e901,"Ballard, Velez and Hood",25084.44,2026-07-15T02:33:26,Approved,Marketing,False
+05f72b24-e804-447e-947f-122469440f22,"Hernandez, Schmidt and Price",49715.18,2026-07-15T06:46:35,Pending,Office Supplies,False
+ae7f9fea-cf57-49fb-a971-954d40fe6c59,Fletcher Inc,16995.24,2026-07-15T06:54:22,Flagged,Logistics,False
+24cffc78-2c55-4b6f-b4f7-6e73fc88b90d,Green PLC,48678.18,2026-07-15T09:35:57,Flagged,Marketing,False
+f370d77d-701a-4c60-adf0-a48b91a97a6e,"Lucas, Parker and Alexander",41272.12,2026-07-15T10:36:12,Pending,Office Supplies,False
+ef8d845c-1362-464f-a085-a7d942c47824,Hernandez PLC,7474.53,2026-07-15T17:50:04,Approved,Logistics,False
+d2a98e4e-8fd5-40dd-82bf-e77c4af51762,Sullivan-Doyle,19472.33,2026-07-15T18:38:32,Flagged,Office Supplies,False
+02367d3b-5d42-45b6-a3fd-efa2b86dddc4,Brown-Davidson,23522.11,2026-07-15T19:35:32,Flagged,Office Supplies,False
+34d1a87f-4ac6-43e6-885b-04480b0baff7,"Hamilton, Smith and Bauer",7500.3,2026-07-15T22:32:27,Approved,Marketing,False
+a8013b1b-ef03-47ca-a577-c55afe6cc0a5,"Fitzgerald, Tran and Reynolds",32791.0,2026-07-15T23:31:43,Pending,Office Supplies,False
+23134837-fc41-4b42-9a59-2f2fcf5db8cd,Cain-Hawkins,48897.94,2026-07-16T02:39:40,Flagged,IT Equipment,False
+4f356764-4cf1-4f03-85f0-43df3cb84f71,Thompson-Harrell,32133.76,2026-07-16T03:37:43,Flagged,IT Equipment,False
+0c3a2bad-c847-44b9-9362-7f3fde31c12b,Harper-Carr,34684.81,2026-07-16T03:55:07,Approved,IT Equipment,False
+c9b91d59-ba59-4878-97c2-d9650ccbf1e1,Kerr-Evans,34347.48,2026-07-16T07:27:41,Pending,IT Equipment,False
+f012946d-7b0c-4e84-966c-4005757d2fc8,"Santos, Gardner and Robinson",36881.25,2026-07-16T09:11:13,Pending,Logistics,False
+239c81d2-2a63-40ca-9604-d8ccf76625a5,Young Ltd,7289.36,2026-07-16T11:16:48,Pending,IT Equipment,False
+da911629-051c-4462-ab0c-bf5359617cfe,Hayes-White,25860.52,2026-07-16T11:38:00,Flagged,Office Supplies,False
+bb9cf05b-de6c-4c55-b5f4-17c4751abd1a,"Jones, Turner and Murray",21456.71,2026-07-16T12:08:49,Pending,Office Supplies,False
+12da4298-535b-472a-9aa5-02b249c3d36d,"Wilson, Leonard and Mendoza",27272.42,2026-07-16T12:44:28,Approved,Marketing,False
+25e6ad15-d645-4e1f-9502-58d50c912d79,Campbell Ltd,22721.55,2026-07-16T18:12:05,Pending,IT Equipment,False
+c9d52515-a764-4652-a40d-819353c2338d,Carr-Newton,47299.4,2026-07-16T19:45:59,Flagged,Logistics,False
+e08bbdb3-4177-449b-b350-e0926d0a06aa,Miles-Burnett,35728.4,2026-07-16T19:47:57,Flagged,Logistics,False
+e58936cf-1aa2-4f87-9c41-ed2e28db7e87,Cox and Sons,22292.25,2026-07-16T22:27:28,Approved,Office Supplies,False
+3dda3f11-02cc-45cc-a114-0b9cc349a7ca,"Brown, Roth and Wilson",40157.21,2026-07-16T22:29:47,Flagged,Office Supplies,False
+b6277f41-5cea-4e2d-a1e6-52b26feeadaf,"Dennis, Long and Griffin",10139.6,2026-07-16T22:51:25,Flagged,Logistics,False
+0e790c8a-478b-454c-9737-4283d1921f33,Bishop Inc,27102.3,2026-07-17T01:30:46,Approved,Marketing,False
+d24a2b1c-cc3c-4086-89dd-5974af04183e,Conner Group,10116.8,2026-07-17T01:49:56,Approved,Marketing,False
+e7a339ae-8413-4c65-8de0-2a93529380dd,"Cox, Montoya and Preston",22920.39,2026-07-17T04:43:15,Flagged,IT Equipment,False
+f4ab76c2-ed84-49e5-9caf-58c76d41dd12,Cox and Sons,22292.25,2026-07-17T05:27:28,Pending,Marketing,True
+70511255-8091-432a-8ce6-afde4e65fdbe,Snyder-Arellano,1964.15,2026-07-17T07:36:59,Flagged,IT Equipment,False
+2149310e-04b9-42a3-876e-fab5800bc3a4,Alvarez PLC,39782.12,2026-07-17T09:45:57,Approved,Logistics,False
+da009317-a53e-4b7a-8b64-2ebf7f16a948,Wilson-Campbell,5490.41,2026-07-17T11:06:27,Flagged,IT Equipment,False
+cdceb4b1-0a47-4fe5-8a43-361749c1d4e0,Scott and Sons,15584.13,2026-07-17T15:47:23,Approved,Logistics,False
+fde1b408-ce84-4404-abf6-214f35c22a66,"Holland, Fischer and Payne",41635.9,2026-07-17T18:05:31,Approved,Office Supplies,False
+58cf33e2-910d-4533-8ac3-0fe33e665c8a,Howard LLC,6178.48,2026-07-17T18:52:56,Pending,Logistics,False
+fbc635bd-2d7c-4572-905f-9b6fd2fa2667,Henry PLC,33640.5,2026-07-17T22:01:55,Flagged,Logistics,False
+43dba70a-4f19-4693-a5d0-fa430e52a814,Chandler-Edwards,39196.55,2026-07-18T00:40:03,Flagged,Logistics,False
+64248ecd-18df-4d9f-88cd-83da88e7649e,"Cook, Wells and Bryant",2650.17,2026-07-18T00:47:16,Flagged,Office Supplies,False
+7adb2513-c40d-4d59-b674-f5a010bb0253,"Nicholson, Valentine and Robinson",47256.93,2026-07-18T01:24:22,Pending,Marketing,False
+101bb52f-b6ed-470b-b7bc-841245e0267f,Wang-Jackson,30576.89,2026-07-18T03:05:16,Flagged,Logistics,False
+2131ad7d-4ff5-4723-a53e-2c6f3d85eca1,"Thompson, Owen and Walker",31170.16,2026-07-18T05:38:33,Pending,IT Equipment,False
+86a3bd53-2e8f-474d-9468-0e474712e1e4,Johnson Ltd,45860.62,2026-07-18T06:52:20,Approved,Office Supplies,False
+e2de074a-db28-4feb-b39f-aea744dbc071,Jackson Inc,37188.87,2026-07-18T08:19:02,Pending,Office Supplies,False
+b7dd45bb-73a3-404f-adba-82890fad6e56,Bass-Warner,18776.2,2026-07-18T13:24:39,Flagged,Logistics,False
+20276678-a076-4c80-99dd-972578fc91a9,Padilla-Lewis,17255.99,2026-07-18T13:52:32,Pending,Marketing,False
+55a587c0-9305-4e54-b135-0bfa545b8df0,Simmons-Nelson,34894.4,2026-07-18T15:19:47,Flagged,Office Supplies,False
+845046bf-f9a2-4104-8590-22e286baf1f4,Murray-Henderson,26185.38,2026-07-18T16:48:18,Approved,Office Supplies,False
+773b8fde-499b-499d-b9de-54eb9ee20520,"Walker, Lopez and Prince",14378.19,2026-07-18T17:29:25,Flagged,Logistics,False
+842052a8-c0e6-4dfc-872b-fa448368cff2,Griffin-Hernandez,12365.35,2026-07-18T19:04:14,Flagged,Office Supplies,False
+206f1815-b25a-4c57-a141-4eccac86e6f9,Hayes and Sons,33735.75,2026-07-18T21:24:05,Approved,IT Equipment,False
+2e23a53d-fb3d-4794-8522-946f0b065f56,"Bentley, Byrd and Orr",12672.53,2026-07-18T22:21:08,Flagged,IT Equipment,False
+68196712-93f4-45fa-8ad4-d963456891cc,Davidson PLC,46093.51,2026-07-18T23:35:32,Approved,IT Equipment,False
+3786399b-d25c-4218-b200-488574ea0fb5,Parker Group,44533.7,2026-07-19T03:01:44,Approved,Marketing,False
+64787df6-5cac-47e2-8067-b5c751c01013,"Greene, Sanchez and Kelley",29058.1,2026-07-19T08:15:29,Flagged,Office Supplies,False
+f67ecc22-2464-4435-9864-70bd02337baa,"Jackson, Howard and Kim",9169.84,2026-07-19T13:00:50,Pending,Logistics,False
+47a52b5c-1c94-45ed-9b43-ff9416950828,Bates LLC,27682.84,2026-07-19T15:19:21,Flagged,Office Supplies,False
+85a14512-767d-4050-a703-6fd0fed9ee6e,Rush LLC,23969.55,2026-07-19T16:09:21,Pending,Logistics,False
+755c3d0b-d318-45dc-8248-53b293680cc1,Green-Andrews,28087.77,2026-07-19T16:21:45,Pending,Office Supplies,False
+c6a876a0-b1b9-4595-afcb-03c3c357d962,"Fry, Hobbs and Buck",18132.7,2026-07-19T22:46:06,Flagged,Marketing,False
+3997a4b4-b206-4710-a499-34a337a13027,"Butler, Fowler and Jimenez",42772.26,2026-07-20T01:29:48,Flagged,IT Equipment,False
+fa2628b7-ab06-45a1-8062-7e87ec951269,"Ferguson, Sims and Clark",11070.98,2026-07-20T06:58:25,Approved,Marketing,False
+af6c87a2-0807-40fd-88df-d20158824252,Harris Ltd,31190.89,2026-07-20T08:49:49,Approved,IT Equipment,False
+d0498c48-afaa-4839-b20a-46f16c41cba4,Taylor-Barry,11674.53,2026-07-20T09:37:27,Flagged,IT Equipment,False
+84508413-13db-4c6f-b4b4-049275f54dd7,Taylor-Cortez,11769.49,2026-07-20T12:48:52,Pending,IT Equipment,False
+d74d8d2c-9213-4d4c-b050-c8cceadea510,Joseph-Walls,46073.7,2026-07-20T14:07:28,Approved,Office Supplies,False
+03d2b1e9-8d92-49d1-8c4d-bc5833ad98b8,"Matthews, Bell and Page",15628.26,2026-07-20T14:33:39,Pending,Office Supplies,False
+2a906d6b-8665-493c-8c37-e2a4fefffc6c,Martinez PLC,39965.18,2026-07-20T15:16:27,Flagged,IT Equipment,False
+d80a3ffb-3e88-4171-82ec-340ab1baf8de,Wilson-Jones,38558.3,2026-07-20T16:38:15,Approved,Office Supplies,False
+58e9c566-decd-4b8e-9bf3-a2adb5c9cd9f,Montes-Harris,411174.38,2026-07-20T20:47:27,Approved,Office Supplies,True
+886d2ba0-4f72-4281-bd52-b83834c7d3c8,Hamilton LLC,27628.62,2026-07-20T21:07:09,Pending,Office Supplies,False
+c26b6632-641a-4c77-baf2-fbebcab4df19,Johnson-Weaver,9967.0,2026-07-20T21:57:01,Flagged,Logistics,False
+a736525e-2bd9-455c-ac8f-d4d126d933ba,Bennett-Alvarez,6227.51,2026-07-20T23:49:45,Approved,Office Supplies,False
+1f8f09d5-ad8a-47c7-b7e6-f850e04fefe8,"Curry, Baker and James",29904.47,2026-07-21T04:01:34,Pending,Logistics,False
+67e13d84-70ee-44bc-91a2-1af50192c016,Schwartz-Harris,27377.88,2026-07-21T07:00:02,Pending,Marketing,False
+bc6874c9-772a-4725-b806-cc27e32b02e7,White-Taylor,2179.36,2026-07-21T10:57:36,Flagged,Marketing,False
+8659345d-a897-4b13-a733-f3ba0ad55d78,Garcia PLC,7115.62,2026-07-21T11:29:18,Pending,Marketing,False
+a1897614-a3c4-40d3-8f98-d74fad6bd693,"Jones, Cummings and Conway",9874.11,2026-07-21T17:30:43,Approved,Marketing,False
+8d17703b-a2ce-4ec2-acc0-3c3ff40d77d5,Moody-Wright,23138.54,2026-07-21T18:10:24,Approved,Office Supplies,False
+466417b4-17f9-460a-845c-a81ff3c9a0dd,"Anderson, Sanchez and Harris",27396.71,2026-07-21T23:01:56,Approved,Marketing,False
+ba4406e4-3a87-486f-8f35-91930ca264ee,Stanley-Jones,22854.68,2026-07-22T00:59:01,Pending,Logistics,False
+a41463dc-488c-4954-9def-9882ea76501f,"Moreno, Barajas and Colon",19339.27,2026-07-22T05:04:39,Approved,Logistics,False
+349f7d4d-3d9c-44be-8433-015cb10b9cda,Morgan-Schwartz,5003.6,2026-07-22T06:19:39,Approved,IT Equipment,False
+9db6a67f-28e6-4df3-9a72-c87e20b68b08,Martinez Ltd,38746.64,2026-07-22T07:58:03,Approved,Marketing,False
+309c4297-a253-4592-a741-a49a0d103b35,"Williams, Avila and Ruiz",44158.34,2026-07-22T10:13:32,Pending,IT Equipment,False
+10b7572b-742c-4102-865f-23b24034bd1f,Mcneil-Sparks,46317.48,2026-07-22T11:24:46,Approved,Marketing,False
+b25551bf-5a10-4bc6-8fd9-5fecd28c4b02,"Gomez, Richard and Bishop",6480.68,2026-07-22T11:31:20,Pending,IT Equipment,False
+30881041-4c32-47a5-9551-df61da0e500b,Cole-Anderson,20572.77,2026-07-22T12:28:12,Approved,Office Supplies,False
+d40609ae-29d0-4f6c-82b3-e199101e14ef,"Torres, Lyons and Young",3493.5,2026-07-22T19:29:23,Approved,Logistics,False
+6bf92500-e35a-4a7e-af1a-4ca3138b81c3,"Austin, Day and Johnson",28222.71,2026-07-23T00:57:23,Flagged,IT Equipment,False
+a9c278b6-38e4-4856-a783-89e014020f46,"Chapman, Barton and Hayes",3147.81,2026-07-23T02:24:50,Flagged,Office Supplies,False
+2438d04a-c873-4b0e-b9bb-e7be0d9c565e,"Little, Peck and Durham",24558.7,2026-07-23T04:20:32,Pending,Logistics,False
+1025690d-972b-4562-93d7-f3a0a9dcb015,"Mills, Haynes and Davis",43998.43,2026-07-23T10:00:08,Flagged,Office Supplies,False
+7c3057b7-8fc7-4451-9a3f-b2cab7deb61e,James-Gardner,46746.48,2026-07-23T11:48:23,Approved,Marketing,False
+46243030-8bdf-493d-a08a-b9752734dbeb,Stephens-Young,28631.72,2026-07-23T12:05:49,Flagged,Logistics,False
+69cef1f4-f45a-40f5-aacf-e01553f52dfe,"Dixon, Sanders and Shaw",8874.59,2026-07-23T12:15:05,Approved,Office Supplies,False
+d1aaccac-f7d8-4cdd-9e88-28f26a4fa676,"Landry, Jones and Guerrero",3578.59,2026-07-23T12:57:28,Flagged,IT Equipment,False
+2f847f1c-515a-406d-94e3-4199f9dfd562,"Harris, Crawford and Cain",276230.88,2026-07-23T23:13:27,Pending,Office Supplies,True
+9558b7ed-7d78-4afa-a3a7-d96da86a1059,Palmer LLC,2158.42,2026-07-24T02:55:47,Pending,Office Supplies,False
+10e6563a-df39-4557-bdef-f090515edcc6,Allen Group,1435.79,2026-07-24T04:03:02,Approved,Office Supplies,False
+abe1e11e-dee3-40e8-bf0b-acb11aa9d50a,Compton Ltd,36528.63,2026-07-24T08:26:24,Pending,IT Equipment,False
+c3d4ba5c-5425-4f44-82f9-4b414c827321,"Vaughn, Marquez and Ross",13980.69,2026-07-24T09:14:33,Flagged,IT Equipment,False
+2062e954-592b-47f0-8290-c0bcf5a2723a,Allen-Foster,43991.91,2026-07-24T09:15:00,Flagged,IT Equipment,False
+2ad12f35-900c-491e-aa73-4d720b103728,"Richardson, Smith and Craig",4661.6,2026-07-24T10:11:40,Approved,Marketing,False
+d902e1bb-d8a3-4133-9264-ab4b211cfe10,"Wells, Wolfe and Lopez",14125.64,2026-07-24T13:31:38,Approved,Office Supplies,False
+20b2232f-f9e6-4920-9804-9231080945d0,"Hardy, Lee and Adams",24418.11,2026-07-24T13:52:04,Flagged,Logistics,False
+4d4e89ec-74a1-40c2-99e4-b5ce9535d08d,Webster Inc,3547.19,2026-07-24T14:33:34,Approved,IT Equipment,False
+972a5b2d-8abe-4e1a-b43d-5ea4fdf4a7f3,"Holmes, Stewart and Smith",30062.15,2026-07-24T14:52:21,Approved,Marketing,False
+49c614aa-2f0f-4e09-b628-f1d2d1c8ad26,Miller Group,18314.25,2026-07-24T21:46:14,Flagged,Logistics,False
+ad41e807-b693-4162-b752-700c7b8a518c,Garcia Inc,4571.63,2026-07-25T00:12:12,Approved,Marketing,False
+1d8e6379-709a-4665-9560-13640fe567da,"Brown, Meyer and Cunningham",30408.52,2026-07-25T00:24:49,Pending,Logistics,False
+816273ef-4339-4ee3-8da1-b07892f6f0c7,Jones-Davis,41445.82,2026-07-25T00:50:13,Pending,IT Equipment,False
+4961468d-1284-4d46-a04d-8c07989a0e2e,Garcia Inc,4571.63,2026-07-25T01:12:12,Flagged,IT Equipment,True
+29cb02cc-9515-4aeb-b759-9caeb6a858d3,Hughes-Schroeder,23948.47,2026-07-25T02:02:41,Flagged,Logistics,False
+7e58cdb1-ab09-4d15-9ee8-f5a9a8bd59e9,Bell-Hicks,18358.8,2026-07-25T03:29:26,Flagged,IT Equipment,False
+dd1e85fe-29c5-4684-92d3-349cc60fc08c,Evans-Bauer,13578.87,2026-07-25T03:35:08,Pending,Marketing,False
+0a20c4d1-c4ef-4f34-8607-37c54b16b955,Nolan and Sons,20302.46,2026-07-25T09:25:45,Approved,Logistics,False
+90377b26-dcd9-4ef6-ad00-9da9d5c97a6e,Harris PLC,8764.13,2026-07-25T14:47:28,Pending,Office Supplies,False
+b95e0dcc-e867-4889-a833-20c5316a0e44,Owen-Mendez,33414.51,2026-07-25T15:14:57,Flagged,Logistics,False
+947a69f9-d14f-4bdd-ba48-96c015d6c617,Armstrong and Sons,47603.71,2026-07-25T17:00:02,Pending,Office Supplies,False
+8aef44e3-8063-40c6-983a-597f656dd864,Santiago Ltd,42271.42,2026-07-25T17:13:48,Flagged,Logistics,False
+bc02c373-7a93-447a-b4f5-64f77d5df352,Vasquez-Ray,7576.8,2026-07-25T19:38:43,Approved,Office Supplies,False
+fe709dac-bb8a-4f59-bf52-d3f05e10e486,"Stafford, Butler and Vasquez",8238.83,2026-07-25T22:53:21,Flagged,Office Supplies,False
+3aec6602-caad-4dd0-a4a0-fed99a88f743,Nelson-Schaefer,10808.59,2026-07-25T23:37:55,Flagged,Office Supplies,False
+f23b51cf-685c-47fb-8da3-ba66cbb9cc18,Kelley and Sons,19456.2,2026-07-25T23:43:47,Pending,IT Equipment,False
+355466ed-2e38-486e-81f4-b4691bd57878,Ford-Frazier,29314.47,2026-07-26T04:56:02,Flagged,Office Supplies,False
+aa56ac23-fc49-4cb0-bffe-cd654d9915de,Hansen Inc,32559.3,2026-07-26T11:16:41,Flagged,Marketing,False
+78fbcdcd-bcbc-474c-8fcd-14104c9fc52c,"Cooper, Martinez and Dalton",708.1,2026-07-26T13:18:29,Approved,Marketing,False
+dc277bcc-58e8-47c3-94ad-d13e9ce857c2,"Graham, Scott and Jennings",38180.61,2026-07-26T13:48:24,Approved,IT Equipment,False
+0f574d8b-13a8-4792-a79a-9770875a4199,Stein-Silva,13655.53,2026-07-26T16:47:04,Approved,Marketing,False
+83b4aa15-fd92-488a-b623-22fe7c88efb4,"Knight, Coffey and Kemp",24738.84,2026-07-26T17:05:20,Approved,IT Equipment,False
+f557381e-6613-4012-adf4-1332b1a28b67,Rose-Warren,45622.35,2026-07-26T17:29:55,Approved,Logistics,False
+1e3e1510-1550-45bf-82f9-3e495ccbc4e0,"Price, Dixon and Robles",48754.82,2026-07-26T18:11:44,Pending,Logistics,False
+dd074baf-342d-44a1-ae16-808c9c644ad1,Elliott-Hernandez,17362.28,2026-07-26T18:59:36,Flagged,Logistics,False
+ee77d3fe-b4ba-46f7-bab1-4e7fdec85d58,"Wolfe, Sloan and Johnson",38931.4,2026-07-27T04:31:24,Pending,Office Supplies,False
+e08740a6-82b2-41be-b9b5-70958e8c817f,"Marks, Miller and Griffin",16317.87,2026-07-27T11:59:33,Pending,Logistics,False
+46a2d96c-cfda-44c5-8e1b-818343ee0473,Hancock LLC,12380.76,2026-07-27T15:29:16,Pending,Logistics,False
+f989e5a1-ae07-4e00-86a7-103677804656,"Rivera, Myers and Smith",17561.19,2026-07-27T20:56:21,Pending,Marketing,False
+68e5e0f9-ce47-4054-b887-9a57c82bb76c,White-Thompson,46749.68,2026-07-27T22:07:01,Flagged,Office Supplies,False
+6df562ae-3b89-497a-92d1-4069c5e717e7,"Hurley, Perry and Wood",23753.71,2026-07-27T22:52:08,Approved,IT Equipment,False
+178fcbd7-e23e-4e2d-9e25-01cf9db457cc,"Rocha, Perry and Peters",533.52,2026-07-28T03:05:38,Flagged,Office Supplies,False
+e301539c-67ce-4675-9551-197edb18401e,"Roberts, Reed and Chambers",13843.79,2026-07-28T03:26:32,Flagged,Office Supplies,False
+f2e072a0-a73f-4ab5-8d00-59bd672f1981,Nguyen-Wong,29898.11,2026-07-28T05:56:35,Approved,Logistics,False
+226adf2b-8323-4b24-94f9-14461db67c0b,Kaufman and Sons,27613.62,2026-07-28T06:22:08,Pending,Logistics,False
+1f42c8b0-4907-4282-92fd-0bcced0fdc72,"Washington, Allen and Gonzales",41889.35,2026-07-28T10:46:43,Pending,Office Supplies,False
+d24a1c2c-fc1e-447d-a731-75b96b28abc1,Allen-Hopkins,9221.81,2026-07-28T14:43:12,Pending,Marketing,False
+d083c422-bc06-4bc2-b7db-281fb6dd513c,Moore PLC,13961.19,2026-07-28T19:32:06,Approved,Office Supplies,False
+31cc88cf-67fc-4866-9700-642a77b8fb47,Garcia LLC,41908.29,2026-07-28T19:39:50,Pending,Logistics,False
+53b744a4-f809-4fd9-8a43-38c58ce55d33,"Tran, Nelson and Jacobs",7664.13,2026-07-28T20:15:22,Pending,Office Supplies,False
+a5fdf167-a29c-4d21-8857-f0333078707b,"Garza, Williams and Walker",34560.79,2026-07-28T20:47:56,Approved,Logistics,False
+5260e634-7edb-4a18-8ea9-9b1bc7e80edd,Jenkins Ltd,47363.56,2026-07-29T00:51:17,Approved,Marketing,False
+b1a99960-5da5-4b96-bd5e-fc3baffe45b9,Jackson PLC,38884.74,2026-07-29T03:17:40,Flagged,IT Equipment,False
+d687a607-e253-4257-966e-ff634e057178,Mills-Logan,10836.63,2026-07-29T03:36:14,Pending,Office Supplies,False
+0cf301d8-7117-4263-9968-0c94bc8702ae,Parsons-Allen,1326.79,2026-07-29T04:09:31,Approved,Marketing,False
+3f462b30-487a-45a9-9a01-ae8f3c2bf5b5,Guerrero-Becker,3820.76,2026-07-29T04:48:37,Approved,Marketing,False
+5af09848-ef3c-46ac-98c4-098f7a032a56,Wong and Sons,8900.1,2026-07-29T04:56:27,Pending,Marketing,False
+75a75efb-52ec-4a09-87b0-02c61f50907e,Peterson-Wood,24754.53,2026-07-29T05:32:20,Pending,Logistics,False
+405f22fe-b27a-45ad-b936-bcbb7bf08a61,Ortiz PLC,21798.26,2026-07-29T06:34:09,Flagged,IT Equipment,False
+9658d9f7-e6d8-4658-b38b-f79950721f7c,"Smith, Santos and Alexander",4583.67,2026-07-29T07:29:14,Approved,Office Supplies,False
+64d6b20d-c336-4318-a704-6653e60d8b6c,Shannon Ltd,16819.98,2026-07-29T08:17:39,Approved,Office Supplies,False
+94c32126-159c-428d-bdeb-c6091b60ddca,Finley-Turner,29377.96,2026-07-29T08:32:13,Flagged,Logistics,False
+69e48ac0-11a8-4011-b940-159381732c72,"Morgan, Hines and Burns",36186.83,2026-07-29T10:06:38,Flagged,Marketing,False
+3403e76e-99df-4dcb-b085-931a6a4cf092,"Krause, Rice and Miller",7263.73,2026-07-29T11:18:49,Flagged,IT Equipment,False
+fc2ce29b-cced-41ef-b2be-70aa8ba2e89b,Silva-Robles,44258.14,2026-07-29T14:13:35,Flagged,Logistics,False
+80f8646d-8902-44ff-9681-c5a15f7cce8f,King and Sons,19148.85,2026-07-29T14:50:38,Flagged,Marketing,False
+ec264e6a-2e90-4730-a202-3af680ec3fda,"Padilla, Calhoun and Dunn",34030.1,2026-07-29T16:07:27,Flagged,IT Equipment,False
+7da7ed0f-1cb3-42f8-8ef4-987948d348da,"Valdez, Lucas and Brown",47880.6,2026-07-29T20:57:33,Pending,Logistics,False
+c51660a7-4a61-4d9b-9577-3335d86a69dd,Martin-Mason,38094.44,2026-07-29T21:45:09,Flagged,Office Supplies,False
+949dde62-4d43-44d7-b77d-3d040642a015,Schroeder-Flores,19792.95,2026-07-29T22:19:27,Pending,Logistics,False
+4d2a5e36-ae90-454c-8343-b6dff98f291e,Stephens LLC,12537.72,2026-07-30T06:43:11,Pending,IT Equipment,False
+5b31a212-2a8f-4cce-be88-c696bac25077,"Bonilla, Cuevas and Parsons",30503.47,2026-07-30T06:51:42,Flagged,Office Supplies,False
+5015e099-4e69-4247-b5f2-4f7df8ed13f5,"Howard, Miller and Chen",7097.8,2026-07-30T13:31:41,Approved,Office Supplies,False
+4df8c917-28c3-47fe-b595-7974cf371b87,Nunez-Freeman,18752.45,2026-07-30T16:19:44,Pending,Logistics,False
+92ac22dd-90ae-4945-ba00-bcb24b2c7177,Ferguson-Moody,43148.3,2026-07-30T17:34:23,Approved,Office Supplies,False
+2f245398-818d-43da-86af-4696ad6c4a82,Rogers-Huff,4235.25,2026-07-30T19:35:47,Flagged,Marketing,False
+788e61a3-27b1-4be9-b5ac-b48ed3a558b8,Martin-Ewing,21593.78,2026-07-30T22:50:15,Pending,IT Equipment,False
+77282cc8-27c6-4998-bfb7-f208015a0381,"Rodriguez, Marsh and Spears",1580.43,2026-07-31T01:33:51,Approved,Office Supplies,False
+35d8f0a6-da58-47a4-9077-81a2c13c8e06,Mcintyre Group,12416.56,2026-07-31T02:37:30,Pending,IT Equipment,False
+bd5fc3b3-a05a-4441-a5e4-5514e829a319,Hill-Scott,8786.78,2026-07-31T03:45:13,Approved,Office Supplies,False
+41fa9892-3f35-46cb-a0f1-8f33fb56568f,Stewart-Hooper,5868.63,2026-07-31T12:37:52,Flagged,Logistics,False
+f27e4ea4-03ef-4e5c-9c11-93670e310a58,Meyer Ltd,30697.5,2026-07-31T13:22:01,Pending,Logistics,False
+1b1cf3ea-d88f-473e-83e3-2ef22fd45117,"Smith, Cortez and Brown",44225.15,2026-07-31T14:17:25,Flagged,Logistics,False
+9fadf3b1-3628-44f5-bb46-fffa8ebe79ed,Hayden Inc,1104.27,2026-07-31T16:27:12,Pending,Office Supplies,False
+67654be3-6627-4d5c-84d2-0d2d7186312e,Warner PLC,43945.39,2026-07-31T17:24:10,Flagged,Logistics,False
+00ba6109-7226-4f18-9fb0-b8cf51d7c396,"Gutierrez, Huang and Ellis",2977.29,2026-07-31T18:49:49,Approved,Logistics,False
+33f8c00d-3209-4f5d-9712-dc35facfe664,French-Lopez,11620.4,2026-07-31T21:24:09,Pending,Logistics,False
+cfbe4985-2201-4ae9-a88a-0b347e3f5f61,Conley-Ruiz,49383.53,2026-07-31T21:27:05,Flagged,Logistics,False
+802f467b-de3c-4465-b664-f86a7d7aa4f2,Gomez-Ortega,44009.15,2026-08-01T00:23:15,Pending,Logistics,False
+d1521307-8230-4fb6-85f9-52a3fec095c3,Hernandez-Bennett,45733.53,2026-08-01T10:00:55,Flagged,Marketing,False
+8eae92ff-2d93-40d4-acef-344b70294e97,"Schmidt, Hansen and Stewart",8838.59,2026-08-01T11:57:31,Pending,Marketing,False
+af8e2039-ba11-4023-bcf1-ee75020b9355,Hicks Inc,23823.28,2026-08-01T13:11:55,Approved,Logistics,False
+2c9a1afe-eed1-4854-a4a6-13f8590a8e0d,"Hatfield, Jones and Choi",19972.6,2026-08-01T13:58:19,Pending,Logistics,False
+94794f39-ad9d-4433-8dcb-4070d379c8f1,Hubbard-Miranda,39005.34,2026-08-01T14:24:43,Pending,IT Equipment,False
+8b4e7656-e20f-48eb-8ea0-21355f03e07a,Morton-Gutierrez,5716.85,2026-08-01T14:46:15,Flagged,Office Supplies,False
+452bda0e-79fd-4dff-b703-81ca01b850d9,"Brooks, Miles and Durham",29917.95,2026-08-01T16:51:11,Flagged,Office Supplies,False
+b1bf36a1-b16a-425f-80f9-a87d23330c22,Brown-Hill,38968.22,2026-08-01T17:19:05,Pending,Office Supplies,False
+3d0006dd-c06e-49b0-b52b-392084a3f4fc,Smith-Mills,17126.19,2026-08-01T19:03:01,Approved,IT Equipment,False
+32523730-f784-49c1-94e7-3e9b95503c73,Cook-Gonzalez,40490.45,2026-08-01T19:18:16,Flagged,Logistics,False
+2e3c8829-308f-46d0-91ec-96a43a1ed0d8,Hubbard-Miranda,39005.34,2026-08-02T01:24:43,Pending,Marketing,True
+070074d6-24b6-408e-bf42-2087fee380b1,Lewis-Murphy,17149.48,2026-08-02T01:53:32,Pending,IT Equipment,False
+e4ffd0ed-f893-41ed-9e25-16cad37bc982,Crosby-Williams,48329.93,2026-08-02T02:27:28,Pending,Office Supplies,False
+770cb607-ecbc-4b1a-9fed-525301029934,Wilson-Herrera,47370.24,2026-08-02T04:07:44,Flagged,Office Supplies,False
+7c9f4d00-e57f-4e3c-be11-3c747fe88d95,Petty-Moon,33137.49,2026-08-02T04:33:37,Approved,IT Equipment,False
+410f1b95-b8d9-44ec-9c49-a968d1a50726,Bruce-Richardson,14796.13,2026-08-02T05:05:54,Pending,Office Supplies,False
+3d0e60d3-1134-47c1-be36-630057177792,Garcia PLC,33189.72,2026-08-02T06:35:10,Approved,Office Supplies,False
+22831b18-f8c8-4c3d-8f5d-97d62422049c,"Henderson, Ramirez and Lewis",49829.2,2026-08-02T07:10:07,Pending,Logistics,False
+df244ded-48e9-4adc-8fb4-45920878bd98,"Martin, Jordan and Edwards",25598.62,2026-08-02T08:22:24,Flagged,Marketing,False
+c2f89aa8-dd2e-4330-9450-5f2621fd7082,Hughes Group,36356.36,2026-08-02T09:17:21,Flagged,IT Equipment,False
+685464eb-f725-45fc-b0ec-921280545a9c,Perez Group,9112.2,2026-08-02T09:36:11,Approved,IT Equipment,False
+b4f10cc7-d62d-49b1-8d6f-8dbfba9e28c4,"Martin, Jordan and Edwards",25598.62,2026-08-02T10:22:24,Flagged,Marketing,True
+020e8dcc-7183-4778-bbbe-60b8191ba093,Miller-Stevens,24043.68,2026-08-02T14:11:30,Pending,Office Supplies,False
+1ea68436-23b0-4fef-80aa-efbf7a4dc018,Palmer-Hancock,17734.83,2026-08-02T16:40:21,Flagged,Logistics,False
+c5812b65-86ad-4436-9608-e98876c11c1a,"Gonzalez, Osborn and White",24021.14,2026-08-02T16:46:40,Flagged,Logistics,False
+7915ae9f-0c64-4d1d-9ce4-91c0bf1f9b72,Monroe Group,9607.76,2026-08-02T23:11:08,Pending,Office Supplies,False
+bb437065-0b15-40a3-8fb2-9f740562fc27,Johnson-Black,35504.92,2026-08-02T23:28:49,Pending,Marketing,False
+6e7ddf74-035a-4e59-9300-49ddeeeb44e4,Miller Ltd,37037.5,2026-08-03T00:42:39,Flagged,IT Equipment,False
+f83e0a46-781b-4722-87d9-1452940ecc45,Martin Ltd,39241.48,2026-08-03T00:53:12,Flagged,Office Supplies,False
+3f3c237d-dffb-44b5-ab45-b062d46293bd,"Norman, Adams and Tanner",24470.16,2026-08-03T01:39:41,Approved,IT Equipment,False
+4e9f6846-bf44-4ff0-9960-0456a15ed3fe,Foley Inc,19782.28,2026-08-03T01:52:39,Flagged,IT Equipment,False
+df26700a-73b9-4356-8afc-0fddb9744f6d,"Meyer, Dawson and Harper",26356.78,2026-08-03T06:44:13,Approved,Marketing,False
+43a5e598-0b5a-47cc-bd0c-c5d9c0c633ce,"Castillo, Warren and Griffith",47377.6,2026-08-03T09:03:42,Pending,Office Supplies,False
+bf3d2dff-5d26-4f88-80d6-83036bb3ce1f,"Harris, Herman and Arnold",45688.77,2026-08-03T11:10:36,Pending,Marketing,False
+558c12ac-311b-471b-979e-7bd1f7209932,Carrillo-Todd,24812.72,2026-08-03T11:22:29,Pending,Marketing,False
+d8d4f119-3323-4dd2-8cca-dc5ccb3c175d,Coffey-Patton,39219.6,2026-08-03T12:41:13,Flagged,Office Supplies,False
+c8febe4a-9e19-44b3-837b-6f19913d0530,"Bentley, Lynch and Henderson",14233.19,2026-08-03T12:42:42,Pending,Office Supplies,False
+b1880b0a-53d0-41d1-b2af-6175eeff2d1f,Clay-Patterson,45179.41,2026-08-03T12:48:36,Approved,Marketing,False
+07f90e93-5e43-40da-94dd-8fac9a3fa38e,White LLC,11703.52,2026-08-04T03:11:28,Pending,Office Supplies,False
+397ba083-4432-42e0-9841-ad52cd61a6a4,Franco Ltd,44886.32,2026-08-04T07:47:01,Pending,Office Supplies,False
+51b1851b-76b7-4619-b242-997ba68dd171,"Walls, Duncan and Kennedy",35439.16,2026-08-04T08:23:39,Pending,Marketing,False
+302b4a48-3ce5-4ce8-a879-f793b0005615,Reilly-Rodriguez,46033.9,2026-08-04T13:41:22,Flagged,IT Equipment,False
+34eae133-0491-4dc2-8b3a-2fc6ca1b4eec,Knight Group,35968.73,2026-08-04T16:58:45,Pending,Logistics,False
+53d2b1a3-2f03-44f4-ad73-158bc3573b64,Stewart PLC,8346.62,2026-08-04T17:34:51,Flagged,IT Equipment,False
+06070cca-d2d7-498c-b2a4-8235f63cd21b,Vaughn LLC,840.81,2026-08-04T21:23:15,Approved,IT Equipment,False
+520479ab-42ff-4e8e-8bf5-2bbab881c1e8,Reyes-Singh,44470.69,2026-08-04T22:05:33,Flagged,Logistics,False
+de4db589-4302-4d30-afdf-ba50c8e408eb,"Hardin, Navarro and Cummings",37487.51,2026-08-05T03:41:57,Pending,Office Supplies,False
+549519fc-097e-49f9-951b-d4ceceb791ee,"Phillips, Wagner and Jordan",25062.76,2026-08-05T04:08:47,Flagged,Logistics,False
+01b47800-593c-4c11-ace5-8c3c60f21038,"Johnston, Taylor and Copeland",21349.15,2026-08-05T04:09:34,Approved,Logistics,False
+aa4c0880-e018-4332-9b0d-fda01691550f,Lowe-Dixon,30573.56,2026-08-05T05:38:10,Flagged,Office Supplies,False
+0ccb477d-f3c5-435d-8a5d-a21f85aa72e5,"Pierce, Davis and Garcia",29735.71,2026-08-05T05:48:33,Approved,Logistics,False
+8009c465-788a-4612-82b3-c69c8d45d700,Allen Ltd,19836.15,2026-08-05T06:01:03,Flagged,Marketing,False
+2c0f0aba-b172-411b-83fe-b4d7474b4528,"Wilson, Hester and Long",40944.87,2026-08-05T08:20:36,Pending,IT Equipment,False
+c6259741-769f-426a-b3c1-c3fc87d4dd66,Byrd-Sloan,41652.18,2026-08-05T08:37:21,Flagged,IT Equipment,False
+ccdc7190-1387-491b-be27-8ffceaa94b43,Stewart-Bailey,45335.9,2026-08-05T09:31:38,Flagged,IT Equipment,False
+ef3cbbb2-da4c-4c1b-b7d4-62b611c054cd,"Lewis, Ramirez and Padilla",25582.0,2026-08-05T10:55:54,Approved,Logistics,False
+35141dfb-2810-450d-9143-f381d4f8e5a7,"Lucas, Rasmussen and Rivera",37011.82,2026-08-05T11:27:05,Pending,Logistics,False
+0eb17439-3dad-4e43-9166-f745de6a4608,"Horne, Miller and Schultz",41431.94,2026-08-05T15:48:08,Flagged,IT Equipment,False
+8089659d-cc3d-43f9-959d-1a4bde84aa58,Fisher-Yu,37715.93,2026-08-05T16:05:36,Pending,IT Equipment,False
+ec239124-76ce-4347-a7af-ab9d53d6c145,Garrett-Black,17334.1,2026-08-05T20:08:18,Flagged,IT Equipment,False
+c6e2bc32-9cb2-486c-86ac-a56ee52253e7,Bradley-Davis,49628.97,2026-08-06T01:42:38,Flagged,Marketing,False
+9992efe1-534b-4a4f-8818-2e2b31f2eb9e,Perez Inc,44966.41,2026-08-06T07:59:28,Pending,Marketing,False
+bcf59320-c225-4c09-89b9-b9db1181b2ca,Hopkins LLC,38882.94,2026-08-06T14:30:13,Approved,IT Equipment,False
+1c6ff75c-245d-4cf7-93db-774e4b066605,Dixon and Sons,5578.39,2026-08-06T15:00:54,Approved,IT Equipment,False
+c004e730-ef9d-4787-83fb-f78d443d346c,"Bowers, Young and Allen",40115.36,2026-08-06T16:19:43,Pending,Office Supplies,False
+bab45df9-453c-43a0-a340-b848d98eab68,Marsh-Dougherty,29720.79,2026-08-06T16:43:46,Approved,Office Supplies,False
+fa38bdda-4e56-4592-9318-bff149d2f245,"Jackson, Williams and Mooney",41341.6,2026-08-06T16:57:44,Flagged,Logistics,False
+76921b2b-a972-4193-bf09-0640575bcd6c,"Horton, Flores and Evans",6497.56,2026-08-06T19:58:07,Flagged,Logistics,False
+7a6895b4-a6c6-446d-a9a5-37ae0b67699a,"Rhodes, James and Baird",18960.15,2026-08-07T15:03:22,Pending,Office Supplies,False
+5b9dfe2a-d9d6-456c-8635-33dfe638d9bd,Burke-Norton,11278.28,2026-08-07T19:53:35,Approved,IT Equipment,False
+eea06012-89e8-4270-af12-1e67485d9060,Mendoza-Yates,27998.67,2026-08-07T21:50:45,Approved,Marketing,False
+1d19cbd7-5c74-4221-931e-28e45c1b4c62,Turner-Reese,20985.52,2026-08-07T22:47:41,Flagged,IT Equipment,False
+905b4fe7-5feb-4301-9e6a-20d69932da8d,Miller-Morrison,5514.93,2026-08-08T00:17:33,Approved,IT Equipment,False
+adb0084d-3ba3-44a5-9d85-7f128e473477,Roberts-Henry,13158.23,2026-08-08T01:21:35,Pending,IT Equipment,False
+26d4a3ff-bee9-40d0-b75d-50450b4eca63,"Barker, Davis and Carpenter",17890.87,2026-08-08T02:33:40,Approved,Logistics,False
+d64ddfdd-b717-454d-aa62-27b7de85ad7b,Fox-Hammond,47084.92,2026-08-08T02:37:06,Flagged,Logistics,False
+9f8f4b0b-c817-4d0c-9f1a-337a8953f5d2,Smith-Miller,10165.6,2026-08-08T03:55:06,Flagged,Marketing,False
+257c4a79-e8da-4d42-9c29-1abbbfd471c7,Rivas-Scott,34889.64,2026-08-08T05:45:54,Pending,IT Equipment,False
+82a8d4a4-9544-43b4-8946-5105252ab5f6,Johnson-Dunn,6826.51,2026-08-08T08:36:19,Approved,IT Equipment,False
+e32eef93-7a31-42f3-9f67-5528d8ef2919,Stephens LLC,6293.76,2026-08-08T10:44:00,Flagged,IT Equipment,False
+ab76d202-72b3-4ad9-8e74-2cbd843a6e13,"Sanchez, Terry and Evans",26709.58,2026-08-08T13:37:23,Approved,Logistics,False
+be62922a-9176-40e7-989e-db3f16bff61b,Simpson LLC,14375.54,2026-08-08T14:16:44,Pending,IT Equipment,False
+906ef02c-247f-4c7e-8274-780d444939d2,"Cline, Wright and Dawson",43084.16,2026-08-08T14:36:04,Approved,Marketing,False
+7373a5f1-7e1b-463e-ad19-4115552ca98b,Jones Ltd,26095.91,2026-08-08T19:28:14,Flagged,Office Supplies,False
+2aa53579-5b9a-4ffa-979b-349c5986d50f,Black-Smith,20791.52,2026-08-08T23:12:42,Pending,Office Supplies,False
+f0e9e296-a290-4018-94a4-c90891069649,"Beltran, Lozano and Mcgee",37188.87,2026-08-09T00:45:14,Pending,Office Supplies,False
+788504fc-4d3f-420c-a085-22e9c58fdc7d,Johnson and Sons,19204.24,2026-08-09T05:40:02,Flagged,IT Equipment,False
+838eea8b-5d79-4945-bc38-2211e36d6d88,Powers Inc,15468.0,2026-08-09T06:19:50,Flagged,Marketing,False
+0d9709b3-cc25-4c17-86a3-a7323b84cecf,Thompson and Sons,34459.72,2026-08-09T10:23:44,Approved,Office Supplies,False
+3126b9c9-7387-4659-8048-3fbbd124f3d7,Sims-Anderson,48438.36,2026-08-09T13:59:11,Approved,Logistics,False
+8deefb0e-fbeb-444d-9d82-06d5ea51a829,Brown-Kim,32919.95,2026-08-09T14:21:07,Approved,IT Equipment,False
+099053f0-cfbc-42bc-b49f-93ecdfabb5bb,"Patel, Ball and White",20907.8,2026-08-09T16:19:40,Approved,Logistics,False
+ae2864ca-afab-4ac7-8a6c-5dcc98828c50,Hunt Ltd,38404.13,2026-08-10T01:05:33,Pending,IT Equipment,False
+5840db9d-1a36-4320-9807-0a5ca07bd382,"Sanford, Rivera and Garcia",2526.16,2026-08-10T05:10:59,Pending,Logistics,False
+1c6ef02e-087f-4993-ae23-5df9bd6d8980,Jacobs-Lane,14894.23,2026-08-10T09:17:40,Flagged,Office Supplies,False
+064b07da-5c6a-482a-a889-21174e33599d,Brown Group,30118.82,2026-08-10T10:26:50,Pending,Marketing,False
+f53c4d95-e52b-40c0-aefe-d0ad95c308a7,"Holmes, Williams and Wright",14441.22,2026-08-10T12:51:56,Approved,Marketing,False
+110a422a-33ed-4734-8010-6888a8b18a82,"Robinson, Francis and Robles",31163.2,2026-08-10T15:30:04,Flagged,IT Equipment,False
+04c4f63b-e3d6-4fa6-8a8a-318b77bd3f95,"Stanton, Reid and Terry",48119.11,2026-08-10T16:59:23,Approved,Marketing,False
+a2edebba-4b59-4054-bd90-4a82441385b8,Simmons-Wilson,23707.86,2026-08-10T19:38:43,Approved,Logistics,False
+c70d486e-e3ad-4df0-b216-e1bd186d4b08,Martinez Inc,18896.62,2026-08-10T20:06:35,Pending,IT Equipment,False
+c9107276-2b12-4a25-bd52-0b21e4c0ac70,Wagner Group,863.82,2026-08-10T21:06:08,Pending,Office Supplies,False
+c60e6a0f-818d-4b7d-8493-c4ecf229478f,Evans-Foster,37633.3,2026-08-11T01:55:21,Flagged,Logistics,False
+ae7e26bb-134b-4b40-a1fd-00b18d182c1b,Pearson-King,7085.19,2026-08-11T04:20:21,Flagged,Marketing,False
+e1e52f45-7154-473e-a950-58f971e5c866,Lane PLC,41911.78,2026-08-11T04:24:08,Approved,Logistics,False
+3e02709e-bcad-4d26-9308-7a813fe731ba,Spencer LLC,45126.56,2026-08-11T05:14:42,Pending,Office Supplies,False
+cda521f7-b005-47fe-a513-091b72bdfb24,Ramos and Sons,45338.47,2026-08-11T05:26:31,Pending,Logistics,False
+4b3fcb26-e258-4bd6-8280-1f81d86b9578,"Bowers, Stevens and Martinez",3110.12,2026-08-11T10:34:18,Approved,Marketing,False
+2597ef03-8749-4ab9-a766-c7d15bb5f1cd,Newman-Rivera,5518.63,2026-08-11T11:17:27,Approved,Logistics,False
+5ba4aca1-01e0-475f-be32-2d382cdc0f5f,May Group,8998.1,2026-08-11T16:23:59,Pending,Marketing,False
+04a629e6-5798-4b3d-8782-c7effca81dd9,Shaw Group,31447.69,2026-08-11T16:58:34,Flagged,Office Supplies,False
+15b9de8a-f9ef-4b8f-a10a-b42dc6ff6cf3,Harris-Melton,949.95,2026-08-11T17:04:48,Pending,Office Supplies,False
+52355127-c167-4cd9-b0f4-b10dff062436,Schroeder PLC,38544.9,2026-08-11T17:36:13,Pending,Logistics,False
+744d33d8-2807-4987-b4df-e9835467a611,Rice-Maddox,25109.76,2026-08-11T17:51:38,Approved,Logistics,False
+503196f6-e773-4dcd-9807-bce1998b8981,"Williams, Smith and Morse",4823.5,2026-08-11T20:57:37,Pending,Marketing,False
+479b5ba7-996e-4bc1-82d2-d4498caf5f70,Maxwell-Carr,11979.78,2026-08-11T22:02:45,Flagged,Office Supplies,False
+5cf0ff49-8d96-4537-bd89-06128829941b,Gonzalez-Clay,31637.81,2026-08-12T00:34:00,Flagged,Office Supplies,False
+3d679ff4-b37b-4c8d-bd54-453a3f9fd84b,Decker-Jones,2564.7,2026-08-12T01:56:49,Approved,Marketing,False
+b3406900-0e4c-47ad-be73-2cd0b5a18ce6,Stevens Ltd,13547.92,2026-08-12T03:15:08,Flagged,Logistics,False
+c425f383-af2d-4ddf-9377-57bf051500f5,Cordova Group,16641.41,2026-08-12T03:29:10,Flagged,Logistics,False
+1efa402e-0c6e-436f-850d-19c4dcbbbe7c,Moore-Murray,42413.17,2026-08-12T04:13:02,Flagged,IT Equipment,False
+2a4c3884-fcd1-4dbe-8dfa-fde2f7b45d6a,Wilkinson-Harvey,9294.23,2026-08-12T04:54:41,Pending,Logistics,False
+4a19a08f-ff06-4a5b-aca2-e38f250f96ed,Lindsey-Rodriguez,8619.69,2026-08-12T07:04:06,Approved,Office Supplies,False
+96d38e93-3311-43d1-a566-79cd9f817ccc,Ford-Frye,25073.78,2026-08-12T11:17:08,Approved,IT Equipment,False
+eb9bb92c-4877-4496-8283-db6304621f5c,Garrison-Cohen,20478.35,2026-08-12T12:46:56,Approved,Office Supplies,False
+11ac69e9-b9e7-4f98-92fb-e57390ea8c0f,"Ramsey, Hansen and Mendoza",4869.24,2026-08-12T14:07:10,Pending,IT Equipment,False
+97fb5538-179f-4322-9073-02735b5d6e02,"Hines, Bennett and Cantu",22718.42,2026-08-12T14:25:02,Approved,Office Supplies,False
+82a0a1ef-937d-4b92-afd1-e186f6d13d8a,Bell-Williams,11021.88,2026-08-12T15:25:55,Pending,Marketing,False
+09c1758d-7595-4ea7-bebc-8043e4946e55,Bowen Group,34568.58,2026-08-12T17:31:10,Flagged,Office Supplies,False
+8ffcf3df-78ec-470e-9b3a-39e54d1302cc,Kelly Ltd,42989.11,2026-08-12T18:40:58,Pending,Marketing,False
+d1c60759-4e72-40ea-9efb-5645e19b71e6,Mcdaniel PLC,369.39,2026-08-12T19:42:53,Approved,IT Equipment,False
+5ce239ce-e3fe-4b28-be3f-7f002a64c15a,Young and Sons,32802.94,2026-08-12T21:44:09,Pending,Office Supplies,False
+1f2d9b74-9def-4528-bd7c-aa73a3809cf0,"Taylor, Wright and Davidson",10720.25,2026-08-13T00:56:19,Pending,Logistics,False
+b328553b-b25c-4b09-b47d-eb862a950880,Williams-Li,19500.33,2026-08-13T00:59:36,Approved,IT Equipment,False
+23318e1d-90ab-436e-911f-aa3ae7a94b55,Bell-Madden,898.36,2026-08-13T01:22:09,Flagged,Logistics,False
+fe14c45d-e623-48f2-b38b-8790ee64aafa,Gentry PLC,17646.8,2026-08-13T06:10:59,Flagged,IT Equipment,False
+00d5a1c8-bb09-42cf-86a1-b8bbdd86da3f,Bryant-Rich,34221.13,2026-08-13T09:28:26,Approved,Marketing,False
+692a2555-8363-4210-b76d-b19b33d4c56e,Huynh-Garcia,43869.7,2026-08-13T10:16:57,Approved,IT Equipment,False
+8e8b57bc-adc9-4280-abbd-d3a09296aae4,Smith-Hickman,39352.41,2026-08-13T11:40:08,Pending,Office Supplies,False
+1e77b780-0586-40aa-9c13-2f3c1766d801,"Baker, Mahoney and Ibarra",35334.27,2026-08-13T12:56:48,Approved,IT Equipment,False
+590ccb92-646f-407d-b138-91297a1a3077,Floyd PLC,36976.99,2026-08-13T14:57:49,Pending,Marketing,False
+08babb04-57da-4bda-8d40-9017886f3c6b,"Gomez, Williams and Simpson",15876.27,2026-08-13T20:05:54,Flagged,Marketing,False
+554f54fb-dd02-46d5-bd99-b5bfcc0dfd85,"Keller, Davis and Montoya",21557.63,2026-08-14T07:34:04,Flagged,Logistics,False
+1a76191c-c3bd-452b-90cb-e81eee52436e,Finley-Sims,44294.68,2026-08-14T07:58:50,Pending,Logistics,False
+46dd99c8-bea8-4e13-8a6a-57bb9b7bcdbe,Martinez-Richardson,43074.42,2026-08-14T12:45:08,Pending,Marketing,False
+60404a0a-59b1-4c64-a382-b382e95dc00d,"Stewart, Mann and Hoffman",41994.62,2026-08-14T13:01:02,Flagged,IT Equipment,False
+55edf9be-5811-48d5-8db5-b9d71d6831c9,King-Jensen,18781.26,2026-08-14T14:08:03,Pending,Logistics,False
+62e43df7-7b76-45d6-8009-b1514d826983,Larson-Holmes,47699.4,2026-08-14T14:42:18,Pending,Logistics,False
+b624a6db-4f8c-4c48-8f22-95b3ccce5b3a,Wilkinson and Sons,42406.77,2026-08-14T16:58:16,Flagged,Office Supplies,False
+9b038a0d-0675-4789-879a-a6beb83c9019,Evans-Price,31359.0,2026-08-14T17:46:26,Pending,Office Supplies,False
+bda4f21d-f250-48c7-a4a4-25826571fd4b,"Anderson, Munoz and Carey",6207.61,2026-08-15T06:11:15,Flagged,Marketing,False
+353ea934-6764-4ab0-bd39-5e435980882a,"Hoffman, Baker and Richards",9250.31,2026-08-15T08:10:39,Flagged,Marketing,False
+a194585e-4806-4d3c-836a-8e8353e99570,Roberts-White,47951.98,2026-08-15T09:51:10,Approved,Office Supplies,False
+469d0537-40f2-4177-aca1-d6416c9ccc38,Joseph-Wallace,45064.13,2026-08-15T11:32:31,Approved,IT Equipment,False
+60af8da7-fcf8-4378-93e8-d6137c0d73c9,"Yang, Allen and Williams",9096.13,2026-08-16T01:19:50,Flagged,Office Supplies,False
+71e20187-c102-40b5-ba41-e0b4ef53de52,"Figueroa, Swanson and Lewis",20068.26,2026-08-16T02:21:53,Flagged,Office Supplies,False
+0fddd0d4-d437-412a-bc22-b61be4c9aadb,"Walker, Nichols and Glover",22589.92,2026-08-16T04:27:30,Flagged,IT Equipment,False
+c4e680ff-bf64-45da-9adb-6a418340ece5,Wagner-King,45155.81,2026-08-16T08:15:45,Approved,Logistics,False
+66afde45-4d80-4648-ba5c-c7db4bf2316d,"Thornton, Mills and Taylor",9151.39,2026-08-16T10:13:37,Approved,Office Supplies,False
+43725341-d399-495c-be4d-1b0621be4e8d,"Best, Stevenson and Williams",30424.74,2026-08-16T10:20:18,Flagged,Office Supplies,False
+9a74eabb-d631-458d-8f17-2b74d686f706,"Gilmore, Fitzgerald and Brown",44970.1,2026-08-16T12:33:42,Flagged,IT Equipment,False
+585e9847-4e0a-4a92-b114-5c4ba99dedea,"Scott, Cox and White",14766.18,2026-08-17T05:28:46,Flagged,IT Equipment,False
+e7ca7807-9b10-4807-81f8-a72a40e34c91,Valdez-Ruiz,48299.18,2026-08-17T07:14:17,Flagged,Logistics,False
+ecb829a0-aede-40ce-9264-1ca217d0dfc9,"Jordan, Case and White",33013.89,2026-08-17T07:18:26,Approved,Office Supplies,False
+d81b4184-e979-452e-b020-a1b135cee96f,Allen-May,43939.44,2026-08-17T08:36:31,Flagged,Office Supplies,False
+28caa69d-8d9a-4f8a-9013-6ea15424d0c2,"Thompson, Nunez and Mcbride",23167.58,2026-08-17T08:47:03,Flagged,Logistics,False
+200265dd-7237-40f6-a24c-b16eb01a6bf5,Taylor Group,33812.86,2026-08-17T08:59:05,Approved,IT Equipment,False
+3b1ab46d-2e0d-4040-8041-33fa53b01d96,"Boyd, Santos and Gilbert",28640.22,2026-08-17T10:57:47,Flagged,Marketing,False
+c480167d-371d-4923-8f0f-c3f2858f6e03,"Mendoza, Morales and Hunter",4947.57,2026-08-17T12:46:04,Flagged,Marketing,False
+5d9a2dd4-f87d-4fd6-bdd9-b98846a851ab,Wilson and Sons,27451.58,2026-08-17T19:47:57,Approved,Marketing,False
+1026c645-9a30-4ab8-b852-7e13a6c81c25,Moses-Miller,19135.5,2026-08-17T21:11:49,Pending,IT Equipment,False
+e534d0b4-f376-400e-95ff-cb7a36797fb2,Figueroa and Sons,44538.68,2026-08-17T23:04:32,Approved,Logistics,False
+570a5d89-1118-4b6e-a40b-0e27cecb3875,"Smith, Davis and Thomas",10634.49,2026-08-18T01:30:46,Flagged,Marketing,False
+a4efa97d-f88e-4ab9-a23a-0978a21752f8,Miller-Smith,10438.2,2026-08-18T02:09:14,Approved,IT Equipment,False
+c6f720ba-38d8-44c4-a8f8-3c70103fdea1,Smith-Myers,3942.21,2026-08-18T03:02:31,Pending,IT Equipment,False
+78a780db-3db5-416d-a15e-8d78d75c6a49,Sanchez PLC,7464.94,2026-08-18T03:32:07,Approved,IT Equipment,False

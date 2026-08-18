@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>AutoAudit - Fraud Detection Dashboard</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class"
+        };
+    </script>
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+
+    <!-- ================================================================
+         Header
+    ================================================================= -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur">
+        <div class="mx-auto max-w-7xl px-6 py-5">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+
+                <div>
+                    <p class="mb-1 text-sm font-medium text-blue-400">
+                        ERP Risk & Compliance
+                    </p>
+
+                    <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">
+                        AutoAudit - Fraud Detection Dashboard
+                    </h1>
+                </div>
+
+                <!-- Backend status -->
+                <div
+                    id="backendStatus"
+                    class="inline-flex w-fit items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-400"
+                >
+                    <span
+                        id="statusDot"
+                        class="h-2.5 w-2.5 rounded-full bg-emerald-400"
+                    ></span>
+
+                    <span id="statusText">
+                        Backend Connected
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ================================================================
+         Main Dashboard
+    ================================================================= -->
+    <main class="mx-auto max-w-7xl px-6 py-8">
+
+        <!-- Loading indicator -->
+        <div
+            id="loading"
+            class="mb-6 rounded-xl border border-slate-800 bg-slate-900 p-6 text-center text-slate-400"
+        >
+            Loading anomaly data...
+        </div>
+
+
+        <!-- Error message -->
+        <div
+            id="errorMessage"
+            class="mb-6 hidden rounded-xl border border-red-500/30 bg-red-500/10 p-5 text-red-400"
+        ></div>
+
+
+        <!-- ============================================================
+             Summary Cards
+        ============================================================= -->
+        <section
+            class="mb-8 grid grid-cols-1 gap-5 md:grid-cols-3"
+        >
+
+            <!-- Total Flagged -->
+            <div
+                class="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg shadow-black/10"
+            >
+                <div class="flex items-start justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-slate-400">
+                            Total Flagged Transactions
+                        </p>
+
+                        <p
+                            id="totalFlagged"
+                            class="mt-3 text-3xl font-bold tracking-tight"
+                        >
+                            —
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl bg-blue-500/10 p-3 text-blue-400">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 9v2m0 4h.01M5.07 19h13.86a2 2 0 001.73-3L13.73 4a2 2 0 00-3.46 0L3.34 16a2 2 0 001.73 3z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Highest Risk Amount -->
+            <div
+                class="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg shadow-black/10"
+            >
+                <div class="flex items-start justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-slate-400">
+                            Highest Risk Amount
+                        </p>
+
+                        <p
+                            id="highestRisk"
+                            class="mt-3 text-3xl font-bold tracking-tight text-red-400"
+                        >
+                            —
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl bg-red-500/10 p-3 text-red-400">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Pending Audits -->
+            <div
+                class="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg shadow-black/10"
+            >
+                <div class="flex items-start justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-slate-400">
+                            Pending Audits
+                        </p>
+
+                        <p
+                            id="pendingAudits"
+                            class="mt-3 text-3xl font-bold tracking-tight text-amber-400"
+                        >
+                            —
+                        </p>
+                    </div>
+
+                    <div class="rounded-xl bg-amber-500/10 p-3 text-amber-400">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ============================================================
+             Transactions Table
+        ============================================================= -->
+        <section
+            class="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-xl shadow-black/20"
+        >
+
+            <!-- Table header -->
+            <div
+                class="flex flex-col gap-3 border-b border-slate-800 px-6 py-5 sm:flex-row sm:items-center sm:justify-between"
+            >
+                <div>
+                    <h2 class="text-lg font-semibold">
+                        Flagged Transactions
+                    </h2>
+
+                    <p class="mt-1 text-sm text-slate-400">
+                        Transactions identified by the anomaly detection model.
+                    </p>
+                </div>
+
+                <span
+                    id="transactionCount"
+                    class="rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-slate-300"
+                >
+                    0 transactions
+                </span>
+            </div>
+
+
+            <!-- Responsive table -->
+            <div class="overflow-x-auto">
+                <table class="w-full min-w-[1100px] text-left">
+                    <thead class="bg-slate-950/60 text-xs uppercase tracking-wider text-slate-400">
+                        <tr>
+                            <th class="px-6 py-4">
+                                Transaction ID
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Vendor
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Amount (GHS)
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Category
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Timestamp
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody
+                        id="transactionsTable"
+                        class="divide-y divide-slate-800"
+                    >
+                        <!-- JavaScript renders rows here -->
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================================================
+         JavaScript
+    ================================================================= -->
+    <script>
+        const API_URL = "http://127.0.0.1:8000/api/anomalies";
+
+        const loading = document.getElementById("loading");
+        const errorMessage = document.getElementById("errorMessage");
+
+        const totalFlagged = document.getElementById("totalFlagged");
+        const highestRisk = document.getElementById("highestRisk");
+        const pendingAudits = document.getElementById("pendingAudits");
+
+        const transactionsTable =
+            document.getElementById("transactionsTable");
+
+        const transactionCount =
+            document.getElementById("transactionCount");
+
+        const backendStatus =
+            document.getElementById("backendStatus");
+
+        const statusDot =
+            document.getElementById("statusDot");
+
+        const statusText =
+            document.getElementById("statusText");
+
+
+        // ================================================================
+        // Backend status
+        // ================================================================
+
+        function setBackendStatus(connected) {
+            if (connected) {
+                backendStatus.className =
+                    "inline-flex w-fit items-center gap-2 rounded-full " +
+                    "border border-emerald-500/30 bg-emerald-500/10 " +
+                    "px-4 py-2 text-sm font-medium text-emerald-400";
+
+                statusDot.className =
+                    "h-2.5 w-2.5 rounded-full bg-emerald-400";
+
+                statusText.textContent = "Backend Connected";
+            } else {
+                backendStatus.className =
+                    "inline-flex w-fit items-center gap-2 rounded-full " +
+                    "border border-red-500/30 bg-red-500/10 " +
+                    "px-4 py-2 text-sm font-medium text-red-400";
+
+                statusDot.className =
+                    "h-2.5 w-2.5 rounded-full bg-red-400";
+
+                statusText.textContent = "Backend Disconnected";
+            }
+        }
+
+
+        // ================================================================
+        // Format currency
+        // ================================================================
+
+        function formatGHS(amount) {
+            return new Intl.NumberFormat("en-GH", {
+                style: "currency",
+                currency: "GHS",
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }).format(Number(amount) || 0);
+        }
+
+
+        // ================================================================
+        // Format timestamp
+        // ================================================================
+
+        function formatTimestamp(timestamp) {
+            if (!timestamp) {
+                return "—";
+            }
+
+            const date = new Date(timestamp);
+
+            if (Number.isNaN(date.getTime())) {
+                return timestamp;
+            }
+
+            return date.toLocaleString("en-GH", {
+                dateStyle: "medium",
+                timeStyle: "short"
+            });
+        }
+
+
+        // ================================================================
+        // Escape HTML
+        //
+        // Protects table rendering if vendor/category data contains
+        // HTML-like characters.
+        // ================================================================
+
+        function escapeHTML(value) {
+            return String(value ?? "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+
+        // ================================================================
+        // Action handlers
+        // ================================================================
+
+        function approveTransaction(transactionId) {
+            alert(
+                `Transaction ${transactionId} has been approved.`
+            );
+        }
+
+
+        function escalateTransaction(transactionId) {
+            alert(
+                `Transaction ${transactionId} has been escalated as fraud.`
+            );
+        }
+
+
+        // ================================================================
+        // Render transaction table
+        // ================================================================
+
+        function renderTransactions(transactions) {
+            transactionsTable.innerHTML = "";
+
+            if (!transactions.length) {
+                transactionsTable.innerHTML = `
+                    <tr>
+                        <td
+                            colspan="6"
+                            class="px-6 py-12 text-center text-slate-400"
+                        >
+                            No flagged transactions found.
+                        </td>
+                    </tr>
+                `;
+
+                return;
+            }
+
+            transactions.forEach((transaction) => {
+                const row = document.createElement("tr");
+
+                row.className =
+                    "transition-colors hover:bg-slate-800/50";
+
+                row.innerHTML = `
+                    <td class="px-6 py-5">
+                        <span
+                            class="font-mono text-xs text-slate-400"
+                            title="${escapeHTML(transaction.transaction_id)}"
+                        >
+                            ${escapeHTML(
+                                transaction.transaction_id
+                            ).slice(0, 12)}...
+                        </span>
+                    </td>
+
+                    <td class="px-6 py-5">
+                        <div class="font-medium text-slate-100">
+                            ${escapeHTML(transaction.vendor_name)}
+                        </div>
+                    </td>
+
+                    <td class="px-6 py-5">
+                        <span class="font-semibold text-red-300">
+                            ${formatGHS(transaction.amount_ghs)}
+                        </span>
+                    </td>
+
+                    <td class="px-6 py-5">
+                        <span
+                            class="inline-flex rounded-full bg-slate-800
+                                   px-3 py-1 text-xs font-medium
+                                   text-slate-300"
+                        >
+                            ${escapeHTML(transaction.category)}
+                        </span>
+                    </td>
+
+                    <td class="px-6 py-5 text-sm text-slate-400">
+                        ${formatTimestamp(transaction.timestamp)}
+                    </td>
+
+                    <td class="px-6 py-5">
+                        <div class="flex items-center gap-2">
+
+                            <button
+                                type="button"
+                                onclick="approveTransaction(
+                                    '${escapeHTML(transaction.transaction_id)}'
+                                )"
+                                class="rounded-lg bg-emerald-500/10
+                                       px-3 py-2 text-xs font-semibold
+                                       text-emerald-400
+                                       ring-1 ring-inset
+                                       ring-emerald-500/30
+                                       transition hover:bg-emerald-500
+                                       hover:text-white"
+                            >
+                                Approve
+                            </button>
+
+                            <button
+                                type="button"
+                                onclick="escalateTransaction(
+                                    '${escapeHTML(transaction.transaction_id)}'
+                                )"
+                                class="rounded-lg bg-red-500/10
+                                       px-3 py-2 text-xs font-semibold
+                                       text-red-400
+                                       ring-1 ring-inset
+                                       ring-red-500/30
+                                       transition hover:bg-red-500
+                                       hover:text-white"
+                            >
+                                Escalate Fraud
+                            </button>
+
+                        </div>
+                    </td>
+                `;
+
+                transactionsTable.appendChild(row);
+            });
+        }
+
+
+        // ================================================================
+        // Update summary metrics
+        // ================================================================
+
+        function updateMetrics(transactions) {
+            totalFlagged.textContent =
+                transactions.length.toLocaleString();
+
+            if (transactions.length > 0) {
+                const amounts = transactions
+                    .map((transaction) =>
+                        Number(transaction.amount_ghs) || 0
+                    );
+
+                const highest = Math.max(...amounts);
+
+                highestRisk.textContent =
+                    formatGHS(highest);
+            } else {
+                highestRisk.textContent = formatGHS(0);
+            }
+
+            /*
+             * The current FastAPI endpoint returns flagged transactions.
+             * Therefore, all returned records are considered pending
+             * unless the backend later exposes an audit_status field.
+             */
+            const pending = transactions.filter(
+                (transaction) =>
+                    !transaction.audit_status ||
+                    transaction.audit_status === "Pending"
+            ).length;
+
+            pendingAudits.textContent =
+                pending.toLocaleString();
+
+            transactionCount.textContent =
+                `${transactions.length.toLocaleString()} transactions`;
+        }
+
+
+        // ================================================================
+        // Fetch anomaly data
+        // ================================================================
+
+        async function loadAnomalies() {
+            loading.classList.remove("hidden");
+            errorMessage.classList.add("hidden");
+
+            try {
+                const response = await fetch(API_URL);
+
+                if (!response.ok) {
+                    throw new Error(
+                        `Backend returned HTTP ${response.status}`
+                    );
+                }
+
+                const transactions = await response.json();
+
+                setBackendStatus(true);
+
+                updateMetrics(transactions);
+                renderTransactions(transactions);
+
+            } catch (error) {
+                console.error(
+                    "Failed to load anomaly data:",
+                    error
+                );
+
+                setBackendStatus(false);
+
+                errorMessage.textContent =
+                    `Unable to load transactions. ` +
+                    `Make sure the FastAPI backend is running at ` +
+                    `${API_URL}.`;
+
+                errorMessage.classList.remove("hidden");
+
+                totalFlagged.textContent = "—";
+                highestRisk.textContent = "—";
+                pendingAudits.textContent = "—";
+                transactionCount.textContent = "0 transactions";
+
+            } finally {
+                loading.classList.add("hidden");
+            }
+        }
+
+
+        // ================================================================
+        // Initialize dashboard
+        // ================================================================
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            loadAnomalies
+        );
+    </script>
+
+</body>
+</html>
